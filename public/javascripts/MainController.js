@@ -15,10 +15,16 @@ function MainController($scope, $http, $q, $mdDialog, $rootScope, DataFactory) {
 
     var data = [];
     $scope.allCardsPlayed = [];
+    $scope.arrayToRender = [];
     //robot:  call newDeal, newDeal set stage to bid.  if activeplayer is cput call 
     //cpuBid function, cpubid call pass or bid, check activeplayer is cpu call cpu bid
     //or if stage changed check activeplayer if cpu call cpuTrump, check activeplayer if cpu
     //call cpuStayOrFold,
+
+    $scope.render = function(arrayToRender){
+        $scope.arrayToRender = arrayToRender;
+        return $scope.arrayToRender;
+    }
 
 
     function cpuBidDecision() {
@@ -274,7 +280,7 @@ function MainController($scope, $http, $q, $mdDialog, $rootScope, DataFactory) {
                 player.handScore = topScore;
                 player.handTotalScore = totalScore;
                 player.topSuit = topSuit;
-                makeCodedHand(player);
+                //makeCodedHand(player);
 
                 console.log("player", player, player.handScore, player.topSuit, player.handTotalScore);
             });
@@ -773,17 +779,17 @@ function MainController($scope, $http, $q, $mdDialog, $rootScope, DataFactory) {
                             return b.rank - a.rank;
                         });
                         for (var i = 0; i < item.arr.length; i++) {
-                            console.log("after initial sort item", item.arr[i].rank);
+                           // console.log("after initial sort item", item.arr[i].rank);
                         }
-                        console.log("*************")
+                        //console.log("*************")
                     });
                     player.sortedHand = angular.copy(longSuit);
                     player.handScore = topScore;
                     player.handTotalScore = totalScore;
                     player.topSuit = topSuit;
-                    makeCodedHand(player);
+                    //makeCodedHand(player);
 
-                    console.log("player", player, player.handScore, player.topSuit, player.handTotalScore);
+                   // console.log("player", player, player.handScore, player.topSuit, player.handTotalScore);
                 });
                 $scope.gameState = "Bidding";
                 console.log('cpu? ', player[$scope.activePlayer].type)
@@ -791,6 +797,8 @@ function MainController($scope, $http, $q, $mdDialog, $rootScope, DataFactory) {
                     //goto cpuBidDecision
                     cpuBidDecision();
                 }
+                var arrayToRender = [player.North.hand]
+                $scope.render(arrayToRender);
                 $scope.$digest();
             });
         }
@@ -798,34 +806,34 @@ function MainController($scope, $http, $q, $mdDialog, $rootScope, DataFactory) {
                 var codedHand = "";
                 var offSuit = jickSuit(player.topSuit);
                 var valuesOnly = [];
-                console.log("makeCodedHand jick check", player.sortedHand[player.topSuit].jick);
+               // console.log("makeCodedHand jick check", player.sortedHand[player.topSuit].jick);
                 if (player.sortedHand[player.topSuit].jick) {
-                    console.log("inside jick if in makecoded hand")
+                   // console.log("inside jick if in makecoded hand")
                     //remove jick from offsuite and add it to topsuite
                     var jickString = offSuit.toUpperCase() + '11'
-                    console.log("before splice for jickString", jickString)
+                   // console.log("before splice for jickString", jickString)
                     _.each(player.sortedHand[offSuit].arr, function (c) {
-                        console.log(c)
+                       // console.log(c)
                     });
                     var index = player.sortedHand[offSuit].arr.indexOf(jickString);
                     player.sortedHand[offSuit].arr.splice(index, 1)
-                    console.log("after splic with index", index)
+                   // console.log("after splic with index", index)
                     _.each(player.sortedHand[offSuit].arr, function (c) {
-                        console.log(c)
+                    //    console.log(c)
                     });
                     valuesOnly.push('15');
                 }
                 _.each(player.sortedHand[player.topSuit].arr, function (card) {
-                    console.log('top suit card ', card);
+                  //  console.log('top suit card ', card);
                     if (card.rank == 11) {
                         valuesOnly.push('16')
                     } else {
                         valuesOnly.push(card.rank);
                     }
                 });
-                console.log("before sorted", valuesOnly.length)
+               // console.log("before sorted", valuesOnly.length)
                 _.each(valuesOnly, function (v) {
-                    console.log(v);
+                //    console.log(v);
                 });
                 valuesOnly.sort(function (a, b) {
                     return b - a;
@@ -838,7 +846,7 @@ function MainController($scope, $http, $q, $mdDialog, $rootScope, DataFactory) {
                 _.each(player.sortedHand, function (item, key) {
                     var ranker = {};
 
-                    console.log("key ", key, " topsuit ", player.topSuit);
+                   // console.log("key ", key, " topsuit ", player.topSuit);
                     if (key != player.topSuit) {
                         ranker.suit = key;
                         ranker.score = item.ntScore;

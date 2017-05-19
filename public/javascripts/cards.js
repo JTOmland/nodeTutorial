@@ -15,24 +15,12 @@
 	var zIndexCounter = 1;
 	var all = []; //All the cards created.
 	
-	function mouseEvent(ev) {
-		var card = $(this).data('card');
-		if (card.container) {
-			var handler = card.container._click;
-			if (handler) {
-				handler.func.call(handler.context||window, card, ev);
-			}
-		}
-	}
 	
 	function init(options) {
 		zIndexCounter = 1;
-		console.log("function init ")
+		//console.log("function init ")
 		if(all.length > 0){
 			all = [];
-		}
-		if(opt.table){
-			$('#card-table').empty();
 		}
 		if (options) {
 			for (var i in options) {
@@ -48,11 +36,6 @@
 			start = opt.acesHigh ? 2 : 1;
 		}
 		var end = start + 5;
-		opt.table = $(opt.table)[0];
-		console.log("opt.table", opt.table);
-		if ($(opt.table).css('position') == 'static') {
-			$(opt.table).css('position', 'relative');
-		}
 		for (var i = start; i <= end; i++) {
 			all.push(new Card('h', i, opt.table));
 			all.push(new Card('s', i, opt.table));
@@ -72,7 +55,6 @@
 		// 	all.push(new Card('c', 1, opt.table));
 		// }
 		
-		$('.card').click(mouseEvent);
 		if(opt.doShuffle){
 			shuffle(all);
 		}
@@ -92,27 +74,18 @@
     }
 	
 	function Card(suit, rank, table) {
-		console.log("Card calling init")
+		//console.log("Card calling init")
 		this.init(suit, rank, table);
 	}
 	
 	Card.prototype = {
 		init: function (suit, rank, table) {
-			console.log("Card.prototype init");
+			//console.log("Card.prototype init");
 			this.shortName = suit + rank;
 			this.suit = suit;
 			this.rank = rank;
 			this.name = suit.toUpperCase()+rank;
 			this.faceUp = false;
-			this.el = $('<div/>').css({
-				width:opt.cardSize.width,
-				height:opt.cardSize.height,
-				"background-image":'url('+ opt.cardsUrl + ')',
-				position:'absolute',
-				cursor:'pointer'	
-			}).addClass('card').data('card', this).appendTo($(table));
-			this.showCard();
-			this.moveToFront();
 		},
 
 		toString: function () {
@@ -121,16 +94,10 @@
 
 		moveTo : function(x, y, speed, callback) {
 			var props = {top:y-(opt.cardSize.height/2),left:x-(opt.cardSize.width/2)};
-			$(this.el).animate(props, speed || opt.animationSpeed, callback);
 		},
 		
 		rotate : function(angle) {
-			$(this.el)
-				.css('-webkit-transform', 'rotate(' + angle + 'deg)')
-				.css('-moz-transform', 'rotate(' + angle + 'deg)')
-				.css('-ms-transform', 'rotate(' + angle + 'deg)')
-				.css('transform', 'rotate(' + angle + 'deg)')
-				.css('-o-transform', 'rotate(' + angle + 'deg)');
+			
 		},
 		
 		showCard : function() {
@@ -142,19 +109,14 @@
 			}
 			xpos = -rank * opt.cardSize.width;
 			ypos = -offsets[this.suit] * opt.cardSize.height;
-			this.rotate(0);
-			$(this.el).css('background-position', xpos + 'px ' + ypos + 'px');
 		},
 
 		hideCard : function(position) {
 			//console.log("card hide card called");
 			var y = opt.cardback == 'red' ? 0*opt.cardSize.height : -1*opt.cardSize.height;
-			$(this.el).css('background-position', '0px ' + y + 'px');
-			this.rotate(0);
 		},
 		
 		moveToFront : function() {
-			$(this.el).css('z-index', zIndexCounter++);
 		}		
 	};
 	
@@ -165,6 +127,7 @@
 	Container.prototype = new Array();
 	Container.prototype.extend = function(obj) {
 		for (var prop in obj) {
+			console.log('cards container prototype extend options', prop);
 			this[prop] = obj[prop];
 		}
 	}
@@ -197,11 +160,9 @@
 		},
 
 		init : function(options) {
-			console.log("Containter.prototype init");
+			//console.log("Containter.prototype init");
 			
 			options = options || {};
-			this.x = options.x || $(opt.table).width()/2;
-			this.y = options.y || $(opt.table).height()/2;
 			this.faceUp = options.faceUp;
 		},
 
@@ -218,27 +179,9 @@
 		},
 		
 		render : function(options) {
-			console.log("rendering options and this", options, " this ", this);
+			//console.log("rendering options and this", options, " this ", this);
 			options = options || {};
 			var speed = options.speed || opt.animationSpeed;
-			this.calcPosition(options);
-			for (var i=0;i<this.length;i++) {
-				var card = this[i];
-				zIndexCounter++;
-				card.moveToFront();
-				var top = parseInt($(card.el).css('top'));
-				var left = parseInt($(card.el).css('left'));
-				console.log("rendering card", card, " top", top, " left", left, "zindex ", zIndexCounter);
-				console.log("card.el", $(card.el));
-				if (top != card.targetTop || left != card.targetLeft) {
-					var props = {top:card.targetTop, left:card.targetLeft, queue:false};
-					if (options.immediate) {
-						$(card.el).css(props);
-					} else {
-						$(card.el).animate(props, speed);
-					}
-				}
-			}
 			var me = this;
 			//console.log("this is me before file", me);
 			var flip = function(){
@@ -271,7 +214,7 @@
 	});
 	
 	function Deck(options) {
-		console.log("Deck calling init");
+		//console.log("Deck calling init");
 		this.init(options);
 	}
 	
@@ -301,7 +244,7 @@
 		},
 
 		dealSpecific: function(cardName){
-			console.log("dealSpecific this", this);
+			//console.log("dealSpecific this", this);
 			for(var i = 0; this.length; i++){
 				if(this[i].name == cardName){
 					return this[i];
@@ -331,7 +274,7 @@
 	});
 
 	function Hand(options) {
-		console.log("hand calling init")
+		console.log("hand calling init", options);
 		this.init(options);
 	}
 	Hand.prototype = new Container();

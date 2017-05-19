@@ -41,5 +41,5 @@ div(ng-show="gameState == 'PickTrump'" layout='row' layout-align='space-around')
         md-option(value='h') Hearts
         md-option(value='s') Spades
 img.preload(src='/images/cards.png')
-div(id="card-table")
-    //- button(id="deal") DEAL
+div
+    draw-canvas(draw-table = "arrayToRender")
