@@ -1,0 +1,45 @@
+div(layout='row' layout-align='start start')
+    h2(flex='20') {{activePlayer}}'s Turn
+    h2(flex='20') GameState: {{gameState}}
+    h2(flex='20' ng-show="gameState != 'Deal'")   {{currentBidOwner}} bid is {{bidTaken}}   {{trump}}
+//- md-button.md-primary(ng-show="gameState == 'Bidding'" aria-label="Bid" ng-click="makebid()") Bid {{bid}}
+md-input-container(ng-show="gameState=='Bidding'" layout='row')
+    md-button.md-primary(ng-show="gameState == 'Bidding'" aria-label="Pass" ng-click="pass()") Pass
+    md-button.md-primary.md-raised(ng-show="gameState == 'Bidding'" aria-label="Bid" ng-click="inputBid()") Bid {{bid}}
+    md-button.md-icon-button(ng-show="gameState == 'Bidding'" aria-label="Increase" ng-click="increaseBid()")
+        md-icon add_circle
+    md-button.md-icon-button(ng-show="gameState == 'Bidding'" aria-label="Decrease" ng-click="decreaseBid()")
+        md-icon remove_circle
+    //- md-select.md-no-underline(flex='10' ng-model="bid" md-on-close="makebid()")
+    //-     md-option(ng-if != 3 ng-value=3) Three
+    //-     md-option(ng-value=4) Four
+    //-     md-option(ng-value=5) Five
+    //-     md-option(ng-value=6) Si
+md-button.md-primary.md-raised(ng-click="newDeal()") New
+md-button.md-primary(ng-show="gameState == 'Deal'" aria-label="Deal random card" ng-click="dealRandom()") Random
+md-button.md-primary(ng-show="gameState == 'Deal'" aria-label="Deal specific card" ng-click="dealSpecific()") Deal Specific
+//- md-button.md-primary(ng-show="gameState == 'Bidding'" aria-label="Increase Bid One" ng-click="increaseBid()") Increase Bid
+md-button.md-primary(ng-show="gameState == 'StayOrFold' || gameState == 'DealerStuck'" aria-label="fold" ng-click="fold()") Fold
+md-button.md-primary(ng-show="gameState == 'StayOrFold' || gameState == 'DealerStuck'" aria-label="Stay" ng-click="stay()") Stay
+md-button.md-primary.md-raised(ng-show="gameState == 'Play'" aria-label = "Index Play" ng-click ="indexPlay()") Index Play
+div(ng-show="gameState == 'Play'" layout='row' layout-align='start start')
+    h4(flex='15') Trick Owner {{trickOwner}},
+    h4(flex='15') Top Card {{topCard.name}},
+    h4(flex='15') Tricks {{tricks}}
+    h4(flex='15') Trump Played {{trumpPlayed}}
+    h4(flex='4' ng-repeat='player in playersIn') {{player}}
+    span(flex='4') &nbsp &nbsp &nbsp
+    h4(flex='10') Suit Led: {{suitLed}}
+div(ng-show="gameState == 'Play'" layout='row' layout-align='start start')
+    div(ng-repeat="card in allCardsPlayed" ) 
+        h6(flex='10') {{card.shortName}}
+        span(flex='3')
+div(ng-show="gameState == 'PickTrump'" layout='row' layout-align='space-around')
+    md-select(flex='20' ng-model="trump" placeholder="Trump" class="md-no-underline" ng-change="trumpChoosen()")
+        md-option(value='d') Diamonds
+        md-option(value='c') Clubs
+        md-option(value='h') Hearts
+        md-option(value='s') Spades
+img.preload(src='/images/cards.png')
+div(id="card-table")
+    //- button(id="deal") DEAL

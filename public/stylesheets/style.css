@@ -1,0 +1,85 @@
+body {
+  /*padding: 50px;*/
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 31, 2015, 2:38:33 PM
+    Author     : jeffomland
+*/
+table, td {
+    border-bottom: 2px solid #000;
+    padding: 3px;
+    text-align: center;
+    width:100px;
+    min-width: 100px;
+    max-width: 100px;
+    overflow: hidden;
+    /*display: inline-block;*/
+    white-space: nowrap;
+    font-size: 0.85em;
+
+}
+
+thead {
+    font-weight: bolder;
+    font-size: 1.1em;
+    color: red;
+}
+
+td.wider{
+    width: 250px;
+    min-width: 250px;
+    max-width: 250px;
+
+}
+.text-center{
+    text-align: center;
+}
+
+.itemName{
+    text-align: center;
+}
+
+.step{
+    border-style:solid;
+    border-width:3px;
+    border-color:rgb(255,231,231);
+    border-radius: 5px;
+    margin-bottom: 25px;
+    padding: 15px;
+    max-width: 200px;
+}
+.row{
+    padding: 15px;
+    border-width:2px;
+    border-color:rgba(52,240,20,1);
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.container{
+    border-style:solid;
+    border-width:1px;
+    border-color:rgb(255,231,231);
+    border-radius: 5px;
+    margin-bottom: 25px;
+    padding: 15px;
+    max-width: 750px; */
+    /* height: auto !important; */
+    /* margin-left: -285px; */
+    /* margin-top: -190px; */
+}
+.container h4{
+    position: relative;
+    top: 5px;
+    left:10px;
+}
+
