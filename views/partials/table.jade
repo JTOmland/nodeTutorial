@@ -1,5 +1,5 @@
 div(layout='row' layout-align='start start')
-    h2(flex='20') {{activePlayer}}'s Turn
+    h2(flex='20') {{activePlayer}}'s Turn {{clicked.x}} {{clicked.y}} {{test}}
     h2(flex='20') GameState: {{gameState}}
     h2(flex='20' ng-show="gameState != 'Deal'")   {{currentBidOwner}} bid is {{bidTaken}}   {{trump}}
 //- md-button.md-primary(ng-show="gameState == 'Bidding'" aria-label="Bid" ng-click="makebid()") Bid {{bid}}
@@ -42,4 +42,4 @@ div(ng-show="gameState == 'PickTrump'" layout='row' layout-align='space-around')
         md-option(value='s') Spades
 img.preload(src='/images/cards.png')
 div
-    draw-canvas(draw-table = "arrayToRender")
+    draw-canvas(array = "arrayToRender" m-clicked = "cardClick" draw = 'test')

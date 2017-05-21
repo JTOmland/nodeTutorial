@@ -127,7 +127,7 @@
 	Container.prototype = new Array();
 	Container.prototype.extend = function(obj) {
 		for (var prop in obj) {
-			console.log('cards container prototype extend options', prop);
+			//console.log('cards container prototype extend options', prop);
 			this[prop] = obj[prop];
 		}
 	}
@@ -163,6 +163,8 @@
 			//console.log("Containter.prototype init");
 			
 			options = options || {};
+			this.x = options.x;
+			this.y = options.y;
 			this.faceUp = options.faceUp;
 		},
 
@@ -274,7 +276,7 @@
 	});
 
 	function Hand(options) {
-		console.log("hand calling init", options);
+		//console.log("hand calling init", options);
 		this.init(options);
 	}
 	Hand.prototype = new Container();
