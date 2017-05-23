@@ -15,6 +15,9 @@ and open the template in the editor.
     Created on : Dec 31, 2015, 2:38:33 PM
     Author     : jeffomland
 */
+.testTable {
+    max-width: 920px;
+}
 table, td {
     border-bottom: 2px solid #000;
     padding: 3px;

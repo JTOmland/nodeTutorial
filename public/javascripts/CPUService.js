@@ -2,9 +2,10 @@
 vsapp.factory('CPUService', ['$http', '$q', function ($http, $q) {
     var theStore = [];
     var service = {
-        cpuPickTrump: cpuPickTrump(),
-        cpuStayDecision: cpuStayDecision(),
-        cpuPlayDecision: cpuPlayDecision()
+        cpuPickTrump: cpuPickTrump,
+        cpuStayDecision: cpuStayDecision,
+        cpuPlayDecision: cpuPlayDecision,
+        cpuBidDecision: cpuBidDecision
     };
     return service;
 
@@ -24,49 +25,45 @@ vsapp.factory('CPUService', ['$http', '$q', function ($http, $q) {
             cpuBid = 6;
         }
 
-        if (cpuBid > currenthighBid) {
-            return $scope.makebid(cpuBid);
+        if (cpuBid > currentHighBid) {
+            return cpuBid;
         } else {
-            return $scope.pass();
+            return false;
         }
     }
 
     function cpuPickTrump(player) {
         console.log("cpu pick trump ", player);
-       // $scope.trump = player.topSuit;
-        return $scope.trumpChoosen(player.topSut);
+        return player.topSuit;
     }
 
-    function cpuStayDecision(player) {
-        //console.log("cpuStaydecision handtrump info", player.sortedHand, $scope.trump)
-        var handTrumpInfo = player.sortedHand[$scope.trump];
+    function cpuStayDecision(player, trump) {
+        var handTrumpInfo = player.sortedHand[trump];
 
         if (handTrumpInfo.score > 35) {
-            return $scope.stay();
-            return;
+            return true;
         }
         if (handTrumpInfo.score > 20 && handTrumpInfo.offAces > 0) {
-            return $scope.stay();
-            return;
+            return true;
         }
         if (handTrumpInfo.offAces > 1) {
-            return $scope.stay();
-            return;
+            return true;
         }
-        return $scope.fold()
+        return false;
     }
 
-    function cpuPlayDecision(player, trump, handLeader, activePlayer, suitLed, trumpPlayed) {
+    function cpuPlayDecision(player, trump, handLeader, suitLed, trumpPlayed, topCard, activePlayer) {
+        console.log("cpuPlayDecision args", arguments)
         var p = player;
         var cardToPlay;
-        var possibleCards = legalPlays(trump, handLeader, activePlayer, suitLed, trumpPlayed);
+        var possibleCards = legalPlays(trump, handLeader, player, suitLed, trumpPlayed, topCard,activePlayer);
         console.log("possible plays", possibleCards);
         var ranNum = Math.floor(Math.random() * possibleCards.length);
         cardToPlay = possibleCards[ranNum]
         return cardToPlay;
     }
 
-    function legalPlays(trump, handLeader, activePlayer, suitLed, trumpPlayed) {
+    function legalPlays(trump, handLeader, player, suitLed, trumpPlayed, topCard, activePlayer) {
         var legalCards = [];
         var hasSuit = false;
         var canTrump = false;
@@ -85,35 +82,35 @@ vsapp.factory('CPUService', ['$http', '$q', function ($http, $q) {
         //6.  The trick has not been trumped you have no cards in suit led and you have trump
         //7.  The trick has not been trumped you have no cards in suit and no trump
         //8.  The trick has been trumped, you don't have lead suit or trump (all cards legal)
-        console.log("handLeader ", $scope.handLeader);
-        if ($scope.activePlayer == $scope.handLeader) {
+        console.log("handLeader ", handLeader, " player is ", player);
+        if (activePlayer == handLeader) {
             return player.hand;
         }
         _.each(player.hand, function (card) {
-            if ((card.suit == $scope.suitLed && !(card.rank == 11 && jickSuit(card.suit) == $scope.trump)) || ($scope.suitLed == $scope.trump && (card.rank == 11 && jickSuit(card.suit) == $scope.trump))) {
+            if ((card.suit == suitLed && !(card.rank == 11 && jickSuit(card.suit) == trump)) || (suitLed == trump && (card.rank == 11 && jickSuit(card.suit) == trump))) {
                 hasSuit = true;
-                if (card.power > $scope.topCard.power) {
+                if (card.power > topCard.power) {
                     hasHigherSuitCard = true;
                     higherSuitCards.push(card);
                 } else {
                     lowerSuitCards.push(card);
                 }
             } else {
-                if (card.suit == $scope.trump || (card.rank == 11 && jickSuit(card.suit) == $scope.trump)) {
+                if (card.suit == trump || (card.rank == 11 && jickSuit(card.suit) == trump)) {
                     canTrump = true;
-                    if (card.power > $scope.topCard.power) {
+                    if (card.power > topCard.power) {
                         higherTrumpCards.push(card);
                     } else {
                         lowerTrumpCards.push(card);
                     }
                 } else {
-                    if (card.suit != $scope.suitLed && card.suit != $scope.trump) {
+                    if (card.suit != suitLed && card.suit != trump) {
                         losers.push(card);
                     }
                 }
             }
         });
-        if (!$scope.trumpPlayed) {
+        if (!trumpPlayed) {
             if (hasHigherSuitCard) {
                 return higherSuitCards;
             } else {
@@ -265,5 +262,21 @@ vsapp.factory('CPUService', ['$http', '$q', function ($http, $q) {
         DataFactory.getData().then(function (response) {
             console.log(response)
         });
+    }
+    function jickSuit(suit) {
+        switch (suit) {
+            case 'd':
+                return 'h'
+                break;
+            case 'h':
+                return 'd'
+                break;
+            case 's':
+                return 'c'
+                break;
+            case 'c':
+                return 's'
+                break;
+        }
     }
 }]);

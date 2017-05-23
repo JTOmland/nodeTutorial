@@ -7,15 +7,15 @@ vsapp.directive("drawCanvas", function () {
             render: "&draw"
         },
         template: '<div style = "position: relative;">' +
-        '<canvas id="canvas" width="1500" height="750" z-index 0;"></canvas>' +
+        '<canvas id="canvas" width="900" height="750" z-index 0;"></canvas>' +
         '<canvas id="canvas2" width="900" height="672" z-index 1;"></canvas>' +
         '</div>',
 
         link: function (scope, element) {
             var cv1 = document.getElementById('canvas');
             var cv2 = document.getElementById('canvas2');
-            var tableWidth = 900;
-            var tableHeight = 600;
+            var tableWidth = 400;
+            var tableHeight = 400;
             var cardWidth = 35;
             var cardHeight = 32;
             var cardImg = new Image();

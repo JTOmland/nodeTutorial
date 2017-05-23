@@ -1,5 +1,5 @@
 div(layout='row' layout-align='start start')
-    h2(flex='20') {{activePlayer}}'s Turn {{clicked.x}} {{clicked.y}} {{test}}
+    h2(flex='20') {{activePlayer}}'s Turn
     h2(flex='20') GameState: {{gameState}}
     h2(flex='20' ng-show="gameState != 'Deal'")   {{currentBidOwner}} bid is {{bidTaken}}   {{trump}}
 //- md-button.md-primary(ng-show="gameState == 'Bidding'" aria-label="Bid" ng-click="makebid()") Bid {{bid}}
@@ -21,7 +21,7 @@ md-button.md-primary(ng-show="gameState == 'Deal'" aria-label="Deal specific car
 //- md-button.md-primary(ng-show="gameState == 'Bidding'" aria-label="Increase Bid One" ng-click="increaseBid()") Increase Bid
 md-button.md-primary(ng-show="gameState == 'StayOrFold' || gameState == 'DealerStuck'" aria-label="fold" ng-click="fold()") Fold
 md-button.md-primary(ng-show="gameState == 'StayOrFold' || gameState == 'DealerStuck'" aria-label="Stay" ng-click="stay()") Stay
-md-button.md-primary.md-raised(ng-show="gameState == 'Play'" aria-label = "Index Play" ng-click ="indexPlay()") Index Play
+md-button.md-primary.md-raised(ng-show="gameState == 'Play' && index!=true" aria-label = "Index Play" ng-click ="indexPlayer()") Index Play
 div(ng-show="gameState == 'Play'" layout='row' layout-align='start start')
     h4(flex='15') Trick Owner {{trickOwner}},
     h4(flex='15') Top Card {{topCard.name}},
@@ -41,5 +41,6 @@ div(ng-show="gameState == 'PickTrump'" layout='row' layout-align='space-around')
         md-option(value='h') Hearts
         md-option(value='s') Spades
 img.preload(src='/images/cards.png')
-div
-    draw-canvas(array = "arrayToRender" m-clicked = "cardClick" draw = 'test')
+div(layout='row' layout-align = 'start start')
+    draw-canvas.testTable(array = "arrayToRender" m-clicked = "cardClick" draw = 'test')
+    h4 This will hold information on the score
