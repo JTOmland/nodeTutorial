@@ -260,7 +260,7 @@
 			var i = 0;
 			var totalCount = count*hands.length;
 			function dealOne() {
-				//console.log("inside deal one", me.length);
+				console.log("inside deal one", me.length);
 				if (me.length == 0 || i == totalCount) {
 					if (callback) {
 						callback();
@@ -268,8 +268,8 @@
 					return;
 				}
 				hands[i%hands.length].addCard(me.topCard());
-				hands[i%hands.length].render({callback:dealOne, speed:speed});
 				i++;
+				dealOne();
 			}
 			dealOne();
 		}

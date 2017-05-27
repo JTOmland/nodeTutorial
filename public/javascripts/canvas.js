@@ -37,12 +37,13 @@ vsapp.directive("drawCanvas", function () {
                 });
             });
             scope.$watch(scope.render, function(value){
+                console.log("canvas watch called")
                 draw(value.player1,value.player2,value.player3,value.player4,value.deck, value.pile);
             });
            
             function draw(north, east, south, west, deck, pile) {
                 var ctx = cv1.getContext('2d');
-                ctx.clearRect(0,0,tableWidth, tableHeight);
+                ctx.clearRect(0,0,900, 900);
                 for(var i = 0; i < arguments.length; i++){
                     if(arguments[i]){
                         var hand = scope.startdraw[i];

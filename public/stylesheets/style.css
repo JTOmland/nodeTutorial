@@ -18,7 +18,8 @@ and open the template in the editor.
 .testTable {
     max-width: 920px;
 }
-table, td {
+
+td {
     border-bottom: 2px solid #000;
     padding: 3px;
     text-align: center;

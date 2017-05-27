@@ -17,7 +17,7 @@ md-input-container(ng-show="gameState=='Bidding'" layout='row')
     //-     md-option(ng-value=6) Si
 md-button.md-primary.md-raised(ng-click="newDeal()") New
 md-button.md-primary(ng-show="gameState == 'Deal'" aria-label="Deal random card" ng-click="dealRandom()") Random
-md-button.md-primary(ng-show="gameState == 'Deal'" aria-label="Deal specific card" ng-click="dealSpecific()") Deal Specific
+md-button.md-primary(aria-label="Deal specific card" ng-click="dealSpecific()") Deal Specific
 //- md-button.md-primary(ng-show="gameState == 'Bidding'" aria-label="Increase Bid One" ng-click="increaseBid()") Increase Bid
 md-button.md-primary(ng-show="gameState == 'StayOrFold' || gameState == 'DealerStuck'" aria-label="fold" ng-click="fold()") Fold
 md-button.md-primary(ng-show="gameState == 'StayOrFold' || gameState == 'DealerStuck'" aria-label="Stay" ng-click="stay()") Stay
@@ -43,4 +43,13 @@ div(ng-show="gameState == 'PickTrump'" layout='row' layout-align='space-around')
 img.preload(src='/images/cards.png')
 div(layout='row' layout-align = 'start start')
     draw-canvas.testTable(array = "arrayToRender" m-clicked = "cardClick" draw = 'test')
-    h4 This will hold information on the score
+    md-table-container
+    table
+        tr
+            th Name 
+            th Score
+            th Tricks
+        tr(ng-repeat ='p in player')
+            td {{p.name}}
+            td {{p.score}}
+            td {{p.tricksTaken}}

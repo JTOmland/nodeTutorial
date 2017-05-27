@@ -1,11 +1,11 @@
 
-vsapp.factory('CPUService', ['$http', '$q', function ($http, $q) {
-    var theStore = [];
+vsapp.factory('CPUService', ['$http', '$q','DataFactory', function ($http, $q, DataFactory) {
     var service = {
         cpuPickTrump: cpuPickTrump,
         cpuStayDecision: cpuStayDecision,
         cpuPlayDecision: cpuPlayDecision,
-        cpuBidDecision: cpuBidDecision
+        cpuBidDecision: cpuBidDecision,
+        makeCodedHand: makeCodedHand
     };
     return service;
 
@@ -54,12 +54,29 @@ vsapp.factory('CPUService', ['$http', '$q', function ($http, $q) {
 
     function cpuPlayDecision(player, trump, handLeader, suitLed, trumpPlayed, topCard, activePlayer) {
         console.log("cpuPlayDecision args", arguments)
-        var p = player;
         var cardToPlay;
-        var possibleCards = legalPlays(trump, handLeader, player, suitLed, trumpPlayed, topCard,activePlayer);
+        var possibleCards = legalPlays(trump, handLeader, player, suitLed, trumpPlayed, topCard, activePlayer);
         console.log("possible plays", possibleCards);
-        var ranNum = Math.floor(Math.random() * possibleCards.length);
-        cardToPlay = possibleCards[ranNum]
+        //if your the last to play then play the lowest winner
+        //if your the leader and bidder then higher prob of leading trump winner
+        //if losers returned play losest loser not twin suited with king
+        if(possibleCards.losers){
+            var lowestCardPower = 30;
+            var lowestCard;
+            _.each(possibleCards.cards, function(card){
+                if(!lowestCard){
+                    lowestCard = card;
+                }
+                if(card.power < lowestCard.power){
+                    lowestCard = card;
+                }
+            });
+            cardToPlay = lowestCard;
+        } else {
+            var ranNum = Math.floor(Math.random() * possibleCards.cards.length);
+            cardToPlay = possibleCards.cards[ranNum];
+        }
+        
         return cardToPlay;
     }
 
@@ -73,6 +90,7 @@ vsapp.factory('CPUService', ['$http', '$q', function ($http, $q) {
         var higherTrumpCards = [];
         var lowerTrumpCards = [];
         var losers = [];
+
         //four cases:
         //1.  Your the leader  all cards legalCards
         //2.  The trick has been trumped, you have the leadsuit
@@ -82,59 +100,78 @@ vsapp.factory('CPUService', ['$http', '$q', function ($http, $q) {
         //6.  The trick has not been trumped you have no cards in suit led and you have trump
         //7.  The trick has not been trumped you have no cards in suit and no trump
         //8.  The trick has been trumped, you don't have lead suit or trump (all cards legal)
-        console.log("handLeader ", handLeader, " player is ", player);
         if (activePlayer == handLeader) {
-            return player.hand;
+            _.each(player.hand, function(card){
+                higherSuitCards.push(card);
+            });
+            return {cards: higherSuitCards, losers: false};
         }
+        console.log("******* LEGAL PLAYS *********")
+        console.log("player ", player.hand[0]);
         _.each(player.hand, function (card) {
+            console.log("card to evaluate ", card, " player is ", player);
+
             if ((card.suit == suitLed && !(card.rank == 11 && jickSuit(card.suit) == trump)) || (suitLed == trump && (card.rank == 11 && jickSuit(card.suit) == trump))) {
                 hasSuit = true;
+                console.log("has suit");
                 if (card.power > topCard.power) {
+                    console.log("higher card in suit");
                     hasHigherSuitCard = true;
                     higherSuitCards.push(card);
                 } else {
                     lowerSuitCards.push(card);
+                    console.log("lower card in suit");
                 }
             } else {
                 if (card.suit == trump || (card.rank == 11 && jickSuit(card.suit) == trump)) {
+                    console.log("can trump is true");
                     canTrump = true;
                     if (card.power > topCard.power) {
+                        console.log("higherTrump");
                         higherTrumpCards.push(card);
                     } else {
+                        console.log("lower trump card")
                         lowerTrumpCards.push(card);
                     }
                 } else {
                     if (card.suit != suitLed && card.suit != trump) {
+                        console.log("card is a loser")
                         losers.push(card);
                     }
                 }
             }
         });
-        if (!trumpPlayed) {
-            if (hasHigherSuitCard) {
-                return higherSuitCards;
+        if (suitLed == trump) {
+            if (hasSuit) {  //has suit need to play higher card unles trumped
+                return (higherSuitCards.length > 0 ? {cards: higherSuitCards, losers: false} : {cards: lowerSuitCards, losers: true});
             } else {
-                if (hasSuit) {
-                    return lowerSuitCards;
+                return {cards: losers, losers: true};
+            }
+        } else {
+            if (!trumpPlayed) {
+                if (hasHigherSuitCard) {
+                    return {cards: higherSuitCards, losers: false};
                 } else {
-                    if (canTrump) {
-                        return higherTrumpCards; //should be all trump in hand if no trump played yet
+                    if (hasSuit) {
+                        return {cards: lowerSuitCards, losers: true};
+                    } else {
+                        if (canTrump) {
+                            return {cards: higherTrumpCards, losers: false}; //should be all trump in hand if no trump played yet
+                        }
+                    }
+                }
+            } else {  //trump played
+                if (hasSuit) {  //has suit need to play higher card unles trumped
+                    return (lowerSuitCards.length > 0 ? {cards: lowerSuitCards, losers: true} : {cards: higherSuitCards, losers: false});
+                } else {
+                    if (higherTrumpCards.length > 0) {
+                        return {cards: higherTrumpCards, losers: false};
+                    } else {
+                        return (losers.length > 0 ? {cards: losers, losers: true} : {cards: lowerTrumpCards, losers: true});
                     }
                 }
             }
-        } else {
-            if (hasSuit) {
-                return (lowerSuitCards.length > 0 ? lowerSuitCards : higherSuitCards);
-            } else {
-                if (higherTrumpCards.length > 0) {
-                    return higherTrumpCards;
-                } else {
-                    return (losers.length > 0 ? losers : lowerTrumpCards);
-                }
-            }
         }
-
-
     }
     function scoreHand(player) {
         var longSuit = { 'd': { suit: 'd', count: 0, arr: [], jick: false, score: 0, ntScore: 0, offAces: 0 }, 'h': { suit: 'h', count: 0, arr: [], jick: false, score: 0, ntScore: 0, offAces: 0 }, 's': { suit: 's', count: 0, arr: [], jick: false, score: 0, ntScore: 0, offAces: 0 }, 'c': { suit: 'c', count: 0, arr: [], jick: false, score: 0, ntScore: 0, offAces: 0 } };
@@ -188,13 +225,14 @@ vsapp.factory('CPUService', ['$http', '$q', function ($http, $q) {
         player.handScore = topScore;
         player.handTotalScore = totalScore;
         player.topSuit = topSuit;
-        //makeCodedHand(player);
     }
-       function makeCodedHand(player) {
+    function makeCodedHand(player, bid, dealer) {
+
         var codedHand = "";
         var offSuit = jickSuit(player.topSuit);
         var valuesOnly = [];
-        // console.log("makeCodedHand jick check", player.sortedHand[player.topSuit].jick);
+        var data = [];
+        console.log("makeCodedHand params", bid, dealer)
         if (player.sortedHand[player.topSuit].jick) {
             // console.log("inside jick if in makecoded hand")
             //remove jick from offsuite and add it to topsuite
@@ -255,13 +293,13 @@ vsapp.factory('CPUService', ['$http', '$q', function ($http, $q) {
 
         console.log("coded hand ", codedHand);
         var oneHand = {};
-        oneHand[codedHand] = 2;
-        data.push(oneHand);
-        DataFactory.saveData(data);
-        console.log(player.name, ' coded hand ', codedHand);
-        DataFactory.getData().then(function (response) {
-            console.log(response)
-        });
+        // {code: {handCode: xyy, bid: 4, tricksTaken: 4, location: west, DealerLocation: 'North'}}
+        oneHand[codedHand] = {};
+        oneHand[codedHand].bid = bid;
+        oneHand[codedHand].dealer = dealer;
+        oneHand[codedHand].location = player.location;
+        
+        return oneHand;
     }
     function jickSuit(suit) {
         switch (suit) {
