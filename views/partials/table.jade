@@ -1,7 +1,8 @@
 div(layout='row' layout-align='start start')
-    h2(flex='20') {{activePlayer}}'s Turn
-    h2(flex='20') GameState: {{gameState}}
-    h2(flex='20' ng-show="gameState != 'Deal'")   {{currentBidOwner}} bid is {{bidTaken}}   {{trump}}
+    h2(flex='20') {{gameInformation.currentPlayer.location}}'s Turn
+    h2(flex='20') GameState: {{gameInformation.gameState}}
+    h2(flex='20') {{gameInformation.currentBidOwner.location}} bid is {{gameInformation.bidTaken}}   {{gameInformation.trump}}
+    h2(flex='20') Trick Winner: {{gameInformation.trickOwner.location}}
 //- md-button.md-primary(ng-show="gameState == 'Bidding'" aria-label="Bid" ng-click="makebid()") Bid {{bid}}
 md-input-container(ng-show="gameState=='Bidding'" layout='row')
     md-button.md-primary(ng-show="gameState == 'Bidding'" aria-label="Pass" ng-click="pass()") Pass
@@ -17,19 +18,19 @@ md-input-container(ng-show="gameState=='Bidding'" layout='row')
     //-     md-option(ng-value=6) Si
 md-button.md-primary.md-raised(ng-click="newDeal()") New
 md-button.md-primary(ng-show="gameState == 'Deal'" aria-label="Deal random card" ng-click="dealRandom()") Random
-md-button.md-primary(aria-label="Deal specific card" ng-click="dealSpecific()") Deal Specific
+md-button.md-primary(aria-label="Deal specific card" ng-click="stopGame()") Stop Game
 //- md-button.md-primary(ng-show="gameState == 'Bidding'" aria-label="Increase Bid One" ng-click="increaseBid()") Increase Bid
 md-button.md-primary(ng-show="gameState == 'StayOrFold' || gameState == 'DealerStuck'" aria-label="fold" ng-click="fold()") Fold
 md-button.md-primary(ng-show="gameState == 'StayOrFold' || gameState == 'DealerStuck'" aria-label="Stay" ng-click="stay()") Stay
-md-button.md-primary.md-raised(ng-show="gameState == 'Play' && index!=true" aria-label = "Index Play" ng-click ="indexPlayer()") Index Play
+md-button.md-primary.md-raised(aria-label = "Index Play" ng-click ="indexPlayer()") Index Play
 div(ng-show="gameState == 'Play'" layout='row' layout-align='start start')
-    h4(flex='15') Trick Owner {{trickOwner}},
-    h4(flex='15') Top Card {{topCard.name}},
-    h4(flex='15') Tricks {{tricks}}
-    h4(flex='15') Trump Played {{trumpPlayed}}
-    h4(flex='4' ng-repeat='player in playersIn') {{player}}
+    h4(flex='15') Trick Owner {{gameInformation.trickOwner.location}},
+    h4(flex='15') Top Card {{gameInformation.topCard.name}},
+    h4(flex='15') Tricks {{gameInformation.tricks}}
+    h4(flex='15') Trump Played {{gameInformation.trumpPlayed}}
+    h4(flex='4' ng-repeat='player in gameInformation.actors') {{player.location}}
     span(flex='4') &nbsp &nbsp &nbsp
-    h4(flex='10') Suit Led: {{suitLed}}
+    h4(flex='10') Suit Led: {{gameInformation.suitLed}}
 div(ng-show="gameState == 'Play'" layout='row' layout-align='start start')
     div(ng-repeat="card in allCardsPlayed" ) 
         h6(flex='10') {{card.shortName}}
@@ -49,7 +50,7 @@ div(layout='row' layout-align = 'start start')
             th Name 
             th Score
             th Tricks
-        tr(ng-repeat ='p in player')
+        tr(ng-repeat ='p in gameInformation.actors')
             td {{p.name}}
             td {{p.score}}
             td {{p.tricksTaken}}
