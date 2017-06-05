@@ -39,30 +39,27 @@ vsapp.factory('CPUService', ['$http', '$q','$rootScope','DataFactory','CommServi
         }
 
         if (cpuBid > gameInfo.bidTaken) {
-            gameInfo.bidTaken = cpuBid;
-            gameInfo.currentBidOwner = player;
-            gameInfo.numBids++;
-            console.log(player.name, 'bid ', gameInfo.bidTaken);
+            return cpuBid;
         } else {
-            console.log(player.name, 'passed');
+            return 0;
         }
 
     }
 
     function cpuPickTrump(player, gameInfo) {
-         gameInfo.trump = player.topSuit;
-        console.log("cpu pick trump ", player.name, " trump ", gameInfo.trump);
-         
+        return player.topSuit;
     }
 
     function cpuStayDecision(player, gameInfo) {
+        console.log("cpuStayDecision", player, " gameInfo.trump", gameInfo.trump);
         var handTrumpInfo = player.sortedHand[gameInfo.trump];
 
         if (handTrumpInfo.score > 35 || handTrumpInfo.score > 20 && handTrumpInfo.offAces > 0 || handTrumpInfo.offAces > 1) {
-            gameInfo.playersPlaying.push(player);
             console.log(player.location, " is staying");
+            return true;
         } else {
              console.log(player.location, " is folding");
+             return false;
         }
     }
 
@@ -123,6 +120,7 @@ vsapp.factory('CPUService', ['$http', '$q','$rootScope','DataFactory','CommServi
         //7.  The trick has not been trumped you have no cards in suit and no trump
         //8.  The trick has been trumped, you don't have lead suit or trump (all cards legal)
         console.log("trick length", gameInfo.trick.length)
+        console.log("legal plays game info", gameInfo);
         if(gameInfo.trick.length < 1){
               _.each(player.hand, function(card){
                 higherSuitCards.push(card);
@@ -131,33 +129,33 @@ vsapp.factory('CPUService', ['$http', '$q','$rootScope','DataFactory','CommServi
         }
        
         _.each(player.hand, function (card) {
-            //console.log("card to evaluate ", card, " player is ", player);
+            console.log("card to evaluate ", card, " player is ", player);
 
             if ((card.suit == gameInfo.suitLed && !(card.rank == 11 && jickSuit(card.suit) == gameInfo.trump)) || (gameInfo.suitLed == gameInfo.trump && (card.rank == 11 && jickSuit(card.suit) == gameInfo.trump))) {
                 hasSuit = true;
-               // console.log("has suit");
+               console.log("has suit");
                 if (card.power > gameInfo.topCard.power) {
-                   // console.log("higher card in suit");
+                   console.log("higher card in suit");
                     hasHigherSuitCard = true;
                     higherSuitCards.push(card);
                 } else {
                     lowerSuitCards.push(card);
-                  //  console.log("lower card in suit");
+                   console.log("lower card in suit");
                 }
             } else {
                 if (card.suit == gameInfo.trump || (card.rank == 11 && jickSuit(card.suit) == gameInfo.trump)) {
-                    //console.log("can trump is true");
+                    console.log("can trump is true");
                     canTrump = true;
                     if (card.power > gameInfo.topCard.power) {
-                       // console.log("higherTrump");
+                       console.log("higherTrump");
                         higherTrumpCards.push(card);
                     } else {
-                       // console.log("lower trump card")
+                       console.log("lower trump card")
                         lowerTrumpCards.push(card);
                     }
                 } else {
                     if (card.suit != gameInfo.suitLed && card.suit != gameInfo.trump) {
-                       // console.log("card is a loser")
+                       console.log("card is a loser")
                         losers.push(card);
                     }
                 }
@@ -184,6 +182,8 @@ vsapp.factory('CPUService', ['$http', '$q','$rootScope','DataFactory','CommServi
                         console.log("Returning trump no trump played")
                             
                             return {cards: higherTrumpCards, losers: false}; //should be all trump in hand if no trump played yet
+                        } else {
+                            return {cards: losers, losers: true}
                         }
                     }
                 }
@@ -205,6 +205,7 @@ vsapp.factory('CPUService', ['$http', '$q','$rootScope','DataFactory','CommServi
         }
     }
     function scoreHand(player) {
+        console.log("cpuService scorehand player", player);
         var longSuit = { 'd': { suit: 'd', count: 0, arr: [], jick: false, score: 0, ntScore: 0, offAces: 0 }, 'h': { suit: 'h', count: 0, arr: [], jick: false, score: 0, ntScore: 0, offAces: 0 }, 's': { suit: 's', count: 0, arr: [], jick: false, score: 0, ntScore: 0, offAces: 0 }, 'c': { suit: 'c', count: 0, arr: [], jick: false, score: 0, ntScore: 0, offAces: 0 } };
         var topSuit = 's';
         var topScore = 0;
@@ -327,8 +328,9 @@ vsapp.factory('CPUService', ['$http', '$q','$rootScope','DataFactory','CommServi
         // {code: {handCode: xyy, bid: 4, tricksTaken: 4, location: west, DealerLocation: 'North'}}
         oneHand[codedHand] = {};
         oneHand[codedHand].bid = bid;
-        oneHand[codedHand].dealer = dealer;
+        oneHand[codedHand].dealer = dealer.location;
         oneHand[codedHand].location = player.location;
+        oneHand[codedHand].tricksTaken = player.tricksTaken;
         
         return oneHand;
     }

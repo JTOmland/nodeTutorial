@@ -22,7 +22,7 @@ md-button.md-primary(aria-label="Deal specific card" ng-click="stopGame()") Stop
 //- md-button.md-primary(ng-show="gameState == 'Bidding'" aria-label="Increase Bid One" ng-click="increaseBid()") Increase Bid
 md-button.md-primary(ng-show="gameState == 'StayOrFold' || gameState == 'DealerStuck'" aria-label="fold" ng-click="fold()") Fold
 md-button.md-primary(ng-show="gameState == 'StayOrFold' || gameState == 'DealerStuck'" aria-label="Stay" ng-click="stay()") Stay
-md-button.md-primary.md-raised(aria-label = "Index Play" ng-click ="indexPlayer()") Index Play
+md-button.md-primary.md-raised(aria-label = "Index Play" ng-click ="indexPlay()") Index Play
 div(ng-show="gameState == 'Play'" layout='row' layout-align='start start')
     h4(flex='15') Trick Owner {{gameInformation.trickOwner.location}},
     h4(flex='15') Top Card {{gameInformation.topCard.name}},
@@ -50,7 +50,7 @@ div(layout='row' layout-align = 'start start')
             th Name 
             th Score
             th Tricks
-        tr(ng-repeat ='p in gameInformation.actors')
+        tr(ng-repeat ='p in gameInformation.playersIn')
             td {{p.name}}
             td {{p.score}}
             td {{p.tricksTaken}}

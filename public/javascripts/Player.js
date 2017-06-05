@@ -25,7 +25,6 @@ vsapp.factory('Player', ['$http', '$q', 'CPUService', function ($http, $q, CPUSe
         },
 
         setNextAction: function (gameState) {
-            // console.log("Player.setNextAction called ", gameState)
             var me = this;
             switch (gameState) {
 
