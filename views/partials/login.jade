@@ -1,0 +1,36 @@
+div.md-content(ng-app="vsapp" id="apostateStart" layout="column" layout-align="center center" layout-wrap layout-padding ng-cloak)
+    md-card
+    md-card-content
+
+        div
+            a(href="/table")
+                img(src="/images/letter.png" style="width:400px; height: auto;")
+        div
+            if(err)
+                p(md-colors="{color:'warn'}")
+                    = err
+            form(name="loginForm" action="/login" method="post" enctype="multipart/form-data")
+                md-input-container.md-block
+                    label Email
+                    input(name="email" type="email" placeholder="Email Address" required ng-model="email")
+                    div(ng-messages="loginForm.email.required.$error")
+                        div(ng-message="required") You must supply an email address
+                md-input-container.md-block
+                    label Password
+                    input(name="password" placeholder="Password" type="password" required ng-model="password")
+                    div(ng-messages="loginForm.password.required.$error")
+                        div(ng-message="required") You must supply a password
+                md-input-container.md-block
+                    md-checkbox(name="remember" ng-init="remember=true" ng-model="remember" ng-change="!remember" ) Keep me signed in
+                div(layout="row")
+                    span(flex)
+                    input(name="remember" type="hidden" value="{{remember}}")
+                    md-button.md-raised.md-primary(type="submit" ng-disabled="loginForm.$invalid") Login
+
+            p Forgot password?
+                div
+                a(href="/reset") Reset
+
+
+
+

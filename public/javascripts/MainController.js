@@ -1,10 +1,11 @@
-'use strict'
+
 vsapp.controller('MainController', MainController)
 
 MainController.$inject = ['$scope', '$http', '$q', '$rootScope', '$timeout', '$interval', '$mdDialog', '$rootScope', 'DataFactory', 'CPUService', 'Player', 'CommService'];
 
 
 function MainController($scope, $http, $q, $rootscope, $timeout, $interval, $mdDialog, $rootScope, DataFactory, CPUService, Player, CommService) {
+    'use strict'
     $scope.data = [];
     var targetData = 10;
     var numHands = 0;
@@ -22,6 +23,7 @@ function MainController($scope, $http, $q, $rootscope, $timeout, $interval, $mdD
     $scope.trickEnded = false;
     $scope.indexTurn = false;
     $scope.clicked = {};
+    $scope.playToo = 10;  //Score to win game
 
     function init() {
         DataFactory.getData().then(function (response) {
@@ -367,9 +369,22 @@ function MainController($scope, $http, $q, $rootscope, $timeout, $interval, $mdD
             case 'HandEnd':
                 console.log("HandEnded");
                 calculateScores();
+               
                 $scope.gameInformation.gameState = 'Deal'
                 resetDeck();
+                var potentialWinner;
+                 _.each($scope.gameInformation.playersIn, function(p){
+                    if(p.score > $scope.playToo){
+                        $scope.gameInformation.gameState = 'GameOver'
+                        if(potentialWinner  && p.score>potentialWinner.score){
+                            p.isWinner = true;
+                            potentialWinner = p;
+                        }
+                    }
+                 });
                 break;
+            case 'GameOver':
+                $scope.stopGame();
         }
     }
 
