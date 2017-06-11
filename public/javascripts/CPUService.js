@@ -5,7 +5,8 @@ vsapp.factory('CPUService', ['$http', '$q','$rootScope','DataFactory','CommServi
         cpuStayDecision: cpuStayDecision,
         cpuPlayDecision: cpuPlayDecision,
         cpuBidDecision: cpuBidDecision,
-        makeCodedHand: makeCodedHand
+        makeCodedHand: makeCodedHand,
+        scoreHand: scoreHand
     };
 
     var currentHighBid;
@@ -254,17 +255,22 @@ vsapp.factory('CPUService', ['$http', '$q','$rootScope','DataFactory','CommServi
             //console.log("*************")
         });
         player.sortedHand = angular.copy(longSuit);
+        console.log("cpuService player.sortedHand", player.sortedHand)
         player.handScore = topScore;
         player.handTotalScore = totalScore;
         player.topSuit = topSuit;
     }
     function makeCodedHand(player, bid, dealer) {
+        if(player.type != 'cpu'){
+            //don't save hands of humans
+            return;
+        }
 
         var codedHand = "";
         var offSuit = jickSuit(player.topSuit);
         var valuesOnly = [];
         var data = [];
-        console.log("makeCodedHand params", bid, dealer)
+        console.log("makeCodedHand params", player.sortedHand, bid, dealer)
         if (player.sortedHand[player.topSuit].jick) {
             // console.log("inside jick if in makecoded hand")
             //remove jick from offsuite and add it to topsuite
@@ -300,6 +306,8 @@ vsapp.factory('CPUService', ['$http', '$q','$rootScope','DataFactory','CommServi
             codedHand += card;
         })
         codedHand += "NT";
+
+        
         var suitOrder = [];
         _.each(player.sortedHand, function (item, key) {
             var ranker = {};
@@ -315,9 +323,38 @@ vsapp.factory('CPUService', ['$http', '$q','$rootScope','DataFactory','CommServi
         suitOrder.sort(function (a, b) {
             return b.score - a.score;
         });
+
+        //this for loop adds the remaining cards after trump seperated into suits by n
         for (var i = 0; i < suitOrder.length; i++) {
+            var prevKing = false;
+            if(player.sortedHand[suitOrder[i].suit].arr.length < 1){
+                //codedHand += 'n';
+                continue;
+            }
             for (var j = 0; j < player.sortedHand[suitOrder[i].suit].arr.length; j++) {
-                codedHand += player.sortedHand[suitOrder[i].suit].arr[j].rank;
+
+
+                var rank = player.sortedHand[suitOrder[i].suit].arr[j].rank;
+                switch(rank) {
+                    case 14:
+                        codedHand += rank;
+                        prevKing = false;
+                        break;
+                    case 13:
+                        if(j == player.sortedHand[suitOrder[i].suit].arr.length-1){
+                            //last card so add
+                            codedHand += 'L';
+                        }
+                        prevKing = true;
+                        break;
+                    default:
+                        if(prevKing){
+                            codedHand += '13' + 'L';
+                        } else {
+                            codedHand += 'L';
+                        }
+                        prevKing = false;
+                }
             }
             codedHand += 'n';
 
