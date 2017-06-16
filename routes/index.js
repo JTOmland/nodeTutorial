@@ -10,13 +10,14 @@ router.get('/table', function(req, res, next) {
   res.render('partials/table');
 });
 
-router.get('/demand', function(req, res, next) {
-  console.log("calling demand route");
-  res.render('partials/demand');
+router.get('/login', function(req, res, next) {
+  console.log("calling login route");
+  res.render('partials/index');
 });
 
 router.get('/partials/:name', function(req, res, next){
   var name = req.params.name;
+  console.log("using generic get with name", name)
   res.render('partials/' + name);
 })
 

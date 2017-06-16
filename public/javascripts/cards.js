@@ -260,7 +260,6 @@
 			var i = 0;
 			var totalCount = count*hands.length;
 			function dealOne() {
-				console.log("inside deal one", me.length);
 				if (me.length == 0 || i == totalCount) {
 					if (callback) {
 						callback();
@@ -286,10 +285,8 @@
 			var width = opt.cardSize.width + (this.length-1)*opt.cardSize.padding;
 			var left = Math.round(this.x - width/2);
 			var top = Math.round(this.y-opt.cardSize.height/2, 0);
-			console.log("calc hand position", left,  this.length);
 			
 			for (var i=0;i<this.length;i++) {
-				console.log("inside setting top and left of cards")
 				this[i].targetTop = top;
 				this[i].targetLeft = left+i*opt.cardSize.padding;
 			}
@@ -301,7 +298,6 @@
 	});
 	
 	function Pile(options) {
-		console.log("pile calling init")
 		
 		this.init(options);
 	}

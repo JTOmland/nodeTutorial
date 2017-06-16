@@ -1,4 +1,4 @@
-vsapp.factory('Player', ['$http', '$q', function ($http, $q) {
+vsapp.factory('Player', ['$http', '$q', 'CPUService', function ($http, $q, CPUService) {
 
     var Player = function(info) {
         this.init(info);
@@ -16,7 +16,8 @@ vsapp.factory('Player', ['$http', '$q', function ($http, $q) {
         },
 
         doNextAction: function () {
-            this.nextAction.fire();
+            console.log("nextAction", this.nextAction)
+           // this.nextAction.fire();
         },
 
         getAllPlayers: function () {
@@ -30,17 +31,17 @@ vsapp.factory('Player', ['$http', '$q', function ($http, $q) {
                 case 'Deal':
                     return null;
                     break;
-                case '"Bidding"':
-                    me.nextAction = { fire: CPUService.cpuBidDecision(me, currentHighBid) };
+                case 'Bidding':
+                    me.nextAction = CPUService.cpuBidDecision;
                     break;
                 case 'PickTrump':
-                    me.nextAction = { fire: CPUService.cpuPickTrump(me) };
+                    me.nextAction = CPUService.cpuPickTrump
                     break;
                 case 'StayOrFold':
-                    me.nextAction = { fire: CPUService.cpuStayDecision(me, trump) };
+                    me.nextAction = CPUService.cpuStayDecision
                     break;
                 case 'Play':
-                    me.nextAction = { fire: CPUService.cpuPlayDecision(me, trump, handLeader, suitLed, trumpPlayed, topCard, activePlayer) };
+                    me.nextAction = CPUService.cpuPlayDecision
                     break;
             }
         }

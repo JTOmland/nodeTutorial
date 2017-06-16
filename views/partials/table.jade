@@ -1,14 +1,17 @@
 div(layout='row' layout-align='start start')
-    h2(flex='20') {{activePlayer}}'s Turn
-    h2(flex='20') GameState: {{gameState}}
-    h2(flex='20' ng-show="gameState != 'Deal'")   {{currentBidOwner}} bid is {{bidTaken}}   {{trump}}
+    h2(flex='20') {{gameInformation.currentPlayer.location}}'s Turn
+    h2(flex='20') GameState: {{gameInformation.gameState}}
+    h2(flex='20') {{gameInformation.currentBidOwner.location}} bid is {{gameInformation.bidTaken}}   {{gameInformation.trump}}
+    h2(flex='20') Trick Winner: {{gameInformation.trickOwner.location}}
+    h2(flex='20') Data Length: {{data.length}}
+    
 //- md-button.md-primary(ng-show="gameState == 'Bidding'" aria-label="Bid" ng-click="makebid()") Bid {{bid}}
-md-input-container(ng-show="gameState=='Bidding'" layout='row')
-    md-button.md-primary(ng-show="gameState == 'Bidding'" aria-label="Pass" ng-click="pass()") Pass
-    md-button.md-primary.md-raised(ng-show="gameState == 'Bidding'" aria-label="Bid" ng-click="inputBid()") Bid {{bid}}
-    md-button.md-icon-button(ng-show="gameState == 'Bidding'" aria-label="Increase" ng-click="increaseBid()")
+md-input-container(ng-show="gameInformation.gameState=='Bidding'" layout='row')
+    md-button.md-primary(ng-show="gameInformation.gameState == 'Bidding'" aria-label="Pass" ng-click="pass()") Pass
+    md-button.md-primary.md-raised(ng-show="gameInformation.gameState == 'Bidding'" aria-label="Bid" ng-click="inputBid()") Bid {{gameInformation.bid}}
+    md-button.md-icon-button(ng-show="gameInformation.gameState == 'Bidding'" aria-label="Increase" ng-click="increaseBid()")
         md-icon add_circle
-    md-button.md-icon-button(ng-show="gameState == 'Bidding'" aria-label="Decrease" ng-click="decreaseBid()")
+    md-button.md-icon-button(ng-show="gameInformation.gameState == 'Bidding'" aria-label="Decrease" ng-click="decreaseBid()")
         md-icon remove_circle
     //- md-select.md-no-underline(flex='10' ng-model="bid" md-on-close="makebid()")
     //-     md-option(ng-if != 3 ng-value=3) Three
@@ -16,40 +19,61 @@ md-input-container(ng-show="gameState=='Bidding'" layout='row')
     //-     md-option(ng-value=5) Five
     //-     md-option(ng-value=6) Si
 md-button.md-primary.md-raised(ng-click="newDeal()") New
-md-button.md-primary(ng-show="gameState == 'Deal'" aria-label="Deal random card" ng-click="dealRandom()") Random
-md-button.md-primary(aria-label="Deal specific card" ng-click="dealSpecific()") Deal Specific
+md-button.md-primary(ng-show="gameInformation.gameState == 'Deal'" aria-label="Deal random card" ng-click="DealSpecific()") Deal Specific
+md-button.md-primary(aria-label="Deal specific card" ng-click="stopGame()") Stop Game
 //- md-button.md-primary(ng-show="gameState == 'Bidding'" aria-label="Increase Bid One" ng-click="increaseBid()") Increase Bid
-md-button.md-primary(ng-show="gameState == 'StayOrFold' || gameState == 'DealerStuck'" aria-label="fold" ng-click="fold()") Fold
-md-button.md-primary(ng-show="gameState == 'StayOrFold' || gameState == 'DealerStuck'" aria-label="Stay" ng-click="stay()") Stay
-md-button.md-primary.md-raised(ng-show="gameState == 'Play' && index!=true" aria-label = "Index Play" ng-click ="indexPlayer()") Index Play
-div(ng-show="gameState == 'Play'" layout='row' layout-align='start start')
-    h4(flex='15') Trick Owner {{trickOwner}},
-    h4(flex='15') Top Card {{topCard.name}},
-    h4(flex='15') Tricks {{tricks}}
-    h4(flex='15') Trump Played {{trumpPlayed}}
-    h4(flex='4' ng-repeat='player in playersIn') {{player}}
+md-button.md-primary(ng-show="gameInformation.gameState == 'StayOrFold' || gameState == 'DealerStuck'" aria-label="fold" ng-click="fold()") Fold
+md-button.md-primary(ng-show="gameInformation.gameState == 'StayOrFold' || gameState == 'DealerStuck'" aria-label="Stay" ng-click="stay()") Stay
+md-button.md-primary.md-raised(aria-label = "Index Play" ng-click ="indexPlay()") Index Play
+div(ng-show="gameInformation.gameState == 'Play'" layout='row' layout-align='start start')
+    h4(flex='15') Trick Owner {{gameInformation.trickOwner.location}},
+    h4(flex='15') Top Card {{gameInformation.topCard.name}},
+    h4(flex='15') Tricks {{gameInformation.tricks}}
+    h4(flex='15') Trump Played {{gameInformation.trumpPlayed}}
+    h4(flex='4' ng-repeat='player in gameInformation.actors') {{player.location}}
     span(flex='4') &nbsp &nbsp &nbsp
-    h4(flex='10') Suit Led: {{suitLed}}
-div(ng-show="gameState == 'Play'" layout='row' layout-align='start start')
+    h4(flex='10') Suit Led: {{gameInformation.suitLed}}
+div(ng-show="gameInformatoin.gameState == 'Play'" layout='row' layout-align='start start')
     div(ng-repeat="card in allCardsPlayed" ) 
         h6(flex='10') {{card.shortName}}
         span(flex='3')
-div(ng-show="gameState == 'PickTrump'" layout='row' layout-align='space-around')
-    md-select(flex='20' ng-model="trump" placeholder="Trump" class="md-no-underline" ng-change="trumpChoosen()")
+div(ng-show="gameInformation.gameState == 'PickTrump'" layout='row' layout-align='space-around')
+    md-select(flex='20' ng-model="gameInformation.trump" placeholder="Trump" class="md-no-underline" ng-change="trumpChoosen()")
         md-option(value='d') Diamonds
         md-option(value='c') Clubs
         md-option(value='h') Hearts
         md-option(value='s') Spades
-img.preload(src='/images/cards.png')
+//img.preload(src='/images/cards.png')
 div(layout='row' layout-align = 'start start')
     draw-canvas.testTable(array = "arrayToRender" m-clicked = "cardClick" draw = 'test')
-    md-table-container
-    table
-        tr
-            th Name 
-            th Score
-            th Tricks
-        tr(ng-repeat ='p in player')
-            td {{p.name}}
-            td {{p.score}}
-            td {{p.tricksTaken}}
+    div(layout='column')
+        md-table-container
+        table
+            tr
+                th Name 
+                th Score
+                th Tricks
+                th Playing
+                th Bidder
+                th Dealer
+                th Winner
+            tr(ng-repeat ='p in gameInformation.playersIn')
+                td {{p.name}}
+                td {{p.score}}
+                td {{p.tricksTaken}}
+                td {{p.isIn}}
+                td {{p.isbidder}}
+                td {{p.isDealer}}
+                td {{p.isWinner}}
+        md-table-container
+        table
+            tr
+                th player1
+                th player2
+                th player3
+                th player4
+                tbody(ng-repeat = 'player in gameInformation.playersIn')
+                    tr(ng-repeat = '(item, amount) in player')
+                        td {{item}}
+                        td {{amount}}
+                
