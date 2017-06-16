@@ -10,7 +10,7 @@ module.exports = {
       key: '~/.ssh/ApostateNode.pem',
       ref: 'origin/master',
       repo: 'https://github.com/JTOmland/nodeTutorial.git',
-      path: '/home/ubuntu/Apostate',
+      path: '/home/ubuntu/ScratchPad',
       'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js'
     }
   }
