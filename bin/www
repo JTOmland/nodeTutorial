@@ -7,13 +7,20 @@
 var app = require('../app');
 var debug = require('debug')('vsapp:server');
 var http = require('http');
+var winston = require('winston');
+
+
+winston.level = 'debug';
+winston.add(winston.transports.File, { filename: './node.winston.log'})
+winston.log('debug', 'Now logging with winston in bin/www');
+
 
 /**
  * Get port from environment and store in Express.
  */
 
-//var port = normalizePort(process.env.PORT || '3000');
-app.set('port', 80);
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
 
 /**
  * Create HTTP server.
