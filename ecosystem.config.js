@@ -1,7 +1,7 @@
 module.exports = {
   apps: [{
     name: 'ScratchPad',
-    script: './app.js'
+    script: './bin/www'
   }],
   deploy: {
     production: {
