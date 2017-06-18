@@ -19,6 +19,5 @@
   },
   "devDependencies": {
     "pm2": "^2.5.0"
-  },
-  "scripts": {"start": "node app.js"}
+  }
 }

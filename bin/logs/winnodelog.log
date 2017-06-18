@@ -1,1 +1,4 @@
 
+2017-06-18T02:37:11.690Z - debug: new winston log for shared logs
+2017-06-18T02:37:11.694Z - debug: start of winston logging
+2017-06-18T02:37:11.702Z - debug: Listening on port 3000
