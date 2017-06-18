@@ -7,14 +7,11 @@
 var app = require('../app');
 var debug = require('debug')('vsapp:server');
 var http = require('http');
-var winston = require('winston');
+// var winston = require('winston');
+var logger = require('../controllers/logging');
 
-
-winston.level = 'debug';
-winston.add(winston.transports.File, { filename: './node.winston.log'})
-winston.log('debug', 'Now logging with winston in bin/www');
-
-
+logger.debug("new winston log for shared logs");
+logger.log('debug', 'start of winston logging');
 /**
  * Get port from environment and store in Express.
  */
@@ -72,11 +69,13 @@ function onError(error) {
   // handle specific listen errors with friendly messages
   switch (error.code) {
     case 'EACCES':
+     logger.log('debug', bind + 'requires elevated privileges');
       console.error(bind + ' requires elevated privileges');
       process.exit(1);
       break;
     case 'EADDRINUSE':
       console.error(bind + ' is already in use');
+     logger.log('debug', bind + 'already in  use');
       process.exit(1);
       break;
     default:
@@ -93,6 +92,6 @@ function onListening() {
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
-  winston.log('debug', 'Listening on' + bind);
-  debug('Listening on ' + bind);
+  logger.log('debug', 'Listening on ' + bind);
+  //debug('Listening on ' + bind);
 }

@@ -1,8 +1,11 @@
 var express = require('express');
 var router = express.Router();
+var winston = require('winston');
+var logger = winston.loggers.get('Standard');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  logger.log('degug', 'index.js get /');
   res.render('index', { title: 'Express' });
 });
 
