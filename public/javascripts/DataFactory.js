@@ -8,10 +8,13 @@ vsapp.factory('DataFactory', ['$http', '$q', function ($http, $q) {
     return service;
 
     function saveData(data) {
-        //console.log("capacityController saveData and data is", angular.toJson(DataFactory.fullModel()));
+        console.log("DataFactory saveData and data is", angular.toJson(data));
+        var hand = {};
+        hand.handCode = data;
+        console.log("DataFactory.saveData the hands to post are", hand);
         $http({
             method: 'POST',
-            url: 'api/save',
+            url: 'api/saveHand',
             data: angular.toJson(data),
             headers: {
                 'Content-Type': 'application/json',

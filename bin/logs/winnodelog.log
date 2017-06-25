@@ -8,3 +8,784 @@
 2017-06-18T11:38:11.542Z - debug: new winston log for shared logs
 2017-06-18T11:38:11.544Z - debug: start of winston logging
 2017-06-18T11:38:11.553Z - debug: Listening on port 3000
+2017-06-20T01:31:34.606Z - error: uncaughtException: Cannot find module 'aws-sdk' date=Mon Jun 19 2017 20:31:34 GMT-0500 (CDT), pid=7705, uid=501, gid=20, cwd=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad, execPath=/usr/local/bin/node, version=v6.9.3, argv=[/usr/local/bin/node, /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/bin/www], rss=31907840, heapTotal=18911232, heapUsed=12463696, loadavg=[1.19873046875, 1.376953125, 1.38330078125], uptime=83698, trace=[column=15, file=module.js, function=Module._resolveFilename, line=469, method=_resolveFilename, native=false, column=25, file=module.js, function=Module._load, line=417, method=_load, native=false, column=17, file=module.js, function=Module.require, line=497, method=require, native=false, column=19, file=internal/module.js, function=require, line=20, method=null, native=false, column=73, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/database/tableCreate.js, function=null, line=1, method=null, native=false, column=32, file=module.js, function=Module._compile, line=570, method=_compile, native=false, column=10, file=module.js, function=Module._extensions..js, line=579, method=.js, native=false, column=32, file=module.js, function=Module.load, line=487, method=load, native=false, column=12, file=module.js, function=tryModuleLoad, line=446, method=null, native=false, column=3, file=module.js, function=Module._load, line=438, method=_load, native=false], stack=[Error: Cannot find module 'aws-sdk',     at Function.Module._resolveFilename (module.js:469:15),     at Function.Module._load (module.js:417:25),     at Module.require (module.js:497:17),     at require (internal/module.js:20:19),     at Object.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/database/tableCreate.js:1:73),     at Module._compile (module.js:570:32),     at Object.Module._extensions..js (module.js:579:10),     at Module.load (module.js:487:32),     at tryModuleLoad (module.js:446:12),     at Function.Module._load (module.js:438:3)]
+2017-06-20T01:34:54.885Z - error: uncaughtException: Cannot find module './controllers/logging' date=Mon Jun 19 2017 20:34:54 GMT-0500 (CDT), pid=7751, uid=501, gid=20, cwd=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad, execPath=/usr/local/bin/node, version=v6.9.3, argv=[/usr/local/bin/node, /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/bin/www], rss=43614208, heapTotal=32542720, heapUsed=20490880, loadavg=[1.28125, 1.2998046875, 1.33935546875], uptime=83898, trace=[column=15, file=module.js, function=Module._resolveFilename, line=469, method=_resolveFilename, native=false, column=25, file=module.js, function=Module._load, line=417, method=_load, native=false, column=17, file=module.js, function=Module.require, line=497, method=require, native=false, column=19, file=internal/module.js, function=require, line=20, method=null, native=false, column=12, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/database/tableCreate.js, function=null, line=4, method=null, native=false, column=32, file=module.js, function=Module._compile, line=570, method=_compile, native=false, column=10, file=module.js, function=Module._extensions..js, line=579, method=.js, native=false, column=32, file=module.js, function=Module.load, line=487, method=load, native=false, column=12, file=module.js, function=tryModuleLoad, line=446, method=null, native=false, column=3, file=module.js, function=Module._load, line=438, method=_load, native=false], stack=[Error: Cannot find module './controllers/logging',     at Function.Module._resolveFilename (module.js:469:15),     at Function.Module._load (module.js:417:25),     at Module.require (module.js:497:17),     at require (internal/module.js:20:19),     at Object.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/database/tableCreate.js:4:12),     at Module._compile (module.js:570:32),     at Object.Module._extensions..js (module.js:579:10),     at Module.load (module.js:487:32),     at tryModuleLoad (module.js:446:12),     at Function.Module._load (module.js:438:3)]
+2017-06-20T01:36:19.305Z - debug: new winston log for shared logs
+2017-06-20T01:36:19.308Z - debug: start of winston logging
+2017-06-20T01:36:19.318Z - debug: Listening on port 3000
+2017-06-20T01:36:42.225Z - debug: / in app.js app.all
+2017-06-20T01:36:42.881Z - debug: /partials/login in app.js app.all
+2017-06-20T01:36:42.975Z - debug: /favicon.ico in app.js app.all
+2017-06-20T01:36:43.028Z - debug: /api/results in app.js app.all
+2017-06-20T01:38:52.480Z - debug: /partials/table in app.js app.all
+2017-06-20T01:38:52.586Z - debug: /favicon.ico in app.js app.all
+2017-06-20T01:38:52.647Z - debug: /api/results in app.js app.all
+2017-06-20T01:39:10.867Z - debug: new winston log for shared logs
+2017-06-20T01:39:10.870Z - debug: start of winston logging
+2017-06-20T01:39:10.879Z - debug: Listening on port 3000
+2017-06-20T01:39:13.025Z - debug: /api/results in app.js app.all
+2017-06-20T01:39:13.055Z - debug: /favicon.ico in app.js app.all
+2017-06-20T01:39:13.056Z - debug: [object Object]catch 404
+2017-06-20T01:39:13.057Z - debug: [object Object] in error handlerNot Found
+2017-06-20T01:39:32.422Z - debug: / in app.js app.all
+2017-06-20T01:39:32.749Z - debug: /partials/login in app.js app.all
+2017-06-20T01:39:32.844Z - debug: /api/results in app.js app.all
+2017-06-20T01:39:54.279Z - debug: /partials/table in app.js app.all
+2017-06-20T01:39:54.395Z - debug: /api/results in app.js app.all
+2017-06-20T01:42:26.784Z - debug: new winston log for shared logs
+2017-06-20T01:42:26.787Z - debug: start of winston logging
+2017-06-20T01:42:26.800Z - debug: Listening on port 3000
+2017-06-20T01:42:31.976Z - debug: /api/results in app.js app.all
+2017-06-20T01:42:35.494Z - debug: / in app.js app.all
+2017-06-20T01:42:36.001Z - debug: /partials/login in app.js app.all
+2017-06-20T01:42:36.125Z - debug: /api/results in app.js app.all
+2017-06-20T02:03:42.831Z - debug: new winston log for shared logs
+2017-06-20T02:03:42.834Z - debug: start of winston logging
+2017-06-20T02:03:42.844Z - debug: Listening on port 3000
+2017-06-20T02:03:59.410Z - debug: / in app.js app.all
+2017-06-20T02:03:59.905Z - debug: /partials/login in app.js app.all
+2017-06-20T02:04:00.034Z - debug: /api/results in app.js app.all
+2017-06-20T02:05:25.923Z - debug: new winston log for shared logs
+2017-06-20T02:05:25.925Z - debug: start of winston logging
+2017-06-20T02:05:25.936Z - debug: Listening on port 3000
+2017-06-20T02:05:31.770Z - debug: / in app.js app.all
+2017-06-20T02:05:32.579Z - debug: /partials/login in app.js app.all
+2017-06-20T02:05:32.686Z - debug: /api/results in app.js app.all
+2017-06-20T02:06:45.725Z - debug: new winston log for shared logs
+2017-06-20T02:06:45.727Z - debug: start of winston logging
+2017-06-20T02:06:45.740Z - debug: Listening on port 3000
+2017-06-20T02:06:48.753Z - debug: / in app.js app.all
+2017-06-20T02:06:48.753Z - debug: Just prior to table.test call
+2017-06-20T02:06:49.600Z - debug: /partials/login in app.js app.all
+2017-06-20T02:06:49.600Z - debug: Just prior to table.test call
+2017-06-20T02:06:49.723Z - debug: /api/results in app.js app.all
+2017-06-20T02:06:49.723Z - debug: Just prior to table.test call
+2017-06-20T02:07:13.722Z - debug: new winston log for shared logs
+2017-06-20T02:07:13.725Z - debug: start of winston logging
+2017-06-20T02:07:13.735Z - debug: Listening on port 3000
+2017-06-20T02:07:23.688Z - debug: / in app.js app.all
+2017-06-20T02:07:23.689Z - debug: Just prior to table.test call
+2017-06-20T02:07:23.690Z - debug: tableCreate.test called
+2017-06-20T02:07:24.544Z - debug: /partials/login in app.js app.all
+2017-06-20T02:07:24.544Z - debug: Just prior to table.test call
+2017-06-20T02:07:24.544Z - debug: tableCreate.test called
+2017-06-20T02:07:24.673Z - debug: /api/results in app.js app.all
+2017-06-20T02:07:24.673Z - debug: Just prior to table.test call
+2017-06-20T02:07:24.673Z - debug: tableCreate.test called
+2017-06-20T02:17:17.805Z - debug: new winston log for shared logs
+2017-06-20T02:17:17.808Z - debug: start of winston logging
+2017-06-20T02:17:17.817Z - debug: Listening on port 3000
+2017-06-20T02:17:23.531Z - debug: / in app.js app.all
+2017-06-20T02:17:23.532Z - debug: Just prior to table.test call
+2017-06-20T02:17:24.038Z - debug: /partials/login in app.js app.all
+2017-06-20T02:17:24.038Z - debug: Just prior to table.test call
+2017-06-20T02:17:24.172Z - debug: /api/results in app.js app.all
+2017-06-20T02:17:24.172Z - debug: Just prior to table.test call
+2017-06-20T02:18:13.030Z - debug: new winston log for shared logs
+2017-06-20T02:18:13.033Z - debug: start of winston logging
+2017-06-20T02:18:13.043Z - debug: Listening on port 3000
+2017-06-20T02:18:17.622Z - debug: / in app.js app.all
+2017-06-20T02:18:17.622Z - debug: Just prior to table.test call
+2017-06-20T02:18:17.623Z - debug: creating table for users
+2017-06-20T02:18:18.132Z - debug: /partials/login in app.js app.all
+2017-06-20T02:18:18.133Z - debug: Just prior to table.test call
+2017-06-20T02:18:18.133Z - debug: creating table for users
+2017-06-20T02:18:18.258Z - debug: /api/results in app.js app.all
+2017-06-20T02:18:18.258Z - debug: Just prior to table.test call
+2017-06-20T02:18:18.258Z - debug: creating table for users
+2017-06-20T02:38:52.485Z - debug: / in app.js app.all
+2017-06-20T02:38:52.493Z - debug: Just prior to table.test call
+2017-06-20T02:38:52.493Z - debug: creating table for users
+2017-06-20T02:38:52.724Z - debug: /partials/login in app.js app.all
+2017-06-20T02:38:52.724Z - debug: Just prior to table.test call
+2017-06-20T02:38:52.724Z - debug: creating table for users
+2017-06-20T02:38:52.834Z - debug: /api/results in app.js app.all
+2017-06-20T02:38:52.835Z - debug: Just prior to table.test call
+2017-06-20T02:38:52.835Z - debug: creating table for users
+2017-06-20T02:42:23.904Z - debug: new winston log for shared logs
+2017-06-20T02:42:23.907Z - debug: start of winston logging
+2017-06-20T02:42:23.916Z - debug: Listening on port 3000
+2017-06-20T02:42:28.622Z - debug: / in app.js app.all
+2017-06-20T02:42:28.623Z - debug: Just prior to table.test call
+2017-06-20T02:42:28.623Z - debug: creating table for users
+2017-06-20T02:42:28.639Z - debug:  ConfigError: Missing region in config
+    at Request.VALIDATE_REGION (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:80:45)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at callNextListener (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:74:9
+    at finish (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:315:7)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:333:9
+    at SharedIniFileCredentials.get (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/credentials.js:126:7)
+    at getAsyncCredentials (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:327:24)
+    at Config.getCredentials (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:347:9)
+    at Request.VALIDATE_CREDENTIALS (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:69:26)
+2017-06-20T02:42:29.334Z - debug: /partials/login in app.js app.all
+2017-06-20T02:42:29.334Z - debug: Just prior to table.test call
+2017-06-20T02:42:29.335Z - debug: creating table for users
+2017-06-20T02:42:29.337Z - debug:  ConfigError: Missing region in config
+    at Request.VALIDATE_REGION (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:80:45)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at callNextListener (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:74:9
+    at finish (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:315:7)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:333:9
+    at SharedIniFileCredentials.get (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/credentials.js:126:7)
+    at getAsyncCredentials (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:327:24)
+    at Config.getCredentials (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:347:9)
+    at Request.VALIDATE_CREDENTIALS (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:69:26)
+2017-06-20T02:42:29.484Z - debug: /api/results in app.js app.all
+2017-06-20T02:42:29.484Z - debug: Just prior to table.test call
+2017-06-20T02:42:29.484Z - debug: creating table for users
+2017-06-20T02:42:29.486Z - debug:  ConfigError: Missing region in config
+    at Request.VALIDATE_REGION (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:80:45)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at callNextListener (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:74:9
+    at finish (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:315:7)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:333:9
+    at SharedIniFileCredentials.get (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/credentials.js:126:7)
+    at getAsyncCredentials (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:327:24)
+    at Config.getCredentials (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:347:9)
+    at Request.VALIDATE_CREDENTIALS (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:69:26)
+2017-06-20T02:43:34.015Z - debug: new winston log for shared logs
+2017-06-20T02:43:34.017Z - debug: start of winston logging
+2017-06-20T02:43:34.030Z - debug: Listening on port 3000
+2017-06-20T02:43:39.501Z - debug: / in app.js app.all
+2017-06-20T02:43:39.502Z - debug: Just prior to table.test call
+2017-06-20T02:43:39.502Z - debug: creating table for users
+2017-06-20T02:43:39.519Z - debug:  ConfigError: Missing region in config
+    at Request.VALIDATE_REGION (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:80:45)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at callNextListener (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:74:9
+    at finish (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:315:7)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:333:9
+    at SharedIniFileCredentials.get (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/credentials.js:126:7)
+    at getAsyncCredentials (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:327:24)
+    at Config.getCredentials (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:347:9)
+    at Request.VALIDATE_CREDENTIALS (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:69:26)
+2017-06-20T02:43:40.196Z - debug: /partials/login in app.js app.all
+2017-06-20T02:43:40.197Z - debug: Just prior to table.test call
+2017-06-20T02:43:40.197Z - debug: creating table for users
+2017-06-20T02:43:40.199Z - debug:  ConfigError: Missing region in config
+    at Request.VALIDATE_REGION (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:80:45)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at callNextListener (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:74:9
+    at finish (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:315:7)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:333:9
+    at SharedIniFileCredentials.get (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/credentials.js:126:7)
+    at getAsyncCredentials (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:327:24)
+    at Config.getCredentials (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:347:9)
+    at Request.VALIDATE_CREDENTIALS (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:69:26)
+2017-06-20T02:43:40.345Z - debug: /api/results in app.js app.all
+2017-06-20T02:43:40.345Z - debug: Just prior to table.test call
+2017-06-20T02:43:40.345Z - debug: creating table for users
+2017-06-20T02:43:40.346Z - debug:  ConfigError: Missing region in config
+    at Request.VALIDATE_REGION (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:80:45)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at callNextListener (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:74:9
+    at finish (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:315:7)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:333:9
+    at SharedIniFileCredentials.get (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/credentials.js:126:7)
+    at getAsyncCredentials (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:327:24)
+    at Config.getCredentials (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:347:9)
+    at Request.VALIDATE_CREDENTIALS (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:69:26)
+2017-06-20T02:44:53.528Z - debug: new winston log for shared logs
+2017-06-20T02:44:53.543Z - debug: start of winston logging
+2017-06-20T02:44:53.569Z - debug: Listening on port 3000
+2017-06-20T02:44:56.267Z - debug: / in app.js app.all
+2017-06-20T02:44:56.267Z - debug: Just prior to table.test call
+2017-06-20T02:44:56.268Z - debug: creating table for users
+2017-06-20T02:44:56.961Z - debug: /partials/login in app.js app.all
+2017-06-20T02:44:56.962Z - debug: Just prior to table.test call
+2017-06-20T02:44:56.962Z - debug: creating table for users
+2017-06-20T02:44:57.176Z - debug:  ResourceInUseException: Cannot create preexisting table
+    at Request.extractError (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/protocol/json.js:48:27)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:682:14)
+    at Request.transition (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:684:12)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+2017-06-20T02:44:57.180Z - debug: /api/results in app.js app.all
+2017-06-20T02:44:57.180Z - debug: Just prior to table.test call
+2017-06-20T02:44:57.180Z - debug: creating table for users
+2017-06-20T02:44:57.195Z - debug: createTable for users successful
+2017-06-20T02:44:57.260Z - debug:  ResourceInUseException: Cannot create preexisting table
+    at Request.extractError (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/protocol/json.js:48:27)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:682:14)
+    at Request.transition (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:684:12)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+2017-06-20T11:22:14.974Z - debug:  ConfigError: Missing region in config
+    at Request.VALIDATE_REGION (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:80:45)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at callNextListener (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:74:9
+    at finish (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:315:7)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:333:9
+    at SharedIniFileCredentials.get (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/credentials.js:126:7)
+    at getAsyncCredentials (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:327:24)
+    at Config.getCredentials (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:347:9)
+    at Request.VALIDATE_CREDENTIALS (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:69:26)
+2017-06-20T11:22:14.979Z - debug: new winston log for shared logs
+2017-06-20T11:22:14.980Z - debug: start of winston logging
+2017-06-20T11:22:14.994Z - debug: Listening on port 3000
+2017-06-20T11:22:21.308Z - debug: / in app.js app.all
+2017-06-20T11:22:21.975Z - debug: /partials/login in app.js app.all
+2017-06-20T11:22:22.105Z - debug: /api/results in app.js app.all
+2017-06-20T11:23:06.207Z - debug: / in app.js app.all
+2017-06-20T11:23:06.475Z - debug: /partials/login in app.js app.all
+2017-06-20T11:23:06.605Z - debug: /api/results in app.js app.all
+2017-06-20T11:23:23.315Z - debug:  ConfigError: Missing region in config
+    at Request.VALIDATE_REGION (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:80:45)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at callNextListener (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:74:9
+    at finish (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:315:7)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:333:9
+    at SharedIniFileCredentials.get (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/credentials.js:126:7)
+    at getAsyncCredentials (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:327:24)
+    at Config.getCredentials (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:347:9)
+    at Request.VALIDATE_CREDENTIALS (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:69:26)
+2017-06-20T11:23:23.326Z - debug: new winston log for shared logs
+2017-06-20T11:23:23.328Z - debug: start of winston logging
+2017-06-20T11:23:23.344Z - debug: Listening on port 3000
+2017-06-20T11:23:26.572Z - debug: / in app.js app.all
+2017-06-20T11:23:27.137Z - debug: /partials/login in app.js app.all
+2017-06-20T11:23:27.256Z - debug: /api/results in app.js app.all
+2017-06-20T11:24:45.927Z - debug:  ConfigError: Missing region in config
+    at Request.VALIDATE_REGION (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:80:45)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at callNextListener (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:95:12)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:74:9
+    at finish (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:315:7)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:333:9
+    at SharedIniFileCredentials.get (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/credentials.js:126:7)
+    at getAsyncCredentials (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:327:24)
+    at Config.getCredentials (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/config.js:347:9)
+    at Request.VALIDATE_CREDENTIALS (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/event_listeners.js:69:26)
+2017-06-20T11:24:45.933Z - debug: Just prior to call
+2017-06-20T11:24:45.936Z - debug: new winston log for shared logs
+2017-06-20T11:24:45.936Z - debug: start of winston logging
+2017-06-20T11:24:45.944Z - debug: Listening on port 3000
+2017-06-20T11:26:24.787Z - debug: Just prior to call
+2017-06-20T11:26:24.795Z - debug: new winston log for shared logs
+2017-06-20T11:26:24.795Z - debug: start of winston logging
+2017-06-20T11:26:24.809Z - debug: Listening on port 3000
+2017-06-20T11:26:24.851Z - debug: createTable for logins successful
+2017-06-23T01:38:27.148Z - debug: Just prior to call
+2017-06-23T01:38:27.151Z - debug: new winston log for shared logs
+2017-06-23T01:38:27.152Z - debug: start of winston logging
+2017-06-23T01:38:27.162Z - debug: Listening on port 3000
+2017-06-23T01:38:27.198Z - debug:  ValidationException: The number of attributes in key schema must match the number of attributesdefined in attribute definitions.
+    at Request.extractError (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/protocol/json.js:48:27)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:682:14)
+    at Request.transition (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:684:12)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+2017-06-23T01:44:59.996Z - debug: Just prior to call
+2017-06-23T01:45:00.001Z - debug: new winston log for shared logs
+2017-06-23T01:45:00.002Z - debug: start of winston logging
+2017-06-23T01:45:00.015Z - debug: Listening on port 3000
+2017-06-23T01:45:00.053Z - debug: createTable for logins successful
+2017-06-23T01:45:10.204Z - debug: / in app.js app.all
+2017-06-23T01:45:10.818Z - debug: /partials/login in app.js app.all
+2017-06-23T01:45:10.968Z - debug: /api/results in app.js app.all
+2017-06-23T02:02:10.269Z - error: uncaughtException: Unexpected token var date=Thu Jun 22 2017 21:02:10 GMT-0500 (CDT), pid=26966, uid=501, gid=20, cwd=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad, execPath=/usr/local/bin/node, version=v6.9.3, argv=[/usr/local/bin/node, /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/bin/www], rss=32096256, heapTotal=18911232, heapUsed=12500872, loadavg=[1.71484375, 1.56982421875, 1.5322265625], uptime=344736, trace=[column=16, file=vm.js, function=Object.exports.runInThisContext, line=76, method=runInThisContext, native=false, column=28, file=module.js, function=Module._compile, line=542, method=_compile, native=false, column=10, file=module.js, function=Module._extensions..js, line=579, method=.js, native=false, column=32, file=module.js, function=Module.load, line=487, method=load, native=false, column=12, file=module.js, function=tryModuleLoad, line=446, method=null, native=false, column=3, file=module.js, function=Module._load, line=438, method=_load, native=false, column=17, file=module.js, function=Module.require, line=497, method=require, native=false, column=19, file=internal/module.js, function=require, line=20, method=null, native=false, column=13, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/app.js, function=null, line=11, method=null, native=false, column=32, file=module.js, function=Module._compile, line=570, method=_compile, native=false], stack=[/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/database/tableCreate.js:207,         var params = {,         ^^^, SyntaxError: Unexpected token var,     at Object.exports.runInThisContext (vm.js:76:16),     at Module._compile (module.js:542:28),     at Object.Module._extensions..js (module.js:579:10),     at Module.load (module.js:487:32),     at tryModuleLoad (module.js:446:12),     at Function.Module._load (module.js:438:3),     at Module.require (module.js:497:17),     at require (internal/module.js:20:19),     at Object.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/app.js:11:13),     at Module._compile (module.js:570:32)]
+2017-06-23T02:04:13.103Z - error: uncaughtException: Json is not defined date=Thu Jun 22 2017 21:04:13 GMT-0500 (CDT), pid=27008, uid=501, gid=20, cwd=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad, execPath=/usr/local/bin/node, version=v6.9.3, argv=[/usr/local/bin/node, /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/bin/www], rss=45555712, heapTotal=33591296, heapUsed=22411280, loadavg=[1.9013671875, 1.66845703125, 1.57568359375], uptime=344859, trace=[column=70, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/database/tableCreate.js, function=null, line=222, method=null, native=false, column=18, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js, function=null, line=364, method=null, native=false, column=20, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js, function=Request.callListeners, line=105, method=callListeners, native=false, column=10, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js, function=Request.emit, line=77, method=emit, native=false, column=14, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js, function=Request.emit, line=682, method=emit, native=false, column=10, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js, function=Request.transition, line=22, method=transition, native=false, column=12, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js, function=AcceptorStateMachine.runTo, line=14, method=runTo, native=false, column=10, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js, function=null, line=26, method=null, native=false, column=9, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js, function=null, line=38, method=null, native=false, column=12, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js, function=null, line=684, method=null, native=false], stack=[ReferenceError: Json is not defined,     at Response.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/database/tableCreate.js:222:70),     at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:364:18),     at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:105:20),     at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:77:10),     at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:682:14),     at Request.transition (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:22:10),     at AcceptorStateMachine.runTo (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:14:12),     at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:26:10,     at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:38:9),     at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:684:12)]
+2017-06-23T02:05:52.316Z - error: uncaughtException: Json is not defined date=Thu Jun 22 2017 21:05:52 GMT-0500 (CDT), pid=27018, uid=501, gid=20, cwd=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad, execPath=/usr/local/bin/node, version=v6.9.3, argv=[/usr/local/bin/node, /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/bin/www], rss=45576192, heapTotal=33591296, heapUsed=22328480, loadavg=[1.6962890625, 1.6787109375, 1.58544921875], uptime=344958, trace=[column=70, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/database/tableCreate.js, function=null, line=222, method=null, native=false, column=18, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js, function=null, line=364, method=null, native=false, column=20, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js, function=Request.callListeners, line=105, method=callListeners, native=false, column=10, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js, function=Request.emit, line=77, method=emit, native=false, column=14, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js, function=Request.emit, line=682, method=emit, native=false, column=10, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js, function=Request.transition, line=22, method=transition, native=false, column=12, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js, function=AcceptorStateMachine.runTo, line=14, method=runTo, native=false, column=10, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js, function=null, line=26, method=null, native=false, column=9, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js, function=null, line=38, method=null, native=false, column=12, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js, function=null, line=684, method=null, native=false], stack=[ReferenceError: Json is not defined,     at Response.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/database/tableCreate.js:222:70),     at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:364:18),     at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:105:20),     at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:77:10),     at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:682:14),     at Request.transition (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:22:10),     at AcceptorStateMachine.runTo (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:14:12),     at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:26:10,     at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:38:9),     at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:684:12)]
+2017-06-23T02:06:29.716Z - debug: Just prior to call
+2017-06-23T02:06:29.719Z - debug: new winston log for shared logs
+2017-06-23T02:06:29.719Z - debug: start of winston logging
+2017-06-23T02:06:29.727Z - debug: Listening on port 3000
+2017-06-23T02:11:15.003Z - debug: / in app.js app.all
+2017-06-23T02:11:15.550Z - debug: /partials/login in app.js app.all
+2017-06-23T02:11:15.654Z - debug: /api/results in app.js app.all
+2017-06-23T02:11:28.246Z - debug: /partials/table in app.js app.all
+2017-06-23T02:11:28.359Z - debug: /api/results in app.js app.all
+2017-06-23T02:18:53.537Z - debug: tableCreate.test called
+2017-06-23T02:18:53.541Z - debug: Just prior to call
+2017-06-23T02:18:53.542Z - debug: new winston log for shared logs
+2017-06-23T02:18:53.542Z - debug: start of winston logging
+2017-06-23T02:18:53.549Z - debug: Listening on port 3000
+2017-06-23T02:20:02.039Z - debug: Putting item in CodedHand table
+2017-06-23T02:20:02.048Z - debug: Unable to add item.  Error JSON {
+  "message": "Missing region in config",
+  "code": "ConfigError",
+  "time": "2017-06-23T02:20:02.045Z"
+}
+2017-06-23T02:20:02.049Z - debug: Just prior to call
+2017-06-23T02:20:02.050Z - debug: new winston log for shared logs
+2017-06-23T02:20:02.051Z - debug: start of winston logging
+2017-06-23T02:20:02.060Z - debug: Listening on port 3000
+2017-06-23T02:20:36.685Z - debug: Putting item in CodedHand table
+2017-06-23T02:20:36.707Z - debug: Just prior to call
+2017-06-23T02:20:36.709Z - debug: new winston log for shared logs
+2017-06-23T02:20:36.710Z - debug: start of winston logging
+2017-06-23T02:20:36.724Z - debug: Listening on port 3000
+2017-06-23T02:20:36.748Z - debug: Added item: {}
+2017-06-23T02:22:34.025Z - debug: Putting item in CodedHand table
+2017-06-23T02:22:34.047Z - debug: Just prior to call
+2017-06-23T02:22:34.050Z - debug: new winston log for shared logs
+2017-06-23T02:22:34.050Z - debug: start of winston logging
+2017-06-23T02:22:34.066Z - debug: Listening on port 3000
+2017-06-23T02:22:34.086Z - debug: Added item: {}
+2017-06-23T02:23:40.875Z - debug: Putting item in CodedHand table
+2017-06-23T02:23:40.900Z - debug: Just prior to call
+2017-06-23T02:23:40.901Z - debug: new winston log for shared logs
+2017-06-23T02:23:40.902Z - debug: start of winston logging
+2017-06-23T02:23:40.917Z - debug: Listening on port 3000
+2017-06-23T02:23:40.942Z - debug: Added item: {}
+2017-06-23T11:17:00.361Z - error: uncaughtException: Illegal break statement date=Fri Jun 23 2017 06:17:00 GMT-0500 (CDT), pid=31056, uid=501, gid=20, cwd=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad, execPath=/usr/local/bin/node, version=v6.9.3, argv=[/usr/local/bin/node, /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/bin/www], rss=32153600, heapTotal=18911232, heapUsed=12497560, loadavg=[1.54541015625, 1.5390625, 1.45458984375], uptime=378026, trace=[column=16, file=vm.js, function=Object.exports.runInThisContext, line=76, method=runInThisContext, native=false, column=28, file=module.js, function=Module._compile, line=542, method=_compile, native=false, column=10, file=module.js, function=Module._extensions..js, line=579, method=.js, native=false, column=32, file=module.js, function=Module.load, line=487, method=load, native=false, column=12, file=module.js, function=tryModuleLoad, line=446, method=null, native=false, column=3, file=module.js, function=Module._load, line=438, method=_load, native=false, column=17, file=module.js, function=Module.require, line=497, method=require, native=false, column=19, file=internal/module.js, function=require, line=20, method=null, native=false, column=13, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/app.js, function=null, line=11, method=null, native=false, column=32, file=module.js, function=Module._compile, line=570, method=_compile, native=false], stack=[/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/database/tableCreate.js:279,                     break;,                     ^^^^^, SyntaxError: Illegal break statement,     at Object.exports.runInThisContext (vm.js:76:16),     at Module._compile (module.js:542:28),     at Object.Module._extensions..js (module.js:579:10),     at Module.load (module.js:487:32),     at tryModuleLoad (module.js:446:12),     at Function.Module._load (module.js:438:3),     at Module.require (module.js:497:17),     at require (internal/module.js:20:19),     at Object.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/app.js:11:13),     at Module._compile (module.js:570:32)]
+2017-06-23T11:19:25.949Z - debug: Just prior to call
+2017-06-23T11:19:25.953Z - debug: new winston log for shared logs
+2017-06-23T11:19:25.953Z - debug: start of winston logging
+2017-06-23T11:19:25.963Z - debug: Listening on port 3000
+2017-06-23T11:19:59.025Z - debug: / in app.js app.all
+2017-06-23T11:19:59.653Z - debug: /partials/login in app.js app.all
+2017-06-23T11:19:59.785Z - debug: /api/results in app.js app.all
+2017-06-23T11:23:35.682Z - debug: calling putFullFile
+2017-06-23T11:23:35.685Z - debug: putFullFile reading file
+2017-06-23T11:23:35.686Z - debug: after putFullFile
+2017-06-23T11:23:35.687Z - debug: Just prior to call
+2017-06-23T11:23:35.688Z - debug: new winston log for shared logs
+2017-06-23T11:23:35.688Z - debug: start of winston logging
+2017-06-23T11:23:35.700Z - debug: Listening on port 3000
+2017-06-23T11:25:42.520Z - debug: calling putFullFile
+2017-06-23T11:25:42.522Z - debug: putFullFile reading file
+2017-06-23T11:25:42.523Z - debug: after putFullFile
+2017-06-23T11:25:42.523Z - debug: Just prior to call
+2017-06-23T11:25:42.525Z - debug: new winston log for shared logs
+2017-06-23T11:25:42.525Z - debug: start of winston logging
+2017-06-23T11:25:42.536Z - debug: Listening on port 3000
+2017-06-23T11:25:42.542Z - debug: putFullFile read file
+2017-06-23T11:25:42.549Z - debug: Array filled with objects from file 800
+2017-06-23T11:26:40.589Z - debug: calling putFullFile
+2017-06-23T11:26:40.591Z - debug: putFullFile reading file
+2017-06-23T11:26:40.592Z - debug: after putFullFile
+2017-06-23T11:26:40.593Z - debug: Just prior to call
+2017-06-23T11:26:40.594Z - debug: new winston log for shared logs
+2017-06-23T11:26:40.594Z - debug: start of winston logging
+2017-06-23T11:26:40.605Z - debug: Listening on port 3000
+2017-06-23T11:26:40.612Z - debug: putFullFile read file
+2017-06-23T11:26:40.617Z - debug: Array filled with objects from file 800
+2017-06-23T11:26:40.621Z - error: uncaughtException: docClient is not defined date=Fri Jun 23 2017 06:26:40 GMT-0500 (CDT), pid=31189, uid=501, gid=20, cwd=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad, execPath=/usr/local/bin/node, version=v6.9.3, argv=[/usr/local/bin/node, /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/bin/www], rss=51458048, heapTotal=36327424, heapUsed=20122232, loadavg=[1.8173828125, 1.73583984375, 1.59326171875], uptime=378606, trace=[column=25, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/database/tableCreate.js, function=readFileCallback, line=306, method=null, native=false, column=3, file=fs.js, function=tryToString, line=455, method=null, native=false, column=12, file=fs.js, function=FSReqWrap.readFileAfterClose [as oncomplete], line=442, method=readFileAfterClose [as oncomplete], native=false], stack=[ReferenceError: docClient is not defined,     at readFileCallback (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/database/tableCreate.js:306:25),     at tryToString (fs.js:455:3),     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:442:12)]
+2017-06-23T11:27:18.046Z - debug: calling putFullFile
+2017-06-23T11:27:18.056Z - debug: putFullFile reading file
+2017-06-23T11:27:18.057Z - debug: after putFullFile
+2017-06-23T11:27:18.059Z - debug: Just prior to call
+2017-06-23T11:27:18.062Z - debug: new winston log for shared logs
+2017-06-23T11:27:18.062Z - debug: start of winston logging
+2017-06-23T11:27:18.072Z - debug: Listening on port 3000
+2017-06-23T11:27:18.083Z - debug: putFullFile read file
+2017-06-23T11:27:18.087Z - debug: Array filled with objects from file 800
+2017-06-23T11:27:19.991Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.040Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.041Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.048Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.051Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.057Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.067Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.073Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.086Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.092Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.101Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.113Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.122Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.131Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.193Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.202Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.221Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.248Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.254Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.258Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.267Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.272Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.276Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.279Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.284Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.293Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.307Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.315Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.320Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.329Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.339Z - debug: BatchWriteItem processed all items in the batch
+2017-06-23T11:27:20.344Z - debug: BatchWriteItem processed all items in the batch
+2017-06-24T01:56:29.796Z - error: uncaughtException: missing ) after argument list date=Fri Jun 23 2017 20:56:29 GMT-0500 (CDT), pid=37757, uid=501, gid=20, cwd=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad, execPath=/usr/local/bin/node, version=v6.9.3, argv=[/usr/local/bin/node, /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/bin/www], rss=31936512, heapTotal=18911232, heapUsed=12502416, loadavg=[1.26220703125, 1.4326171875, 1.53759765625], uptime=430798, trace=[column=16, file=vm.js, function=Object.exports.runInThisContext, line=76, method=runInThisContext, native=false, column=28, file=module.js, function=Module._compile, line=542, method=_compile, native=false, column=10, file=module.js, function=Module._extensions..js, line=579, method=.js, native=false, column=32, file=module.js, function=Module.load, line=487, method=load, native=false, column=12, file=module.js, function=tryModuleLoad, line=446, method=null, native=false, column=3, file=module.js, function=Module._load, line=438, method=_load, native=false, column=17, file=module.js, function=Module.require, line=497, method=require, native=false, column=19, file=internal/module.js, function=require, line=20, method=null, native=false, column=13, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/app.js, function=null, line=11, method=null, native=false, column=32, file=module.js, function=Module._compile, line=570, method=_compile, native=false], stack=[/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/database/tableCreate.js:354,                 logs.log('debug', "GetItem succeeded: " JSON.stringify(data, null, 2));,                                   ^^^^^^^^^^^^^^^^^^^^^, SyntaxError: missing ) after argument list,     at Object.exports.runInThisContext (vm.js:76:16),     at Module._compile (module.js:542:28),     at Object.Module._extensions..js (module.js:579:10),     at Module.load (module.js:487:32),     at tryModuleLoad (module.js:446:12),     at Function.Module._load (module.js:438:3),     at Module.require (module.js:497:17),     at require (internal/module.js:20:19),     at Object.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/app.js:11:13),     at Module._compile (module.js:570:32)]
+2017-06-24T01:57:48.851Z - debug: calling putFullFile
+2017-06-24T01:57:48.880Z - debug: after putFullFile
+2017-06-24T01:57:48.881Z - debug: Just prior to call
+2017-06-24T01:57:48.883Z - debug: new winston log for shared logs
+2017-06-24T01:57:48.883Z - debug: start of winston logging
+2017-06-24T01:57:48.895Z - debug: Listening on port 3000
+2017-06-24T01:57:48.920Z - debug: GetItem succeeded:  {
+  "Item": {
+    "averageBid": 4,
+    "total": 43,
+    "hand": "14131210NTLnLn",
+    "min": 2,
+    "totalBid": 172,
+    "totalTricks": 136,
+    "max": 5,
+    "average": 3.1627906976744184
+  }
+}
+2017-06-24T02:09:06.368Z - debug: calling putFullFile
+2017-06-24T02:09:06.392Z - debug: after getHand
+2017-06-24T02:09:06.394Z - debug: Just prior to call
+2017-06-24T02:09:06.396Z - debug: new winston log for shared logs
+2017-06-24T02:09:06.397Z - debug: start of winston logging
+2017-06-24T02:09:06.413Z - debug: Listening on port 3000
+2017-06-24T02:09:06.440Z - debug: GetItem succeeded:  {
+  "Item": {
+    "averageBid": 4,
+    "total": 31,
+    "hand": "1613109NTLnLn",
+    "min": 2,
+    "totalBid": 124,
+    "totalTricks": 101,
+    "max": 5,
+    "average": 3.2580645161290325
+  }
+}
+2017-06-24T02:53:28.857Z - debug: calling putFullFile
+2017-06-24T02:53:28.860Z - debug: after getHand
+2017-06-24T02:53:28.862Z - debug: Just prior to call
+2017-06-24T02:53:28.862Z - debug: new winston log for shared logs
+2017-06-24T02:53:28.863Z - debug: start of winston logging
+2017-06-24T02:53:28.874Z - debug: Listening on port 3000
+2017-06-24T02:53:38.611Z - debug: / in app.js app.all
+2017-06-24T02:53:39.310Z - debug: /partials/login in app.js app.all
+2017-06-24T02:53:39.444Z - debug: /api/results in app.js app.all
+2017-06-24T02:53:40.783Z - debug: /partials/table in app.js app.all
+2017-06-24T02:53:40.901Z - debug: /api/results in app.js app.all
+2017-06-24T02:55:36.163Z - debug: /table in app.js app.all
+2017-06-24T02:55:50.988Z - debug: / in app.js app.all
+2017-06-24T02:55:51.439Z - debug: /partials/login in app.js app.all
+2017-06-24T02:55:51.578Z - debug: /api/results in app.js app.all
+2017-06-24T02:55:52.677Z - debug: /partials/table in app.js app.all
+2017-06-24T02:55:52.816Z - debug: /api/results in app.js app.all
+2017-06-24T02:58:30.796Z - debug: / in app.js app.all
+2017-06-24T02:58:31.196Z - debug: /partials/login in app.js app.all
+2017-06-24T02:58:31.319Z - debug: /api/results in app.js app.all
+2017-06-24T02:58:32.394Z - debug: /partials/table in app.js app.all
+2017-06-24T02:58:32.519Z - debug: /api/results in app.js app.all
+2017-06-24T02:59:08.665Z - debug: /api/save in app.js app.all
+2017-06-24T17:58:24.787Z - debug: calling putFullFile
+2017-06-24T17:58:24.790Z - debug: after getHand
+2017-06-24T17:58:24.791Z - debug: Just prior to call
+2017-06-24T17:58:24.793Z - debug: new winston log for shared logs
+2017-06-24T17:58:24.793Z - debug: start of winston logging
+2017-06-24T17:58:24.800Z - debug: Listening on port 3000
+2017-06-24T17:58:35.195Z - debug: / in app.js app.all
+2017-06-24T17:58:36.018Z - debug: /partials/login in app.js app.all
+2017-06-24T17:58:36.164Z - debug: /api/results in app.js app.all
+2017-06-24T17:58:45.512Z - debug: /partials/table in app.js app.all
+2017-06-24T17:58:45.645Z - debug: /api/results in app.js app.all
+2017-06-24T17:58:52.741Z - debug: /api/saveItem in app.js app.all
+2017-06-24T17:58:52.742Z - debug: [object Object]catch 404
+2017-06-24T17:58:52.743Z - debug: [object Object] in error handlerNot Found
+2017-06-24T17:58:55.480Z - debug: /api/saveItem in app.js app.all
+2017-06-24T17:58:55.481Z - debug: [object Object]catch 404
+2017-06-24T17:58:55.481Z - debug: [object Object] in error handlerNot Found
+2017-06-24T17:58:58.878Z - debug: /api/saveItem in app.js app.all
+2017-06-24T17:58:58.879Z - debug: [object Object]catch 404
+2017-06-24T17:58:58.879Z - debug: [object Object] in error handlerNot Found
+2017-06-24T18:00:20.464Z - debug: / in app.js app.all
+2017-06-24T18:00:20.925Z - debug: /partials/login in app.js app.all
+2017-06-24T18:00:21.068Z - debug: /api/results in app.js app.all
+2017-06-24T18:00:22.032Z - debug: /partials/table in app.js app.all
+2017-06-24T18:00:22.177Z - debug: /api/results in app.js app.all
+2017-06-24T18:00:27.325Z - debug: /api/saveHand in app.js app.all
+2017-06-24T18:00:27.326Z - debug: /api/saveHand post bid=3, dealer=North, location=West, tricksTaken=4
+2017-06-24T18:00:30.524Z - debug: /api/saveHand in app.js app.all
+2017-06-24T18:00:30.524Z - debug: /api/saveHand post bid=4, dealer=East, location=West, tricksTaken=4
+2017-06-24T18:02:27.343Z - debug: /api/saveHand in app.js app.all
+2017-06-24T18:02:27.343Z - debug: /api/saveHand post bid=3, dealer=North, location=West, tricksTaken=4
+2017-06-24T18:02:30.531Z - debug: /api/saveHand in app.js app.all
+2017-06-24T18:02:30.531Z - debug: /api/saveHand post bid=4, dealer=East, location=West, tricksTaken=4
+2017-06-24T18:05:52.680Z - debug: calling putFullFile
+2017-06-24T18:05:52.683Z - debug: after getHand
+2017-06-24T18:05:52.684Z - debug: Just prior to call
+2017-06-24T18:05:52.685Z - debug: new winston log for shared logs
+2017-06-24T18:05:52.686Z - debug: start of winston logging
+2017-06-24T18:05:52.694Z - debug: Listening on port 3000
+2017-06-24T18:05:59.653Z - debug: / in app.js app.all
+2017-06-24T18:06:00.397Z - debug: /partials/login in app.js app.all
+2017-06-24T18:06:00.542Z - debug: /api/results in app.js app.all
+2017-06-24T18:06:01.362Z - debug: /partials/table in app.js app.all
+2017-06-24T18:06:01.496Z - debug: /api/results in app.js app.all
+2017-06-24T18:06:06.588Z - debug: /api/saveHand in app.js app.all
+2017-06-24T18:06:06.590Z - debug: /api/saveHand post bid=3, dealer=North, location=East, tricksTaken=2
+2017-06-24T18:06:06.591Z - debug: the key fro req.body[0] is  0=1613NT14Ln14Ln
+2017-06-24T18:06:06.591Z - debug: the hand fro req.body[0] is  bid=3, dealer=North, location=East, tricksTaken=2
+2017-06-24T18:08:06.614Z - debug: /api/saveHand in app.js app.all
+2017-06-24T18:08:06.621Z - debug: /api/saveHand post bid=3, dealer=North, location=East, tricksTaken=2
+2017-06-24T18:08:06.621Z - debug: the key fro req.body[0] is  0=1613NT14Ln14Ln
+2017-06-24T18:08:06.621Z - debug: the hand fro req.body[0] is  bid=3, dealer=North, location=East, tricksTaken=2
+2017-06-24T18:21:45.375Z - debug: calling putFullFile
+2017-06-24T18:21:45.377Z - debug: after getHand
+2017-06-24T18:21:45.379Z - debug: Just prior to call
+2017-06-24T18:21:45.380Z - debug: new winston log for shared logs
+2017-06-24T18:21:45.380Z - debug: start of winston logging
+2017-06-24T18:21:45.389Z - debug: Listening on port 3000
+2017-06-24T18:21:57.498Z - debug: / in app.js app.all
+2017-06-24T18:21:58.184Z - debug: /partials/login in app.js app.all
+2017-06-24T18:21:58.358Z - debug: /api/results in app.js app.all
+2017-06-24T18:21:59.208Z - debug: /partials/table in app.js app.all
+2017-06-24T18:21:59.333Z - debug: /api/results in app.js app.all
+2017-06-24T18:22:05.314Z - debug: /api/saveHand in app.js app.all
+2017-06-24T18:22:05.317Z - debug: /api/saveHand post bid=6, dealer=North, location=East, tricksTaken=5
+2017-06-24T18:22:05.318Z - debug: the key fro req.body[0] is  0=0
+2017-06-24T18:22:05.319Z - debug: the hand fro req.body[0] is  bid=6, dealer=North, location=East, tricksTaken=5
+2017-06-24T18:22:05.319Z - debug: the hand tricks taken is  bid=6, dealer=North, location=East, tricksTaken=5
+2017-06-24T18:22:44.312Z - debug: /api/saveHand in app.js app.all
+2017-06-24T18:22:44.312Z - debug: /api/saveHand post bid=4, dealer=East, location=South, tricksTaken=5
+2017-06-24T18:22:44.312Z - debug: the key fro req.body[0] is  0=0
+2017-06-24T18:22:44.312Z - debug: the hand fro req.body[0] is  bid=4, dealer=East, location=South, tricksTaken=5
+2017-06-24T18:22:44.313Z - debug: the hand tricks taken is  bid=4, dealer=East, location=South, tricksTaken=5
+2017-06-24T18:24:05.333Z - debug: /api/saveHand in app.js app.all
+2017-06-24T18:24:05.334Z - debug: /api/saveHand post bid=6, dealer=North, location=East, tricksTaken=5
+2017-06-24T18:24:05.334Z - debug: the key fro req.body[0] is  0=0
+2017-06-24T18:24:05.335Z - debug: the hand fro req.body[0] is  bid=6, dealer=North, location=East, tricksTaken=5
+2017-06-24T18:24:05.335Z - debug: the hand tricks taken is  bid=6, dealer=North, location=East, tricksTaken=5
+2017-06-24T18:24:44.316Z - debug: /api/saveHand in app.js app.all
+2017-06-24T18:24:44.317Z - debug: /api/saveHand post bid=4, dealer=East, location=South, tricksTaken=5
+2017-06-24T18:24:44.317Z - debug: the key fro req.body[0] is  0=0
+2017-06-24T18:24:44.317Z - debug: the hand fro req.body[0] is  bid=4, dealer=East, location=South, tricksTaken=5
+2017-06-24T18:24:44.317Z - debug: the hand tricks taken is  bid=4, dealer=East, location=South, tricksTaken=5
+2017-06-24T18:27:23.158Z - debug: calling putFullFile
+2017-06-24T18:27:23.161Z - debug: after getHand
+2017-06-24T18:27:23.163Z - debug: Just prior to call
+2017-06-24T18:27:23.164Z - debug: new winston log for shared logs
+2017-06-24T18:27:23.164Z - debug: start of winston logging
+2017-06-24T18:27:23.173Z - debug: Listening on port 3000
+2017-06-24T18:27:31.703Z - debug: / in app.js app.all
+2017-06-24T18:27:32.394Z - debug: /partials/login in app.js app.all
+2017-06-24T18:27:32.563Z - debug: /api/results in app.js app.all
+2017-06-24T18:27:36.095Z - debug: /partials/table in app.js app.all
+2017-06-24T18:27:36.200Z - debug: /api/results in app.js app.all
+2017-06-24T18:27:50.602Z - debug: /api/saveHand in app.js app.all
+2017-06-24T18:27:50.603Z - debug: /api/saveHand post bid=4, dealer=North, location=West, tricksTaken=4
+2017-06-24T18:27:50.603Z - debug: the key fro req.body[0] is  0=1614109NT14nLn
+2017-06-24T18:27:50.603Z - debug: the hand fro req.body[0] is  bid=4, dealer=North, location=West, tricksTaken=4
+2017-06-24T18:27:50.603Z - debug: the hand tricks taken is  bid=4, dealer=North, location=West, tricksTaken=4
+2017-06-24T18:29:50.614Z - debug: /api/saveHand in app.js app.all
+2017-06-24T18:29:50.614Z - debug: /api/saveHand post bid=4, dealer=North, location=West, tricksTaken=4
+2017-06-24T18:29:50.614Z - debug: the key fro req.body[0] is  0=1614109NT14nLn
+2017-06-24T18:29:50.615Z - debug: the hand fro req.body[0] is  bid=4, dealer=North, location=West, tricksTaken=4
+2017-06-24T18:29:50.615Z - debug: the hand tricks taken is  bid=4, dealer=North, location=West, tricksTaken=4
+2017-06-24T18:29:56.806Z - debug: calling putFullFile
+2017-06-24T18:29:56.808Z - debug: after getHand
+2017-06-24T18:29:56.810Z - debug: Just prior to call
+2017-06-24T18:29:56.811Z - debug: new winston log for shared logs
+2017-06-24T18:29:56.811Z - debug: start of winston logging
+2017-06-24T18:29:56.818Z - debug: Listening on port 3000
+2017-06-24T18:30:04.806Z - debug: / in app.js app.all
+2017-06-24T18:30:05.496Z - debug: /partials/login in app.js app.all
+2017-06-24T18:30:05.654Z - debug: /api/results in app.js app.all
+2017-06-24T18:30:08.266Z - debug: /partials/table in app.js app.all
+2017-06-24T18:30:08.395Z - debug: /api/results in app.js app.all
+2017-06-24T18:30:15.071Z - debug: /api/saveHand in app.js app.all
+2017-06-24T18:30:15.071Z - debug: /api/saveHand post bid=3, dealer=North, location=East, tricksTaken=2
+2017-06-24T18:30:15.072Z - debug: the key fro req.body[0] is  0=13129NTLLnLn
+2017-06-24T18:30:15.072Z - debug: the hand fro req.body[0] is  bid=3, dealer=North, location=East, tricksTaken=2
+2017-06-24T18:30:15.072Z - debug: the hand tricks taken is  bid=3, dealer=North, location=East, tricksTaken=2
+2017-06-24T18:32:15.087Z - debug: /api/saveHand in app.js app.all
+2017-06-24T18:32:15.088Z - debug: /api/saveHand post bid=3, dealer=North, location=East, tricksTaken=2
+2017-06-24T18:32:15.088Z - debug: the key fro req.body[0] is  0=13129NTLLnLn
+2017-06-24T18:32:15.089Z - debug: the hand fro req.body[0] is  bid=3, dealer=North, location=East, tricksTaken=2
+2017-06-24T18:32:15.090Z - debug: the hand tricks taken is  bid=3, dealer=North, location=East, tricksTaken=2
+2017-06-24T18:44:47.195Z - debug: calling putFullFile
+2017-06-24T18:44:47.197Z - debug: after getHand
+2017-06-24T18:44:47.199Z - debug: Just prior to call
+2017-06-24T18:44:47.200Z - debug: new winston log for shared logs
+2017-06-24T18:44:47.200Z - debug: start of winston logging
+2017-06-24T18:44:47.207Z - debug: Listening on port 3000
+2017-06-24T18:44:53.284Z - debug: / in app.js app.all
+2017-06-24T18:44:54.058Z - debug: /partials/login in app.js app.all
+2017-06-24T18:44:54.239Z - debug: /api/results in app.js app.all
+2017-06-24T18:44:55.173Z - debug: /partials/table in app.js app.all
+2017-06-24T18:44:55.312Z - debug: /api/results in app.js app.all
+2017-06-24T18:45:02.579Z - debug: /api/saveHand in app.js app.all
+2017-06-24T18:45:02.580Z - debug: /api/saveHand post bid=4, dealer=North, location=East, tricksTaken=6
+2017-06-24T18:45:02.581Z - debug: the key fro req.body[0] is  0=16141210NT14nLn
+2017-06-24T18:45:02.581Z - debug: the hand fro req.body[0] is  bid=4, dealer=North, location=East, tricksTaken=6
+2017-06-24T18:45:02.581Z - debug: the hand tricks taken is  bid=4, dealer=North, location=East, tricksTaken=6
+2017-06-24T18:45:02.618Z - debug: Unable to read item. Error JSON:  {
+  "message": "Invalid attribute value type",
+  "code": "ValidationException",
+  "time": "2017-06-24T18:45:02.616Z",
+  "requestId": "7d3a6f4d-c9a4-4c75-866f-c4423613d6cc",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 2.204204647845065
+}
+2017-06-24T18:47:02.606Z - debug: /api/saveHand in app.js app.all
+2017-06-24T18:47:02.623Z - debug: /api/saveHand post bid=4, dealer=North, location=East, tricksTaken=6
+2017-06-24T18:47:02.623Z - debug: the key fro req.body[0] is  0=16141210NT14nLn
+2017-06-24T18:47:02.623Z - debug: the hand fro req.body[0] is  bid=4, dealer=North, location=East, tricksTaken=6
+2017-06-24T18:47:02.624Z - debug: the hand tricks taken is  bid=4, dealer=North, location=East, tricksTaken=6
+2017-06-24T18:47:02.645Z - debug: Unable to read item. Error JSON:  {
+  "message": "Invalid attribute value type",
+  "code": "ValidationException",
+  "time": "2017-06-24T18:47:02.644Z",
+  "requestId": "ec1a6b67-e25b-4a38-a18d-909def9924bd",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 6.292658855528199
+}
+2017-06-24T18:47:18.445Z - debug: calling putFullFile
+2017-06-24T18:47:18.447Z - debug: after getHand
+2017-06-24T18:47:18.449Z - debug: Just prior to call
+2017-06-24T18:47:18.451Z - debug: new winston log for shared logs
+2017-06-24T18:47:18.451Z - debug: start of winston logging
+2017-06-24T18:47:18.460Z - debug: Listening on port 3000
+2017-06-24T18:47:29.801Z - debug: / in app.js app.all
+2017-06-24T18:47:30.568Z - debug: /partials/login in app.js app.all
+2017-06-24T18:47:30.754Z - debug: /api/results in app.js app.all
+2017-06-24T18:47:31.999Z - debug: /partials/table in app.js app.all
+2017-06-24T18:47:32.146Z - debug: /api/results in app.js app.all
+2017-06-24T18:47:38.490Z - debug: /api/saveHand in app.js app.all
+2017-06-24T18:47:38.490Z - debug: /api/saveHand post bid=4, dealer=North, location=East, tricksTaken=4
+2017-06-24T18:47:38.491Z - debug: the key fro req.body[0] is  161514NTLnLnLn
+2017-06-24T18:47:38.491Z - debug: the hand fro req.body[0] is  bid=4, dealer=North, location=East, tricksTaken=4
+2017-06-24T18:47:38.491Z - debug: the hand tricks taken is  bid=4, dealer=North, location=East, tricksTaken=4
+2017-06-24T18:47:38.525Z - debug: GetItem succeeded:  {
+  "Item": {
+    "averageBid": 4,
+    "total": 43,
+    "hand": "161514NTLnLnLn",
+    "min": 3,
+    "totalBid": 172,
+    "totalTricks": 151,
+    "max": 5,
+    "average": 3.511627906976744
+  }
+}
+2017-06-24T18:48:54.954Z - debug: calling putFullFile
+2017-06-24T18:48:54.957Z - debug: after getHand
+2017-06-24T18:48:54.958Z - debug: Just prior to call
+2017-06-24T18:48:54.959Z - debug: new winston log for shared logs
+2017-06-24T18:48:54.959Z - debug: start of winston logging
+2017-06-24T18:48:54.967Z - debug: Listening on port 3000
+2017-06-24T18:48:58.581Z - debug: /table in app.js app.all
+2017-06-24T18:49:02.357Z - debug: / in app.js app.all
+2017-06-24T18:49:02.807Z - debug: /partials/login in app.js app.all
+2017-06-24T18:49:02.962Z - debug: /api/results in app.js app.all
+2017-06-24T18:49:03.827Z - debug: /partials/table in app.js app.all
+2017-06-24T18:49:03.966Z - debug: /api/results in app.js app.all
+2017-06-24T18:49:11.235Z - debug: /api/saveHand in app.js app.all
+2017-06-24T18:49:11.236Z - debug: /api/saveHand post bid=3, dealer=North, location=East, tricksTaken=4
+2017-06-24T18:49:11.236Z - debug: the key fro req.body[0] is  15129NT13LLn
+2017-06-24T18:49:11.236Z - debug: the hand fro req.body[0] is  bid=3, dealer=North, location=East, tricksTaken=4
+2017-06-24T18:49:11.237Z - debug: the hand tricks taken is  bid=3, dealer=North, location=East, tricksTaken=4
+2017-06-24T18:49:11.301Z - debug: GetItem succeeded:  {
+  "Item": {
+    "averageBid": 3,
+    "total": 1,
+    "hand": "15129NT13LLn",
+    "min": 2,
+    "totalBid": 3,
+    "totalTricks": 2,
+    "max": 2,
+    "average": 2
+  }
+}
+2017-06-24T18:59:03.307Z - debug: calling putFullFile
+2017-06-24T18:59:03.309Z - debug: after getHand
+2017-06-24T18:59:03.311Z - debug: Just prior to call
+2017-06-24T18:59:03.312Z - debug: new winston log for shared logs
+2017-06-24T18:59:03.312Z - debug: start of winston logging
+2017-06-24T18:59:03.321Z - debug: Listening on port 3000
+2017-06-24T18:59:09.570Z - debug: / in app.js app.all
+2017-06-24T18:59:10.310Z - debug: /partials/login in app.js app.all
+2017-06-24T18:59:10.479Z - debug: /api/results in app.js app.all
+2017-06-24T18:59:11.222Z - debug: /partials/table in app.js app.all
+2017-06-24T18:59:11.370Z - debug: /api/results in app.js app.all
+2017-06-24T18:59:16.834Z - debug: /api/saveHand in app.js app.all
+2017-06-24T18:59:16.835Z - debug: /api/saveHand post [{"161413NT14Ln14n":{"bid":4,"dealer":"North","location":"South","tricksTaken":3}}]
+2017-06-24T18:59:16.835Z - debug: the key fro req.body[0] is  161413NT14Ln14n
+2017-06-24T18:59:16.835Z - debug: the hand fro req.body[0] is  bid=4, dealer=North, location=South, tricksTaken=3
+2017-06-24T18:59:16.836Z - debug: the hand tricks taken is  bid=4, dealer=North, location=South, tricksTaken=3
+2017-06-24T18:59:16.872Z - debug: GetItem succeeded:  {
+  "Item": {
+    "averageBid": 4,
+    "total": 21,
+    "hand": "161413NT14Ln14n",
+    "min": 2,
+    "totalBid": 84,
+    "totalTricks": 94,
+    "max": 6,
+    "average": 4.476190476190476
+  }
+}
+2017-06-24T19:03:09.726Z - debug: calling putFullFile
+2017-06-24T19:03:09.728Z - debug: after getHand
+2017-06-24T19:03:09.730Z - debug: Just prior to call
+2017-06-24T19:03:09.731Z - debug: new winston log for shared logs
+2017-06-24T19:03:09.731Z - debug: start of winston logging
+2017-06-24T19:03:09.739Z - debug: Listening on port 3000
+2017-06-24T19:03:13.680Z - debug: / in app.js app.all
+2017-06-24T19:03:14.369Z - debug: /partials/login in app.js app.all
+2017-06-24T19:03:14.541Z - debug: /api/results in app.js app.all
+2017-06-24T19:03:15.622Z - debug: /partials/table in app.js app.all
+2017-06-24T19:03:15.772Z - debug: /api/results in app.js app.all
+2017-06-24T19:03:22.281Z - debug: /api/saveHand in app.js app.all
+2017-06-24T19:03:22.281Z - debug: /api/saveHand post [{"14129NTLLn14n":{"bid":3,"dealer":"North","location":"West","tricksTaken":3}}]
+2017-06-24T19:03:22.281Z - debug: the key fro req.body[0] is  14129NTLLn14n
+2017-06-24T19:03:22.281Z - debug: the hand fro req.body[0] is  {"14129NTLLn14n":{"bid":3,"dealer":"North","location":"West","tricksTaken":3}}
+2017-06-24T19:03:22.282Z - debug: the hand tricks taken is  bid=3, dealer=North, location=West, tricksTaken=3
+2017-06-24T19:03:22.337Z - debug: GetItem succeeded:  {
+  "Item": {
+    "averageBid": 3,
+    "total": 7,
+    "hand": "14129NTLLn14n",
+    "min": 1,
+    "totalBid": 21,
+    "totalTricks": 18,
+    "max": 4,
+    "average": 2.5714285714285716
+  }
+}
+2017-06-24T19:04:26.931Z - debug: calling putFullFile
+2017-06-24T19:04:26.933Z - debug: after getHand
+2017-06-24T19:04:26.935Z - debug: Just prior to call
+2017-06-24T19:04:26.936Z - debug: new winston log for shared logs
+2017-06-24T19:04:26.936Z - debug: start of winston logging
+2017-06-24T19:04:26.945Z - debug: Listening on port 3000
+2017-06-24T19:04:31.967Z - debug: / in app.js app.all
+2017-06-24T19:04:32.672Z - debug: /partials/login in app.js app.all
+2017-06-24T19:04:32.843Z - debug: /api/results in app.js app.all
+2017-06-24T19:04:33.781Z - debug: /partials/table in app.js app.all
+2017-06-24T19:04:33.933Z - debug: /api/results in app.js app.all
+2017-06-24T19:04:40.946Z - debug: /api/saveHand in app.js app.all
+2017-06-24T19:04:40.946Z - debug: /api/saveHand post [{"161413NTLLnLn":{"bid":4,"dealer":"North","location":"East","tricksTaken":3}}]
+2017-06-24T19:04:40.981Z - debug: GetItem succeeded:  {
+  "Item": {
+    "averageBid": 4,
+    "total": 89,
+    "hand": "161413NTLLnLn",
+    "min": 2,
+    "totalBid": 356,
+    "totalTricks": 255,
+    "max": 5,
+    "average": 2.865168539325843
+  }
+}

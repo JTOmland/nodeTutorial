@@ -504,7 +504,7 @@ function MainController($scope, $http, $q, $rootscope, $timeout, $interval, $mdD
             var codedHand = CPUService.makeCodedHand($scope.gameInformation.currentBidOwner, $scope.gameInformation.bidTaken, $scope.gameInformation.Dealer);
             if (codedHand) {
                 $scope.data.push(codedHand);
-                if ($scope.data.length > targetData) {
+                if ($scope.data.length > 0) {
                     console.log("this is data that will be saved before clearing", $scope.data);
                     DataFactory.saveData($scope.data);
                     $scope.data = [];
