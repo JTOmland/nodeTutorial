@@ -789,3 +789,677 @@
     "average": 2.865168539325843
   }
 }
+2017-06-27T12:20:39.803Z - debug: calling putFullFile
+2017-06-27T12:20:39.807Z - debug: after getHand
+2017-06-27T12:20:39.809Z - debug: Just prior to call
+2017-06-27T12:20:39.811Z - debug: new winston log for shared logs
+2017-06-27T12:20:39.811Z - debug: start of winston logging
+2017-06-27T12:20:39.828Z - debug: Listening on port 3000
+2017-06-27T12:20:58.797Z - debug: / in app.js app.all
+2017-06-27T12:20:59.716Z - debug: /partials/login in app.js app.all
+2017-06-27T12:20:59.948Z - debug: /api/results in app.js app.all
+2017-06-27T12:21:01.106Z - debug: /partials/table in app.js app.all
+2017-06-27T12:21:01.286Z - debug: /api/results in app.js app.all
+2017-06-27T12:22:01.848Z - debug: /table in app.js app.all
+2017-06-27T12:22:06.499Z - debug: / in app.js app.all
+2017-06-27T12:22:06.846Z - debug: /partials/login in app.js app.all
+2017-06-27T12:22:07.002Z - debug: /api/results in app.js app.all
+2017-06-27T12:22:08.098Z - debug: /partials/table in app.js app.all
+2017-06-27T12:22:08.321Z - debug: /api/results in app.js app.all
+2017-06-27T12:31:58.479Z - debug: / in app.js app.all
+2017-06-27T12:31:58.874Z - debug: /partials/login in app.js app.all
+2017-06-27T12:31:59.009Z - debug: /api/results in app.js app.all
+2017-06-27T12:31:59.857Z - debug: /partials/table in app.js app.all
+2017-06-27T12:32:00.020Z - debug: /api/results in app.js app.all
+2017-06-27T12:32:38.046Z - debug: / in app.js app.all
+2017-06-27T12:32:38.388Z - debug: /partials/login in app.js app.all
+2017-06-27T12:32:38.507Z - debug: /api/results in app.js app.all
+2017-06-27T12:32:39.601Z - debug: /partials/table in app.js app.all
+2017-06-27T12:32:39.761Z - debug: /api/results in app.js app.all
+2017-06-28T02:54:21.149Z - debug: / in app.js app.all
+2017-06-28T02:54:21.595Z - debug: /partials/login in app.js app.all
+2017-06-28T02:54:21.689Z - debug: /api/results in app.js app.all
+2017-06-28T02:54:22.829Z - debug: /partials/table in app.js app.all
+2017-06-28T02:54:22.966Z - debug: /api/results in app.js app.all
+2017-08-11T12:59:11.841Z - debug: calling putFullFile
+2017-08-11T12:59:11.844Z - debug: after getHand
+2017-08-11T12:59:11.846Z - debug: Just prior to call
+2017-08-11T13:00:38.264Z - debug: calling putFullFile
+2017-08-11T13:00:38.266Z - debug: after getHand
+2017-08-11T13:00:38.268Z - debug: Just prior to call
+2017-08-11T13:01:59.101Z - debug: calling putFullFile
+2017-08-11T13:01:59.104Z - debug: after getHand
+2017-08-11T13:01:59.107Z - debug: Just prior to call
+2017-08-11T13:04:11.884Z - debug: calling putFullFile
+2017-08-11T13:04:11.886Z - debug: after getHand
+2017-08-11T13:04:11.888Z - debug: Just prior to call
+2017-08-11T13:04:11.889Z - debug: new winston log for shared logs
+2017-08-11T13:04:11.890Z - debug: start of winston logging
+2017-08-11T13:04:11.900Z - debug: Listening on port 9000
+2017-08-11T13:06:47.524Z - debug: calling putFullFile
+2017-08-11T13:06:47.527Z - debug: after getHand
+2017-08-11T13:06:47.529Z - debug: Just prior to call
+2017-08-11T13:06:47.530Z - debug: new winston log for shared logs
+2017-08-11T13:06:47.530Z - debug: start of winston logging
+2017-08-11T13:06:47.540Z - debug: Listening on port 8080
+2017-08-11T13:08:23.163Z - debug: calling putFullFile
+2017-08-11T13:08:23.166Z - debug: after getHand
+2017-08-11T13:08:23.168Z - debug: Just prior to call
+2017-08-11T13:08:23.169Z - debug: new winston log for shared logs
+2017-08-11T13:08:23.169Z - debug: start of winston logging
+2017-08-11T13:08:23.180Z - debug: Listening on port 3000
+2017-08-11T13:08:29.364Z - debug: / in app.js app.all
+2017-08-11T13:08:30.172Z - debug: /partials/login in app.js app.all
+2017-08-11T13:08:30.346Z - debug: /api/results in app.js app.all
+2017-08-11T13:09:00.349Z - debug: calling putFullFile
+2017-08-11T13:09:00.353Z - debug: after getHand
+2017-08-11T13:09:00.354Z - debug: Just prior to call
+2017-08-11T13:09:00.356Z - debug: new winston log for shared logs
+2017-08-11T13:09:00.357Z - debug: start of winston logging
+2017-08-11T13:09:00.368Z - debug: Listening on port 3000
+2017-08-11T13:09:26.921Z - debug: /api/humanPlay/Jeff in app.js app.all
+2017-08-11T13:09:26.932Z - debug: [object Object] in error handlerInvalid status code: 0
+2017-08-11T13:09:50.964Z - debug: /api/humanPlay/ in app.js app.all
+2017-08-11T13:09:50.964Z - debug: [object Object]catch 404
+2017-08-11T13:09:50.965Z - debug: [object Object] in error handlerNot Found
+2017-08-11T13:09:57.087Z - debug: /api/humanPlay/jeff in app.js app.all
+2017-08-11T13:09:57.089Z - debug: [object Object] in error handlerInvalid status code: 0
+2017-08-11T13:10:16.271Z - debug: /api/humanPlay/jeff?123 in app.js app.all
+2017-08-11T13:10:16.272Z - debug: [object Object] in error handlerInvalid status code: 0
+2017-08-11T13:11:25.942Z - debug: calling putFullFile
+2017-08-11T13:11:25.945Z - debug: after getHand
+2017-08-11T13:11:25.947Z - debug: Just prior to call
+2017-08-11T13:11:25.948Z - debug: new winston log for shared logs
+2017-08-11T13:11:25.948Z - debug: start of winston logging
+2017-08-11T13:11:25.956Z - debug: Listening on port 3000
+2017-08-11T13:11:32.526Z - debug: /api/humanPlay in app.js app.all
+2017-08-11T13:11:32.527Z - debug: [object Object]catch 404
+2017-08-11T13:11:32.527Z - debug: [object Object] in error handlerNot Found
+2017-08-11T13:14:37.590Z - debug: /api/humanPlay in app.js app.all
+2017-08-11T13:14:37.591Z - debug: [object Object]catch 404
+2017-08-11T13:14:37.607Z - debug: [object Object] in error handlerNot Found
+2017-08-11T13:14:43.994Z - debug: /api/humanPlay in app.js app.all
+2017-08-11T13:14:43.994Z - debug: [object Object]catch 404
+2017-08-11T13:14:43.994Z - debug: [object Object] in error handlerNot Found
+2017-08-11T13:14:53.936Z - debug: calling putFullFile
+2017-08-11T13:14:53.939Z - debug: after getHand
+2017-08-11T13:14:53.941Z - debug: Just prior to call
+2017-08-11T13:14:53.944Z - debug: new winston log for shared logs
+2017-08-11T13:14:53.944Z - debug: start of winston logging
+2017-08-11T13:14:53.953Z - debug: Listening on port 3000
+2017-08-11T13:14:58.179Z - debug: /api/humanPlay in app.js app.all
+2017-08-11T13:14:58.183Z - debug: [object Object] in error handlerInvalid status code: 0
+2017-08-11T13:16:22.152Z - debug: calling putFullFile
+2017-08-11T13:16:22.157Z - debug: after getHand
+2017-08-11T13:16:22.159Z - debug: Just prior to call
+2017-08-11T13:16:22.161Z - debug: new winston log for shared logs
+2017-08-11T13:16:22.161Z - debug: start of winston logging
+2017-08-11T13:16:22.171Z - debug: Listening on port 3000
+2017-08-11T13:16:27.124Z - debug: /api/humanPlay in app.js app.all
+2017-08-11T13:16:27.125Z - debug: inside /api/:id
+2017-08-11T13:16:27.135Z - debug: [object Object] in error handlerInvalid status code: 0
+2017-08-11T13:17:27.930Z - debug: calling putFullFile
+2017-08-11T13:17:27.932Z - debug: after getHand
+2017-08-11T13:17:27.934Z - debug: Just prior to call
+2017-08-11T13:17:27.936Z - debug: new winston log for shared logs
+2017-08-11T13:17:27.936Z - debug: start of winston logging
+2017-08-11T13:17:27.948Z - debug: Listening on port 3000
+2017-08-11T13:17:33.618Z - debug: /api/humanPlay in app.js app.all
+2017-08-11T13:17:33.619Z - debug: inside /api/:id
+2017-08-11T13:19:25.406Z - debug: calling putFullFile
+2017-08-11T13:19:25.409Z - debug: after getHand
+2017-08-11T13:19:25.417Z - debug: Just prior to call
+2017-08-11T13:19:25.418Z - debug: new winston log for shared logs
+2017-08-11T13:19:25.418Z - debug: start of winston logging
+2017-08-11T13:19:25.433Z - debug: Listening on port 3000
+2017-08-11T13:19:34.821Z - debug: /api/humanPlay in app.js app.all
+2017-08-11T13:19:34.822Z - debug: [object Object]catch 404
+2017-08-11T13:19:34.823Z - debug: [object Object] in error handlerNot Found
+2017-08-11T13:20:12.770Z - debug: /other/humanPlay in app.js app.all
+2017-08-11T13:20:12.770Z - debug: inside /api/:id humanPlay
+2017-08-11T13:20:47.717Z - debug: calling putFullFile
+2017-08-11T13:20:47.720Z - debug: after getHand
+2017-08-11T13:20:47.722Z - debug: Just prior to call
+2017-08-11T13:20:47.723Z - debug: new winston log for shared logs
+2017-08-11T13:20:47.723Z - debug: start of winston logging
+2017-08-11T13:20:47.733Z - debug: Listening on port 3000
+2017-08-11T13:20:51.307Z - debug: /other/humanPlay/jeff in app.js app.all
+2017-08-11T13:20:51.307Z - debug: inside /api/:id jeff
+2017-08-14T01:17:49.299Z - debug: / in app.js app.all
+2017-08-14T01:17:50.114Z - debug: /partials/login in app.js app.all
+2017-08-14T01:17:50.253Z - debug: /api/results in app.js app.all
+2017-08-14T01:17:52.140Z - debug: /partials/table in app.js app.all
+2017-08-14T01:17:52.276Z - debug: /api/results in app.js app.all
+2017-08-14T01:27:37.769Z - debug: / in app.js app.all
+2017-08-14T01:27:38.335Z - debug: /partials/login in app.js app.all
+2017-08-14T01:27:38.471Z - debug: /api/results in app.js app.all
+2017-08-14T01:27:39.569Z - debug: /partials/table in app.js app.all
+2017-08-14T01:27:39.722Z - debug: /api/results in app.js app.all
+2017-08-14T01:29:57.050Z - debug: / in app.js app.all
+2017-08-14T01:29:57.484Z - debug: /partials/login in app.js app.all
+2017-08-14T01:29:57.601Z - debug: /api/results in app.js app.all
+2017-08-14T01:29:58.874Z - debug: /partials/table in app.js app.all
+2017-08-14T01:29:59.043Z - debug: /api/results in app.js app.all
+2017-08-14T01:37:46.628Z - debug: / in app.js app.all
+2017-08-14T01:37:47.128Z - debug: /partials/login in app.js app.all
+2017-08-14T01:37:47.303Z - debug: /api/results in app.js app.all
+2017-08-14T01:37:48.510Z - debug: /partials/table in app.js app.all
+2017-08-14T01:37:48.659Z - debug: /api/results in app.js app.all
+2017-08-14T01:39:04.342Z - debug: / in app.js app.all
+2017-08-14T01:39:04.778Z - debug: /partials/login in app.js app.all
+2017-08-14T01:39:04.987Z - debug: /api/results in app.js app.all
+2017-08-14T01:39:06.309Z - debug: /partials/table in app.js app.all
+2017-08-14T01:39:06.478Z - debug: /api/results in app.js app.all
+2017-08-14T01:39:49.906Z - debug: / in app.js app.all
+2017-08-14T01:39:50.274Z - debug: /partials/login in app.js app.all
+2017-08-14T01:39:50.402Z - debug: /api/results in app.js app.all
+2017-08-14T01:39:51.488Z - debug: /partials/table in app.js app.all
+2017-08-14T01:39:51.640Z - debug: /api/results in app.js app.all
+2017-08-14T01:40:54.098Z - debug: / in app.js app.all
+2017-08-14T01:40:54.457Z - debug: /partials/login in app.js app.all
+2017-08-14T01:40:54.568Z - debug: /api/results in app.js app.all
+2017-08-14T01:40:55.879Z - debug: /partials/table in app.js app.all
+2017-08-14T01:40:56.033Z - debug: /api/results in app.js app.all
+2017-08-14T01:48:06.192Z - debug: / in app.js app.all
+2017-08-14T01:48:06.725Z - debug: /partials/login in app.js app.all
+2017-08-14T01:48:06.844Z - debug: /api/results in app.js app.all
+2017-08-14T01:48:08.152Z - debug: /partials/table in app.js app.all
+2017-08-14T01:48:08.304Z - debug: /api/results in app.js app.all
+2017-08-14T01:50:43.297Z - debug: / in app.js app.all
+2017-08-14T01:50:43.682Z - debug: /partials/login in app.js app.all
+2017-08-14T01:50:43.844Z - debug: /api/results in app.js app.all
+2017-08-14T01:50:45.038Z - debug: /partials/table in app.js app.all
+2017-08-14T01:50:45.182Z - debug: /api/results in app.js app.all
+2017-08-14T01:53:47.777Z - debug: / in app.js app.all
+2017-08-14T01:53:48.162Z - debug: /partials/login in app.js app.all
+2017-08-14T01:53:48.287Z - debug: /api/results in app.js app.all
+2017-08-14T01:53:49.580Z - debug: /partials/table in app.js app.all
+2017-08-14T01:53:49.731Z - debug: /api/results in app.js app.all
+2017-08-14T01:54:52.129Z - debug: / in app.js app.all
+2017-08-14T01:54:52.494Z - debug: /partials/login in app.js app.all
+2017-08-14T01:54:52.625Z - debug: /api/results in app.js app.all
+2017-08-14T01:54:54.373Z - debug: /partials/table in app.js app.all
+2017-08-14T01:54:54.497Z - debug: /api/results in app.js app.all
+2017-08-14T02:09:22.793Z - debug: / in app.js app.all
+2017-08-14T02:09:23.117Z - debug: /partials/login in app.js app.all
+2017-08-14T02:09:23.232Z - debug: /api/results in app.js app.all
+2017-08-14T02:09:24.474Z - debug: /partials/table in app.js app.all
+2017-08-14T02:09:24.603Z - debug: /api/results in app.js app.all
+2017-08-14T02:10:49.582Z - debug: /table in app.js app.all
+2017-08-14T02:10:57.579Z - debug: / in app.js app.all
+2017-08-14T02:10:57.910Z - debug: /partials/login in app.js app.all
+2017-08-14T02:10:58.060Z - debug: /api/results in app.js app.all
+2017-08-14T02:10:59.454Z - debug: /partials/table in app.js app.all
+2017-08-14T02:10:59.584Z - debug: /api/results in app.js app.all
+2017-08-14T02:11:20.467Z - debug: /table in app.js app.all
+2017-08-14T02:11:25.212Z - debug: / in app.js app.all
+2017-08-14T02:11:25.560Z - debug: /partials/login in app.js app.all
+2017-08-14T02:11:25.724Z - debug: /api/results in app.js app.all
+2017-08-14T02:11:27.239Z - debug: /partials/table in app.js app.all
+2017-08-14T02:11:27.384Z - debug: /api/results in app.js app.all
+2017-08-14T02:14:35.166Z - debug: /table in app.js app.all
+2017-08-14T02:14:41.335Z - debug: / in app.js app.all
+2017-08-14T02:14:41.640Z - debug: /partials/login in app.js app.all
+2017-08-14T02:14:41.756Z - debug: /api/results in app.js app.all
+2017-08-14T02:14:43.083Z - debug: /partials/table in app.js app.all
+2017-08-14T02:14:43.211Z - debug: /api/results in app.js app.all
+2017-08-14T02:20:29.475Z - debug: /table in app.js app.all
+2017-08-14T02:20:35.461Z - debug: / in app.js app.all
+2017-08-14T02:20:35.759Z - debug: /partials/login in app.js app.all
+2017-08-14T02:20:35.871Z - debug: /api/results in app.js app.all
+2017-08-14T02:20:37.253Z - debug: /partials/table in app.js app.all
+2017-08-14T02:20:37.397Z - debug: /api/results in app.js app.all
+2017-08-14T02:21:03.259Z - debug: / in app.js app.all
+2017-08-14T02:21:03.630Z - debug: /partials/login in app.js app.all
+2017-08-14T02:21:03.738Z - debug: /api/results in app.js app.all
+2017-08-14T02:21:05.188Z - debug: /partials/table in app.js app.all
+2017-08-14T02:21:05.311Z - debug: /api/results in app.js app.all
+2017-08-14T02:22:39.026Z - debug: / in app.js app.all
+2017-08-14T02:22:39.411Z - debug: /partials/login in app.js app.all
+2017-08-14T02:22:39.562Z - debug: /api/results in app.js app.all
+2017-08-14T02:22:41.009Z - debug: /partials/table in app.js app.all
+2017-08-14T02:22:41.135Z - debug: /api/results in app.js app.all
+2017-08-14T02:23:20.218Z - debug: / in app.js app.all
+2017-08-14T02:23:20.648Z - debug: /partials/login in app.js app.all
+2017-08-14T02:23:20.813Z - debug: /api/results in app.js app.all
+2017-08-14T02:23:21.966Z - debug: /partials/table in app.js app.all
+2017-08-14T02:23:22.091Z - debug: /api/results in app.js app.all
+2017-08-14T02:31:04.257Z - debug: /api/saveHand in app.js app.all
+2017-08-14T02:31:04.258Z - debug: /api/saveHand post [{"1615141310NT14n":{"bid":4,"dealer":"North","location":"South","tricksTaken":6}}]
+2017-08-14T02:31:04.341Z - debug: Unable to read item. Error JSON:  {
+  "message": "Cannot do operations on a non-existent table",
+  "code": "ResourceNotFoundException",
+  "time": "2017-08-14T02:31:04.337Z",
+  "requestId": "9a64a0f4-ee6e-4590-92e3-76b0c825d706",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 29.1483139492153
+}
+2017-08-14T02:38:21.511Z - debug: /api/saveHand in app.js app.all
+2017-08-14T02:38:21.511Z - debug: /api/saveHand post [{"14109NTLLn14n":{"bid":3,"dealer":"East","location":"South","tricksTaken":4}}]
+2017-08-14T02:38:21.531Z - debug: Unable to read item. Error JSON:  {
+  "message": "Cannot do operations on a non-existent table",
+  "code": "ResourceNotFoundException",
+  "time": "2017-08-14T02:38:21.531Z",
+  "requestId": "aeb5a71b-258c-47f4-900e-17c92e5ed937",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 8.286919430981198
+}
+2017-08-14T02:51:05.395Z - debug: /api/saveHand in app.js app.all
+2017-08-14T02:51:05.396Z - debug: /api/saveHand post [{"1615141310NTLn":{"bid":6,"dealer":"South","location":"West","tricksTaken":6}}]
+2017-08-14T02:51:05.409Z - debug: Unable to read item. Error JSON:  {
+  "message": "Cannot do operations on a non-existent table",
+  "code": "ResourceNotFoundException",
+  "time": "2017-08-14T02:51:05.408Z",
+  "requestId": "8ee7c5ca-4e69-43e4-84d8-df9492dfc3f8",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 12.360528894799339
+}
+2017-08-14T02:51:21.090Z - debug: calling putFullFile
+2017-08-14T02:51:21.093Z - debug: after getHand
+2017-08-14T02:51:21.095Z - debug: Just prior to call
+2017-08-14T02:51:21.097Z - debug: new winston log for shared logs
+2017-08-14T02:51:21.098Z - debug: start of winston logging
+2017-08-14T02:51:21.111Z - debug: Listening on port 3000
+2017-08-14T02:51:28.795Z - debug: / in app.js app.all
+2017-08-14T02:51:29.775Z - debug: /partials/login in app.js app.all
+2017-08-14T02:51:29.940Z - debug: /api/results in app.js app.all
+2017-08-14T02:51:31.230Z - debug: /partials/table in app.js app.all
+2017-08-14T02:51:31.445Z - debug: /api/results in app.js app.all
+2017-08-14T02:51:37.348Z - debug: /api/saveHand in app.js app.all
+2017-08-14T02:51:37.349Z - debug: /api/saveHand post [{"151410NTLLnLn":{"bid":3,"dealer":"North","location":"East","tricksTaken":2}}]
+2017-08-14T02:51:37.419Z - debug: Unable to read item. Error JSON:  {
+  "message": "Cannot do operations on a non-existent table",
+  "code": "ResourceNotFoundException",
+  "time": "2017-08-14T02:51:37.417Z",
+  "requestId": "4c26cfa1-c384-4803-bd85-37dd973c1c2a",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 25.355926396809704
+}
+2017-08-14T02:53:37.379Z - debug: /api/saveHand in app.js app.all
+2017-08-14T02:53:37.385Z - debug: /api/saveHand post [{"151410NTLLnLn":{"bid":3,"dealer":"North","location":"East","tricksTaken":2}}]
+2017-08-14T02:53:37.418Z - debug: Unable to read item. Error JSON:  {
+  "message": "Cannot do operations on a non-existent table",
+  "code": "ResourceNotFoundException",
+  "time": "2017-08-14T02:53:37.418Z",
+  "requestId": "33d9b45e-571d-4add-b498-0fb1b02d20c9",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 9.869898404741317
+}
+2017-08-14T03:04:19.478Z - debug: calling putFullFile
+2017-08-14T03:04:19.481Z - debug: after getHand
+2017-08-14T03:04:19.482Z - debug: Just prior to call
+2017-08-14T03:04:19.483Z - debug: new winston log for shared logs
+2017-08-14T03:04:19.484Z - debug: start of winston logging
+2017-08-14T03:04:19.491Z - debug: Listening on port 3000
+2017-08-14T03:04:30.656Z - debug: / in app.js app.all
+2017-08-14T03:04:31.591Z - debug: /partials/login in app.js app.all
+2017-08-14T03:04:31.866Z - debug: /api/results in app.js app.all
+2017-08-14T03:04:33.328Z - debug: /partials/table in app.js app.all
+2017-08-14T03:04:33.483Z - debug: /api/results in app.js app.all
+2017-08-14T03:04:40.226Z - debug: /api/saveHand in app.js app.all
+2017-08-14T03:04:40.227Z - debug: /api/saveHand post [{"1413109NTLnLn":{"bid":4,"dealer":"North","location":"East","tricksTaken":3}}]
+2017-08-14T03:04:40.274Z - debug: Unable to read item. Error JSON:  {
+  "message": "Cannot do operations on a non-existent table",
+  "code": "ResourceNotFoundException",
+  "time": "2017-08-14T03:04:40.269Z",
+  "requestId": "72e193c3-6cbd-4c66-995f-f3a52bf5346b",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 11.521589544930787
+}
+2017-08-14T03:06:40.256Z - debug: /api/saveHand in app.js app.all
+2017-08-14T03:06:40.273Z - debug: /api/saveHand post [{"1413109NTLnLn":{"bid":4,"dealer":"North","location":"East","tricksTaken":3}}]
+2017-08-14T03:06:40.287Z - debug: Unable to read item. Error JSON:  {
+  "message": "Cannot do operations on a non-existent table",
+  "code": "ResourceNotFoundException",
+  "time": "2017-08-14T03:06:40.287Z",
+  "requestId": "beea3bde-dae1-4159-8d7e-526c246db846",
+  "statusCode": 400,
+  "retryable": false,
+  "retryDelay": 20.32145654102313
+}
+2017-08-14T11:29:10.230Z - debug: calling putFullFile
+2017-08-14T11:29:10.233Z - debug: after getHand
+2017-08-14T11:29:10.235Z - debug: Just prior to call
+2017-08-14T11:29:10.237Z - debug: new winston log for shared logs
+2017-08-14T11:29:10.237Z - debug: start of winston logging
+2017-08-14T11:29:10.267Z - debug: Listening on port 3000
+2017-08-14T11:31:33.628Z - debug: calling putFullFile
+2017-08-14T11:31:33.640Z - debug: after getHand
+2017-08-14T11:31:33.643Z - debug: Just prior to call
+2017-08-14T11:31:33.645Z - debug: new winston log for shared logs
+2017-08-14T11:31:33.645Z - debug: start of winston logging
+2017-08-14T11:31:33.662Z - debug: Listening on port 3000
+2017-08-14T11:31:41.696Z - debug: / in app.js app.all
+2017-08-14T11:31:41.699Z - debug: [object Object] in error handlertableCreate is not defined
+2017-08-14T11:35:34.719Z - debug: calling putFullFile
+2017-08-14T11:35:34.724Z - debug: after getHand
+2017-08-14T11:35:34.727Z - debug: Just prior to call
+2017-08-14T11:35:34.740Z - debug: new winston log for shared logs
+2017-08-14T11:35:34.740Z - debug: start of winston logging
+2017-08-14T11:35:34.778Z - debug: Listening on port 3000
+2017-08-14T11:35:36.646Z - debug: / in app.js app.all
+2017-08-14T11:35:36.647Z - debug: tableCreate.createCodedHands called
+2017-08-14T11:35:37.241Z - debug: createTable for logins successful
+2017-08-14T11:35:37.892Z - debug: /partials/login in app.js app.all
+2017-08-14T11:35:37.893Z - debug: tableCreate.createCodedHands called
+2017-08-14T11:35:38.109Z - debug: createCodedHands error ResourceInUseException: Cannot create preexisting table
+    at Request.extractError (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/protocol/json.js:48:27)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:682:14)
+    at Request.transition (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:684:12)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+2017-08-14T11:35:38.220Z - debug: /api/results in app.js app.all
+2017-08-14T11:35:38.221Z - debug: tableCreate.createCodedHands called
+2017-08-14T11:35:38.244Z - debug: createCodedHands error ResourceInUseException: Cannot create preexisting table
+    at Request.extractError (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/protocol/json.js:48:27)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:682:14)
+    at Request.transition (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:684:12)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+2017-08-14T11:37:02.607Z - debug: /partials/table in app.js app.all
+2017-08-14T11:37:02.623Z - debug: tableCreate.createCodedHands called
+2017-08-14T11:37:02.846Z - debug: createCodedHands error ResourceInUseException: Cannot create preexisting table
+    at Request.extractError (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/protocol/json.js:48:27)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:682:14)
+    at Request.transition (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:684:12)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+2017-08-14T11:37:03.054Z - debug: /api/results in app.js app.all
+2017-08-14T11:37:03.056Z - debug: tableCreate.createCodedHands called
+2017-08-14T11:37:03.093Z - debug: createCodedHands error ResourceInUseException: Cannot create preexisting table
+    at Request.extractError (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/protocol/json.js:48:27)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:682:14)
+    at Request.transition (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:684:12)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+2017-08-14T11:37:11.626Z - debug: /api/saveHand in app.js app.all
+2017-08-14T11:37:11.627Z - debug: tableCreate.createCodedHands called
+2017-08-14T11:37:11.630Z - debug: /api/saveHand post [{"151413129NTLn":{"bid":6,"dealer":"North","location":"East","tricksTaken":4}}]
+2017-08-14T11:37:11.777Z - debug: createCodedHands error ResourceInUseException: Cannot create preexisting table
+    at Request.extractError (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/protocol/json.js:48:27)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:682:14)
+    at Request.transition (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:684:12)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+2017-08-14T11:37:11.782Z - debug: GetItem succeeded:  {}
+2017-08-14T11:37:39.233Z - debug: /api/saveHand in app.js app.all
+2017-08-14T11:37:39.235Z - debug: tableCreate.createCodedHands called
+2017-08-14T11:37:39.244Z - debug: /api/saveHand post [{"16141210NTLnLn":{"bid":4,"dealer":"East","location":"South","tricksTaken":4}}]
+2017-08-14T11:37:39.286Z - debug: createCodedHands error ResourceInUseException: Cannot create preexisting table
+    at Request.extractError (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/protocol/json.js:48:27)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:682:14)
+    at Request.transition (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:684:12)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+2017-08-14T11:37:39.296Z - debug: GetItem succeeded:  {}
+2017-08-14T11:38:29.748Z - debug: /api/saveHand in app.js app.all
+2017-08-14T11:38:29.759Z - debug: tableCreate.createCodedHands called
+2017-08-14T11:38:29.783Z - debug: /api/saveHand post [{"14131210NTLnLn":{"bid":4,"dealer":"South","location":"West","tricksTaken":3}}]
+2017-08-14T11:38:29.935Z - debug: GetItem succeeded:  {}
+2017-08-14T11:38:29.969Z - debug: createCodedHands error ResourceInUseException: Cannot create preexisting table
+    at Request.extractError (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/protocol/json.js:48:27)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:682:14)
+    at Request.transition (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:22:10)
+    at AcceptorStateMachine.runTo (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:14:12)
+    at /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/state_machine.js:26:10
+    at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:38:9)
+    at Request.<anonymous> (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/request.js:684:12)
+    at Request.callListeners (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/node_modules/aws-sdk/lib/sequential_executor.js:115:18)
+2017-08-14T11:38:57.204Z - debug: calling putFullFile
+2017-08-14T11:38:57.210Z - debug: after getHand
+2017-08-14T11:38:57.213Z - debug: Just prior to call
+2017-08-14T11:38:57.219Z - debug: new winston log for shared logs
+2017-08-14T11:38:57.220Z - debug: start of winston logging
+2017-08-14T11:38:57.282Z - debug: Listening on port 3000
+2017-08-14T11:39:02.489Z - debug: / in app.js app.all
+2017-08-14T11:39:04.287Z - debug: /partials/login in app.js app.all
+2017-08-14T11:39:04.624Z - debug: /api/results in app.js app.all
+2017-08-14T11:39:06.426Z - debug: /partials/table in app.js app.all
+2017-08-14T11:39:06.599Z - debug: /api/results in app.js app.all
+2017-08-14T11:42:07.767Z - debug: /api/saveHand in app.js app.all
+2017-08-14T11:42:07.770Z - debug: /api/saveHand post [{"161413NT13LnLn":{"bid":4,"dealer":"North","location":"East","tricksTaken":4}}]
+2017-08-14T11:42:07.891Z - debug: GetItem succeeded:  {}
+2017-08-14T11:45:23.704Z - debug: / in app.js app.all
+2017-08-14T11:45:24.575Z - debug: /partials/login in app.js app.all
+2017-08-14T11:45:24.975Z - debug: /api/results in app.js app.all
+2017-08-14T11:45:42.226Z - debug: / in app.js app.all
+2017-08-14T11:45:42.609Z - debug: /partials/login in app.js app.all
+2017-08-14T11:45:42.741Z - debug: /api/results in app.js app.all
+2017-08-14T11:45:49.099Z - debug: /partials/table in app.js app.all
+2017-08-14T11:45:49.266Z - debug: /api/results in app.js app.all
+2017-08-14T11:48:47.470Z - debug: / in app.js app.all
+2017-08-14T11:48:48.040Z - debug: /partials/login in app.js app.all
+2017-08-14T11:48:48.183Z - debug: /api/results in app.js app.all
+2017-08-15T00:18:42.048Z - debug: calling putFullFile
+2017-08-15T00:18:42.050Z - debug: after getHand
+2017-08-15T00:18:42.052Z - debug: Just prior to call
+2017-08-15T00:18:42.053Z - debug: new winston log for shared logs
+2017-08-15T00:18:42.053Z - debug: start of winston logging
+2017-08-15T00:18:42.062Z - debug: Listening on port 3000
+2017-08-15T00:18:55.312Z - debug: / in app.js app.all
+2017-08-15T00:18:56.055Z - debug: /partials/login in app.js app.all
+2017-08-15T00:18:56.204Z - debug: /api/results in app.js app.all
+2017-08-15T00:18:57.340Z - debug: /partials/table in app.js app.all
+2017-08-15T00:18:57.475Z - debug: /api/results in app.js app.all
+2017-08-15T00:19:05.340Z - debug: /api/saveHand in app.js app.all
+2017-08-15T00:19:05.341Z - debug: /api/saveHand post [{"151312NTLLnLn":{"bid":3,"dealer":"North","location":"East","tricksTaken":3}}]
+2017-08-15T00:19:05.459Z - debug: GetItem succeeded:  {}
+2017-08-15T00:20:10.588Z - debug: calling putFullFile
+2017-08-15T00:20:10.591Z - debug: after getHand
+2017-08-15T00:20:10.594Z - debug: Just prior to call
+2017-08-15T00:20:10.595Z - debug: new winston log for shared logs
+2017-08-15T00:20:10.596Z - debug: start of winston logging
+2017-08-15T00:20:10.635Z - debug: Listening on port 3000
+2017-08-15T00:20:13.504Z - debug: /api/results in app.js app.all
+2017-08-15T00:20:16.944Z - debug: / in app.js app.all
+2017-08-15T00:20:17.614Z - debug: /partials/login in app.js app.all
+2017-08-15T00:20:17.903Z - debug: /api/results in app.js app.all
+2017-08-15T00:20:18.822Z - debug: /partials/table in app.js app.all
+2017-08-15T00:20:18.962Z - debug: /api/results in app.js app.all
+2017-08-15T00:20:24.957Z - debug: /api/saveHand in app.js app.all
+2017-08-15T00:20:24.957Z - debug: /api/saveHand post [{"16139NT14LLn":{"bid":3,"dealer":"North","location":"East","tricksTaken":3}}]
+2017-08-15T00:20:24.986Z - debug: Unable to read item. Error JSON:  {
+  "message": "Missing required key 'Key' in params",
+  "code": "MissingRequiredParameter",
+  "time": "2017-08-15T00:20:24.985Z"
+}
+2017-08-15T00:22:24.987Z - debug: /api/saveHand in app.js app.all
+2017-08-15T00:22:24.995Z - debug: /api/saveHand post [{"16139NT14LLn":{"bid":3,"dealer":"North","location":"East","tricksTaken":3}}]
+2017-08-15T00:22:24.999Z - debug: Unable to read item. Error JSON:  {
+  "message": "Missing required key 'Key' in params",
+  "code": "MissingRequiredParameter",
+  "time": "2017-08-15T00:22:24.999Z"
+}
+2017-08-15T00:24:28.931Z - debug: calling putFullFile
+2017-08-15T00:24:28.933Z - debug: after getHand
+2017-08-15T00:24:28.935Z - debug: Just prior to call
+2017-08-15T00:24:28.938Z - debug: new winston log for shared logs
+2017-08-15T00:24:28.938Z - debug: start of winston logging
+2017-08-15T00:24:28.947Z - debug: Listening on port 3000
+2017-08-15T00:24:34.018Z - debug: / in app.js app.all
+2017-08-15T00:24:34.655Z - debug: /partials/login in app.js app.all
+2017-08-15T00:24:34.851Z - debug: /api/results in app.js app.all
+2017-08-15T00:24:36.305Z - debug: /partials/table in app.js app.all
+2017-08-15T00:24:36.453Z - debug: /api/results in app.js app.all
+2017-08-15T00:24:41.815Z - debug: /api/saveHand in app.js app.all
+2017-08-15T00:24:41.816Z - debug: /api/saveHand post [{"161310NTLLnLn":{"bid":3,"dealer":"North","location":"East","tricksTaken":4}}]
+2017-08-15T00:24:41.921Z - debug: GetItem succeeded:  {
+  "Item": {
+    "hand": "161310NTLLnLn"
+  }
+}
+2017-08-15T00:25:54.700Z - debug: calling putFullFile
+2017-08-15T00:25:54.703Z - debug: after getHand
+2017-08-15T00:25:54.708Z - debug: Just prior to call
+2017-08-15T00:25:54.711Z - debug: new winston log for shared logs
+2017-08-15T00:25:54.711Z - debug: start of winston logging
+2017-08-15T00:25:54.726Z - debug: Listening on port 3000
+2017-08-15T00:25:59.999Z - debug: /api/results in app.js app.all
+2017-08-15T00:26:04.633Z - debug: / in app.js app.all
+2017-08-15T00:26:05.355Z - debug: /partials/login in app.js app.all
+2017-08-15T00:26:05.497Z - debug: /api/results in app.js app.all
+2017-08-15T00:26:07.177Z - debug: /partials/table in app.js app.all
+2017-08-15T00:26:07.318Z - debug: /api/results in app.js app.all
+2017-08-15T00:26:13.923Z - debug: /api/saveHand in app.js app.all
+2017-08-15T00:26:13.923Z - debug: /api/saveHand post [{"16129NT14LnLn":{"bid":3,"dealer":"North","location":"South","tricksTaken":4}}]
+2017-08-15T00:26:14.052Z - debug: GetItem succeeded:  {
+  "Item": {
+    "hand": "16129NT14LnLn"
+  }
+}
+2017-08-15T00:29:42.479Z - debug: calling putFullFile
+2017-08-15T00:29:42.487Z - debug: after getHand
+2017-08-15T00:29:42.490Z - debug: Just prior to call
+2017-08-15T00:29:42.492Z - debug: new winston log for shared logs
+2017-08-15T00:29:42.492Z - debug: start of winston logging
+2017-08-15T00:29:42.509Z - debug: Listening on port 3000
+2017-08-15T00:29:51.530Z - debug: / in app.js app.all
+2017-08-15T00:29:52.388Z - debug: /partials/login in app.js app.all
+2017-08-15T00:29:52.569Z - debug: /api/results in app.js app.all
+2017-08-15T00:29:54.062Z - debug: /partials/table in app.js app.all
+2017-08-15T00:29:54.222Z - debug: /api/results in app.js app.all
+2017-08-15T00:30:00.196Z - debug: /api/saveHand in app.js app.all
+2017-08-15T00:30:00.197Z - debug: /api/saveHand post [{"1614NT14LnLnLn":{"bid":3,"dealer":"North","location":"South","tricksTaken":5}}]
+2017-08-15T00:30:00.302Z - debug: GetItem succeeded:  {
+  "Item": {
+    "hand": "1614NT14LnLnLn",
+    "data": {
+      "1614NT14LnLnLn": {
+        "dealer": "North",
+        "bid": 3,
+        "location": "South",
+        "tricksTaken": 5
+      }
+    }
+  }
+}
+2017-08-15T00:35:12.762Z - debug: /api/results in app.js app.all
+2017-08-15T00:35:14.611Z - debug: / in app.js app.all
+2017-08-15T00:35:15.258Z - debug: /partials/login in app.js app.all
+2017-08-15T00:35:15.405Z - debug: /api/results in app.js app.all
+2017-08-15T00:35:16.025Z - debug: /partials/table in app.js app.all
+2017-08-15T00:35:16.177Z - debug: /api/results in app.js app.all
+2017-08-15T00:35:34.142Z - debug: /api/saveHand in app.js app.all
+2017-08-15T00:35:34.143Z - debug: /api/saveHand post [{"151413NTLnLLn":{"bid":3,"dealer":"North","location":"South","tricksTaken":3}}]
+2017-08-15T00:35:34.245Z - debug: GetItem succeeded:  {
+  "Item": {
+    "hand": "151413NTLnLLn",
+    "data": {
+      "151413NTLnLLn": {
+        "dealer": "North",
+        "bid": 3,
+        "location": "South",
+        "tricksTaken": 3
+      }
+    }
+  }
+}
+2017-08-15T00:41:38.730Z - debug: / in app.js app.all
+2017-08-15T00:41:39.179Z - debug: /partials/login in app.js app.all
+2017-08-15T00:41:39.309Z - debug: /api/results in app.js app.all
+2017-08-15T00:41:40.450Z - debug: /partials/table in app.js app.all
+2017-08-15T00:41:40.588Z - debug: /api/results in app.js app.all
+2017-08-15T00:41:43.449Z - debug: /api/results in app.js app.all
+2017-08-15T00:41:46.934Z - debug: / in app.js app.all
+2017-08-15T00:41:47.275Z - debug: /partials/login in app.js app.all
+2017-08-15T00:41:47.422Z - debug: /api/results in app.js app.all
+2017-08-15T00:41:48.590Z - debug: /partials/table in app.js app.all
+2017-08-15T00:41:48.702Z - debug: /api/results in app.js app.all
+2017-08-15T00:42:05.340Z - debug: /api/saveHand in app.js app.all
+2017-08-15T00:42:05.340Z - debug: /api/saveHand post [{"16151410NT14n14n":{"bid":4,"dealer":"North","location":"South","tricksTaken":5}}]
+2017-08-15T00:42:05.382Z - debug: GetItem succeeded:  {
+  "Item": {
+    "hand": "16151410NT14n14n",
+    "data": {
+      "16151410NT14n14n": {
+        "dealer": "North",
+        "bid": 4,
+        "location": "South",
+        "tricksTaken": 5
+      }
+    }
+  }
+}
+2017-08-15T11:12:01.376Z - debug: / in app.js app.all
+2017-08-15T11:12:01.725Z - debug: /partials/login in app.js app.all
+2017-08-15T11:12:01.859Z - debug: /api/results in app.js app.all
+2017-08-15T11:12:11.967Z - debug: /partials/table in app.js app.all
+2017-08-15T11:12:12.081Z - debug: /api/results in app.js app.all
+2017-08-15T11:14:54.528Z - debug: /api/saveHand in app.js app.all
+2017-08-15T11:14:54.529Z - debug: /api/saveHand post [{"12109NT14LnLn":{"bid":3,"dealer":"North","location":"East","tricksTaken":4}}]
+2017-08-15T11:14:54.593Z - debug: GetItem succeeded:  {
+  "Item": {
+    "hand": "12109NT14LnLn",
+    "data": {
+      "12109NT14LnLn": {
+        "dealer": "North",
+        "bid": 3,
+        "location": "East",
+        "tricksTaken": 4
+      }
+    }
+  }
+}
+2017-08-15T11:44:52.654Z - debug: / in app.js app.all
+2017-08-15T11:44:53.042Z - debug: /partials/login in app.js app.all
+2017-08-15T11:44:53.163Z - debug: /api/results in app.js app.all
+2017-08-15T11:44:54.574Z - debug: /partials/table in app.js app.all
+2017-08-15T11:44:54.734Z - debug: /api/results in app.js app.all
+2017-08-15T11:45:35.740Z - debug: / in app.js app.all
+2017-08-15T11:45:36.070Z - debug: /partials/login in app.js app.all
+2017-08-15T11:45:36.184Z - debug: /api/results in app.js app.all
+2017-08-15T11:45:37.488Z - debug: /partials/table in app.js app.all
+2017-08-15T11:45:37.611Z - debug: /api/results in app.js app.all
+2017-08-15T11:48:04.380Z - debug: / in app.js app.all
+2017-08-15T11:48:04.734Z - debug: /partials/login in app.js app.all
+2017-08-15T11:48:04.858Z - debug: /api/results in app.js app.all
+2017-08-15T11:48:06.081Z - debug: /partials/table in app.js app.all
+2017-08-15T11:48:06.210Z - debug: /api/results in app.js app.all
+2017-08-15T11:49:41.533Z - debug: / in app.js app.all
+2017-08-15T11:49:41.896Z - debug: /partials/login in app.js app.all
+2017-08-15T11:49:42.032Z - debug: /api/results in app.js app.all
+2017-08-15T11:49:43.271Z - debug: /partials/table in app.js app.all
+2017-08-15T11:49:43.424Z - debug: /api/results in app.js app.all
+2017-08-15T11:50:44.750Z - debug: / in app.js app.all
+2017-08-15T11:50:45.142Z - debug: /partials/login in app.js app.all
+2017-08-15T11:50:45.268Z - debug: /api/results in app.js app.all
+2017-08-15T11:50:46.413Z - debug: /partials/table in app.js app.all
+2017-08-15T11:50:46.549Z - debug: /api/results in app.js app.all

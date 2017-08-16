@@ -120,6 +120,7 @@ module.exports = {
             endpoint: "http://localhost:8000"
         });
 
+
         var params = {
             TableName: "Companies",
             KeySchema: [
@@ -165,6 +166,7 @@ module.exports = {
             region: 'us-east-1',
             endpoint: "http://localhost:8000"
         });
+        logs.log('debug', "tableCreate.createCodedHands called");
 
         var params = {
             TableName: "CodedHands",
@@ -181,7 +183,7 @@ module.exports = {
         };
 
         dynamodb.createTable(params, function (err, data) {
-            if (err) logs.log('debug', err)
+            if (err) logs.log('debug', 'createCodedHands error', err)
             else logs.log('debug', 'createTable for logins successful');
         });
     },

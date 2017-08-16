@@ -33,6 +33,7 @@ logs.log('debug', "after getHand", hand);
 app.all('/*', function (req, res, next) {
   logs.log('debug', req.url + ' in app.js app.all');
   //table.createUsers();
+  //table.createCodedHands();
   next();
 });
 logs.log('debug', 'Just prior to call')

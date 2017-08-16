@@ -38,7 +38,11 @@ vsapp.directive("drawCanvas", function () {
             });
             scope.$watch(scope.render, function(value){
                 console.log("canvas watch called")
-                draw(value.player1,value.player2,value.player3,value.player4,value.deck, value.pile);
+                //the value passed is whether this needs to be rendered true or false
+                if(value){
+                     draw(value.player1,value.player2,value.player3,value.player4,value.deck, value.pile);
+                }
+               
             });
            
             function draw(north, east, south, west, deck, pile) {

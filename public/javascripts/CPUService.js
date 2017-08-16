@@ -123,7 +123,7 @@ vsapp.factory('CPUService', ['$http', '$q','$rootScope','DataFactory','CommServi
         console.log("trick length", gameInfo.trick.length)
         console.log("legal plays game info", gameInfo);
         if(gameInfo.trick.length < 1){
-              _.each(player.hand, function(card){
+            _.each(player.hand, function(card){
                 higherSuitCards.push(card);
             });
             return {cards: higherSuitCards, losers: false};

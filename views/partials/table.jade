@@ -45,7 +45,7 @@ div(ng-show="gameInformation.gameState == 'PickTrump'" layout='row' layout-align
         md-option(value='s') Spades
 //img.preload(src='/images/cards.png')
 div(layout='row' layout-align = 'start start')
-    draw-canvas.testTable(array = "arrayToRender" m-clicked = "cardClick" draw = 'test')
+    draw-canvas.testTable(array = "arrayToRender" m-clicked = "cardClick" draw = 'itemsToRender')
     div(layout='column')
         md-table-container
         table

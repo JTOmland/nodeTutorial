@@ -13,6 +13,12 @@ module.exports = function (app) {
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
 
+    app.get('/other/humanPlay/:id', function (req, res){
+        logs.log('debug', "inside /api/:id", req.params.id);
+        res.send('Success');
+        
+    });
+
     app.post('/api/saveHand', function (req, res) {
         logs.log('debug', "/api/saveHand post", JSON.stringify(req.body));
         
@@ -21,97 +27,41 @@ module.exports = function (app) {
         var table = "CodedHands";
         var key = Object.keys(req.body[0])[0];
         var hand = req.body[0];
-         
+        console.log("this is the key", key);
+        console.log('this is the hand', hand);
         var params = {
             TableName: table,
-            Key: {
-                "hand": key
+            Item: {
+                "hand": key,
+                "data": hand
             }
         };
 
-        docClient.get(params, function (err, data) {
-            if (err) {
-                logs.log('debug', "Unable to read item. Error JSON: ", JSON.stringify(err, null, 2));
-
+        docClient.put(params, function(err, data) {
+            if(err) {
+                console.log(JSON.stringify(err, null, 2))
             } else {
-                logs.log('debug', "GetItem succeeded: ", JSON.stringify(data, null, 2));
-                res.send('Success');
-                
-                //add manipulation of attributes and do update
-                //if it returns undefined then key does not exit
-                // if (data) {
-                //     logs.log('debug', "/api/saveItem item exists and will be updated", JSON.stringify(data, null, 2));
-                //     var returnKey = Object.keys(data);
-                //     var existingHand = data[returnKey].hand, total = data[returnKey].total, totalTricks = data[returnKey].totalTricks,
-                //     average = data[returnKey].average, totalBid = data[returnKey].totalBid, averageBid = data[returnKey].averageBid,
-                //     max = data[returnKey].max, min = data[returnKey].min;
+                console.log("success put", JSON.stringify(data, null, 2));
 
-                //     total++; //increment total hands
-                //     totalTricks += hand.tricksTaken;
-                //     average = totalTricks/total;
-                //     totalBid += hand.bid;
-                //     averageBid = totalBid/total;
-                //     if(hand.tricksTaken > max) {
-                //         max = hand.tricksTaken;
-                //     }
-                //     if(hand.tricksTakn < min) {
-                //         min = hand.tricksTaken;
-                //     }
+                var params2 = {
+                    TableName: table,
+                    Key: {
+                        "hand": key
+                    }
+                };
+                docClient.get(params2, function (err, data) {
+                    if (err) {
+                        logs.log('debug', "Unable to read item. Error JSON: ", JSON.stringify(err, null, 2));
 
-                //     var params = {
-                //         TableName: table,
-                //         Key: {"hand": existingHand},
-                //         UpdateExpression: "set total = :t, totalTricks = :tt, average = :a, totalBid = :tb, averageBid = :ab, max = :mx, min = :mn",
-                //         ExpressionAttributeValues: {
-                //             ":t": total,
-                //             ":tt": totalTricks,
-                //             ":a": average,
-                //             ":tb": totalBid,
-                //             ":ab": averageBid,
-                //             ":mx": max,
-                //             ":mn": min
-                //         }
-                //     }
-                //     docClient.update(params, function (err, data) {
-                //         if (err) logs.log('debug', "/api/saveHand update error: ", JSON.stringify(err, null, 2)); // an error occurred
-                //         else return JSON.stringify(data, null, 2); // successful response
-                //     });
-
-
-
-                // } else {
-                //     var params = {
-                //         TableName: table,
-                //         Item: { // a map of attribute name to AttributeValue
-                //             "hand": key,
-                //             "total": hand[key].total,
-                //             "totalTricks": hand[key].totalTricks,
-                //             "average": hand[key].average,
-                //             "totalBid": hand[key].totalBid,
-                //             "averageBid": hand[key].averageBid,
-                //             "max": hand[key].max,
-                //             "min": hand[key].min
-                //             // attribute_value (string | number | boolean | null | Binary | DynamoDBSet | Array | Object)
-                //             // more attributes...
-                //         },
-                //         ConditionExpression: 'attribute_not_exists(attribute_name)', // optional String describing the constraint to be placed on an attribute
-                //         ExpressionAttributeNames: { // a map of substitutions for attribute names with special characters
-                //             //'#name': 'attribute name'
-                //         },
-                //         ExpressionAttributeValues: { // a map of substitutions for all attribute values
-                //             //':value': 'VALUE'
-                //         },
-                //         ReturnValues: 'NONE', // optional (NONE | ALL_OLD)
-                //         ReturnConsumedCapacity: 'NONE', // optional (NONE | TOTAL | INDEXES)
-                //         ReturnItemCollectionMetrics: 'NONE', // optional (NONE | SIZE)
-                //     };
-                //     docClient.put(params, function (err, data) {
-                //         if (err) logs.log('debug', "/api/saveHand PutItem error: ", JSON.stringify(err, null, 2)); // an error occurred
-                //         else return JSON.stringify(data, null, 2); // successful response
-                //     });
-                // }
+                    } else {
+                        logs.log('debug', "GetItem succeeded: ", JSON.stringify(data, null, 2));
+                        res.send('Success');
+                    }
+                 });
             }
         });
+
+       
 
     });
 
