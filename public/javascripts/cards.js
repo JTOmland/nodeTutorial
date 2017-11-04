@@ -10,7 +10,8 @@
 		blackJoker : false,
 		redJoker : false,
 		euchre: true,
-		doShuffle: true
+		doShuffle: true,
+		secondDeck: false
 	};
 	var zIndexCounter = 1;
 	var all = []; //All the cards created.
@@ -55,7 +56,7 @@
 		// 	all.push(new Card('c', 1, opt.table));
 		// }
 		
-		if(opt.doShuffle){
+		if(opt.doShuffle && !opt.secondDeck){
 			shuffle(all);
 		}
 	}

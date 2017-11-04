@@ -1,0 +1,20 @@
+md-dialog(flex)
+  md-toolbar(layout='row')
+    .md-toolbar-tools
+      h2 Game Options
+      md-button.md-icon-button(ng-click='save()')
+        md-icon save
+      md-button.md-icon-button(ng-click='closeEdit()')
+        md-icon close
+      span(flex)
+        {{active.name}}
+  md-dialog-content
+    .md-dialog-content(layout="row")
+      div(layout="column" flex="30")
+        div(layout-align="space-between center")
+          md-content(layout="column")
+            md-input-container(flex="50")
+                label Play Speed
+                input(type='number' ng-model="options.playSpeed")
+        div
+            {{options.playSpeed}}

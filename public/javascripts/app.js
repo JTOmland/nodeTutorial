@@ -3,15 +3,19 @@ var vsapp = angular.module('vsapp', ['ngMaterial','ngRoute'])
         $locationProvider.html5Mode(true);
         $routeProvider
             .when('/', {
-            templateUrl: '/partials/login',
-            controller: MainController
+                templateUrl: 'login',
+                controller: MainController
             })
             .when('/table', {
-            templateUrl: 'partials/table',
-            controller: MainController
+                templateUrl: 'table',
+                controller: MainController
+            })
+            .when('/signup', {
+                templateUrl: 'signup',
+                controller: MainController
             })
             .otherwise({
-            redirectTo: '/'
+                redirectTo: '/'
             });
 
 }]).run(function($rootScope) {

@@ -1,0 +1,60 @@
+md-dialog(flex)
+  md-toolbar(layout='row')
+    .md-toolbar-tools
+      h2 Game Options
+      md-button.md-icon-button(ng-click='save()')
+        md-icon save
+      md-button.md-icon-button(ng-click='closeEdit()')
+        md-icon close
+      span(flex)
+        {{active.name}}
+  md-dialog-content
+    .md-dialog-content(layout="row")
+        //- form(name='myForm')
+        //- label(for='repeatSelect')  Filter By Operation: 
+        //- select#repeatSelect(name='repeatSelect', ng-init="operation || 'All'", ng-model='operation')
+        //-     option(value='') All
+        //-     option(ng-repeat='option in siteModel', value='{{option.SiteName}}') {{option.SiteName}}
+        //- label(for='workCenterSelect')  Filter By WorkCenter: 
+        //- select#workCenterSelect(name='workCenterSelect', ng-init='All', ng-model='maker')
+        //-     option(value='') All
+        //-     option(ng-repeat='workcenter in workCenterModel', value='{{workcenter.WorkCenterName}}') {{workcenter.WorkCenterName}}
+        //- label(for='product')  Filter By Product: 
+        //- select#product(name='product', ng-init='All', ng-model='product')
+        //-     option(value='') All
+        //-     option(ng-repeat='product in products', value='{{product}}') {{product}}
+        //- label(for='periodSelect')  Filter By Period: 
+        //- select#periodSelect(name='periodSelect', ng-init='All', ng-model='periodUnit', ng-change='selectTimePeriod()')
+        //-     option(value='') All
+        //-     option(ng-repeat='periodUnit in timePeriods', value='{{periodUnit.PeriodName}}') {{periodUnit.PeriodName}}
+        table.md-table
+            thead.md-head
+                tr
+                td Card
+                td North East
+                td North South
+                td North West
+                td East South
+                td East West
+                td East North
+                td South West
+                td South North
+                td South East
+                td West North
+                td West East
+                td West South
+            tbody.md-body
+                tr.md-row(ng-repeat='card in options.cards')
+                    td.wider {{card.shortName}}
+                    td {{card.probabilities.North.East}}
+                    td {{card.probabilities.North.South}}
+                    td {{card.probabilities.North.West}}
+                    td {{card.probabilities.East.South}}
+                    td {{card.probabilities.East.West}}
+                    td {{card.probabilities.East.North}}
+                    td {{card.probabilities.South.West}}
+                    td {{card.probabilities.South.North}}
+                    td {{card.probabilities.South.East}}
+                    td {{card.probabilities.West.North}}
+                    td {{card.probabilities.West.East}}
+                    td {{card.probabilities.West.South}}
