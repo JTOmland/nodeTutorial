@@ -19,6 +19,8 @@ function MainController($scope, $location, $http, $q, $rootscope, $timeout, $int
     $scope.playSpeed = 1000;
     $scope.testing = true;
     var playerTurnComplete = false;
+    var dealTestHand = false;
+    
     // $scope.test = [
     //     { question: "q1" },
     //     { question: "q2" },
@@ -246,8 +248,10 @@ function MainController($scope, $location, $http, $q, $rootscope, $timeout, $int
         // console.log('Factorial of 2', Utilities.factorial(2.2));
         // console.log("Combin 24 6", Utilities.combin(24,6));
         // console.log("look at 18 factorial again", Utilities.factorial(18));
-        console.log("trackingDeck", cards.all);
-        CPUService.setProbabilities($scope.gameInformation);
+        var test = "S13";
+       // $scope.DealSpecific(test);
+       // console.log("trackingDeck", cards.all);
+       // CPUService.setProbabilities($scope.gameInformation);
     }
 
     $scope.changeSettings = function () {
@@ -377,10 +381,32 @@ function MainController($scope, $location, $http, $q, $rootscope, $timeout, $int
 
         switch ($scope.gameInformation.gameState) {
             case 'Deal':
-                cards.shuffle($scope.deck);
-                $scope.deck.deal(6, [$scope.gameInformation.playersIn[0].hand, $scope.gameInformation.playersIn[1].hand, $scope.gameInformation.playersIn[2].hand, $scope.gameInformation.playersIn[3].hand], 50, function () {
+                if(dealTestHand){
+                    var testHand = ["S9","S10","S11","S12","S13","S14","H9","H10","H11","H12","H13","H14","D9","D10","D11","D12","D13","D14","C9","C10","C11","C12","C13","C14"]
+                    _.each($scope.gameInformation.playersIn, function(player){
+                        for(var j = 0; j < 6; j++){
+                            player.hand.addCard($scope.deck.dealSpecific(testHand.shift()));
+                        }
+                    });
+                    
 
-                });
+                } else {
+                    cards.shuffle($scope.deck);
+                    $scope.deck.deal(6, [$scope.gameInformation.playersIn[0].hand, $scope.gameInformation.playersIn[1].hand, $scope.gameInformation.playersIn[2].hand, $scope.gameInformation.playersIn[3].hand], 50, function () {
+                    });
+                    var data = {dealer: {}, deal: []};
+                    console.log("Dealer", $scope.gameInformation);
+                    console.log("gameInformation.dealer.location",$scope.gameInformation.Dealer.location);
+                    data.dealer = $scope.gameInformation.Dealer.location;
+                    _.each($scope.gameInformation.playersIn, function(player){
+                        _.each(player.hand, function(card){
+                            data.deal.push(card.name);
+                        })
+                    });
+                    DataFactory.saveHand(data);
+                    
+                }
+               
                 CPUService.setProbabilities($scope.gameInformation);
                 $scope.gameInformation.currentPlayer = rotateActivePlayer($scope.gameInformation.currentPlayer);
                 $scope.gameInformation.gameState = 'Bidding';

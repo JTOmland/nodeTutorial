@@ -4049,3 +4049,257 @@ input is self closing and should not have content.
 2017-10-31T01:58:06.957Z - debug: this is the body of the req
 2017-10-31T01:58:07.569Z - debug: /api/results in app.js app.all
 2017-10-31T01:58:07.569Z - debug: this is the body of the req
+2017-11-04T14:19:23.281Z - debug: Just prior to call
+2017-11-04T14:19:23.287Z - debug: new winston log for shared logs
+2017-11-04T14:19:23.288Z - debug: start of winston logging
+2017-11-04T14:19:23.304Z - debug: Listening on port 3000
+2017-11-04T14:19:28.018Z - debug: / in app.js app.all
+2017-11-04T14:19:28.018Z - debug: this is the body of the req
+2017-11-04T14:19:28.828Z - debug: /favicon.ico in app.js app.all
+2017-11-04T14:19:28.828Z - debug: this is the body of the req
+2017-11-04T14:19:28.829Z - debug: [object Object]catch 404
+2017-11-04T14:19:28.829Z - debug: [object Object] in error handlerNot Found
+2017-11-04T14:19:29.618Z - debug: /login in app.js app.all
+2017-11-04T14:19:29.618Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T14:19:29.847Z - debug: /table in app.js app.all
+2017-11-04T14:19:29.847Z - debug: this is the body of the req
+2017-11-04T14:19:30.264Z - debug: /api/results in app.js app.all
+2017-11-04T14:19:30.264Z - debug: this is the body of the req
+2017-11-04T14:21:20.337Z - debug: /api/saveHand in app.js app.all
+2017-11-04T14:21:20.337Z - debug: this is the body of the req bid=4, dealer=North, location=East, tricksTaken=3
+2017-11-04T14:21:20.338Z - debug: /api/saveHand post [{"16131210NTLnLn":{"bid":4,"dealer":"North","location":"East","tricksTaken":3}}]
+2017-11-04T14:22:55.704Z - debug: /api/saveHand in app.js app.all
+2017-11-04T14:22:55.704Z - debug: this is the body of the req bid=4, dealer=East, location=East, tricksTaken=6
+2017-11-04T14:22:55.705Z - debug: /api/saveHand post [{"16141210NT14Ln":{"bid":4,"dealer":"East","location":"East","tricksTaken":6}}]
+2017-11-04T14:23:20.343Z - debug: /api/saveHand in app.js app.all
+2017-11-04T14:23:20.343Z - debug: this is the body of the req bid=4, dealer=North, location=East, tricksTaken=3
+2017-11-04T14:23:20.343Z - debug: /api/saveHand post [{"16131210NTLnLn":{"bid":4,"dealer":"North","location":"East","tricksTaken":3}}]
+2017-11-04T14:24:09.281Z - debug: /api/saveHand in app.js app.all
+2017-11-04T14:24:09.281Z - debug: this is the body of the req bid=4, dealer=South, location=South, tricksTaken=4
+2017-11-04T14:24:09.282Z - debug: /api/saveHand post [{"1613129NT14nLn":{"bid":4,"dealer":"South","location":"South","tricksTaken":4}}]
+2017-11-04T14:56:06.970Z - debug: / in app.js app.all
+2017-11-04T14:56:06.970Z - debug: this is the body of the req
+2017-11-04T14:56:11.970Z - debug: /login in app.js app.all
+2017-11-04T14:56:11.970Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T14:56:12.123Z - debug: /table in app.js app.all
+2017-11-04T14:56:12.123Z - debug: this is the body of the req
+2017-11-04T14:56:12.769Z - debug: /api/results in app.js app.all
+2017-11-04T14:56:12.769Z - debug: this is the body of the req
+2017-11-04T15:04:16.192Z - debug: / in app.js app.all
+2017-11-04T15:04:16.193Z - debug: this is the body of the req
+2017-11-04T15:04:19.106Z - debug: /login in app.js app.all
+2017-11-04T15:04:19.106Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T15:04:19.525Z - debug: /table in app.js app.all
+2017-11-04T15:04:19.525Z - debug: this is the body of the req
+2017-11-04T15:04:20.171Z - debug: /api/results in app.js app.all
+2017-11-04T15:04:20.171Z - debug: this is the body of the req
+2017-11-04T15:05:10.517Z - debug: / in app.js app.all
+2017-11-04T15:05:10.518Z - debug: this is the body of the req
+2017-11-04T15:05:13.405Z - debug: /login in app.js app.all
+2017-11-04T15:05:13.405Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T15:05:13.588Z - debug: /table in app.js app.all
+2017-11-04T15:05:13.588Z - debug: this is the body of the req
+2017-11-04T15:05:14.257Z - debug: /api/results in app.js app.all
+2017-11-04T15:05:14.257Z - debug: this is the body of the req
+2017-11-04T15:18:17.415Z - debug: / in app.js app.all
+2017-11-04T15:18:17.416Z - debug: this is the body of the req
+2017-11-04T15:18:20.688Z - debug: /login in app.js app.all
+2017-11-04T15:18:20.689Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T15:18:20.859Z - debug: /table in app.js app.all
+2017-11-04T15:18:20.859Z - debug: this is the body of the req
+2017-11-04T15:18:21.530Z - debug: /api/results in app.js app.all
+2017-11-04T15:18:21.530Z - debug: this is the body of the req
+2017-11-04T15:19:59.137Z - debug: / in app.js app.all
+2017-11-04T15:19:59.138Z - debug: this is the body of the req
+2017-11-04T15:20:03.275Z - debug: /login in app.js app.all
+2017-11-04T15:20:03.275Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T15:20:03.429Z - debug: /table in app.js app.all
+2017-11-04T15:20:03.430Z - debug: this is the body of the req
+2017-11-04T15:20:04.075Z - debug: /api/results in app.js app.all
+2017-11-04T15:20:04.076Z - debug: this is the body of the req
+2017-11-04T15:21:42.411Z - debug: / in app.js app.all
+2017-11-04T15:21:42.411Z - debug: this is the body of the req
+2017-11-04T15:21:47.021Z - debug: /login in app.js app.all
+2017-11-04T15:21:47.021Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T15:21:47.173Z - debug: /table in app.js app.all
+2017-11-04T15:21:47.174Z - debug: this is the body of the req
+2017-11-04T15:21:47.771Z - debug: /api/results in app.js app.all
+2017-11-04T15:21:47.771Z - debug: this is the body of the req
+2017-11-04T15:22:49.665Z - debug: / in app.js app.all
+2017-11-04T15:22:49.665Z - debug: this is the body of the req
+2017-11-04T15:22:55.199Z - debug: /login in app.js app.all
+2017-11-04T15:22:55.200Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T15:22:55.361Z - debug: /table in app.js app.all
+2017-11-04T15:22:55.361Z - debug: this is the body of the req
+2017-11-04T15:22:56.026Z - debug: /api/results in app.js app.all
+2017-11-04T15:22:56.026Z - debug: this is the body of the req
+2017-11-04T15:37:16.205Z - debug: / in app.js app.all
+2017-11-04T15:37:16.205Z - debug: this is the body of the req
+2017-11-04T15:37:19.105Z - debug: /login in app.js app.all
+2017-11-04T15:37:19.105Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T15:37:19.259Z - debug: /table in app.js app.all
+2017-11-04T15:37:19.259Z - debug: this is the body of the req
+2017-11-04T15:37:20.079Z - debug: /api/results in app.js app.all
+2017-11-04T15:37:20.079Z - debug: this is the body of the req
+2017-11-04T15:38:22.233Z - debug: Just prior to call
+2017-11-04T15:38:22.237Z - debug: new winston log for shared logs
+2017-11-04T15:38:22.238Z - debug: start of winston logging
+2017-11-04T15:38:22.249Z - debug: Listening on port 3000
+2017-11-04T15:38:27.641Z - debug: / in app.js app.all
+2017-11-04T15:38:27.642Z - debug: this is the body of the req
+2017-11-04T15:38:30.723Z - debug: /login in app.js app.all
+2017-11-04T15:38:30.724Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T15:38:30.936Z - debug: /table in app.js app.all
+2017-11-04T15:38:30.937Z - debug: this is the body of the req
+2017-11-04T15:38:31.628Z - debug: /api/results in app.js app.all
+2017-11-04T15:38:31.663Z - debug: this is the body of the req
+2017-11-04T15:42:04.534Z - debug: / in app.js app.all
+2017-11-04T15:42:04.534Z - debug: this is the body of the req
+2017-11-04T15:42:08.224Z - debug: /login in app.js app.all
+2017-11-04T15:42:08.224Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T15:42:08.388Z - debug: /table in app.js app.all
+2017-11-04T15:42:08.388Z - debug: this is the body of the req
+2017-11-04T15:42:09.011Z - debug: /api/results in app.js app.all
+2017-11-04T15:42:09.011Z - debug: this is the body of the req
+2017-11-04T15:42:45.610Z - debug: / in app.js app.all
+2017-11-04T15:42:45.610Z - debug: this is the body of the req
+2017-11-04T15:42:48.205Z - debug: /login in app.js app.all
+2017-11-04T15:42:48.206Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T15:42:48.358Z - debug: /table in app.js app.all
+2017-11-04T15:42:48.358Z - debug: this is the body of the req
+2017-11-04T15:42:49.017Z - debug: /api/results in app.js app.all
+2017-11-04T15:42:49.017Z - debug: this is the body of the req
+2017-11-04T15:43:35.355Z - debug: / in app.js app.all
+2017-11-04T15:43:35.356Z - debug: this is the body of the req
+2017-11-04T15:43:38.489Z - debug: /login in app.js app.all
+2017-11-04T15:43:38.489Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T15:43:38.637Z - debug: /table in app.js app.all
+2017-11-04T15:43:38.638Z - debug: this is the body of the req
+2017-11-04T15:43:39.268Z - debug: /api/results in app.js app.all
+2017-11-04T15:43:39.271Z - debug: this is the body of the req
+2017-11-04T15:44:09.818Z - debug: / in app.js app.all
+2017-11-04T15:44:09.818Z - debug: this is the body of the req
+2017-11-04T15:44:12.815Z - debug: /login in app.js app.all
+2017-11-04T15:44:12.815Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T15:44:13.029Z - debug: /table in app.js app.all
+2017-11-04T15:44:13.030Z - debug: this is the body of the req
+2017-11-04T15:44:13.786Z - debug: /api/results in app.js app.all
+2017-11-04T15:44:13.787Z - debug: this is the body of the req
+2017-11-04T15:44:16.272Z - debug: /api/saveDeal in app.js app.all
+2017-11-04T15:44:16.272Z - debug: this is the body of the req 0=H10, 1=D11, 2=S9, 3=D12, 4=H13, 5=D13, 6=C12, 7=H11, 8=S10, 9=C9, 10=S12, 11=H9, 12=D10, 13=H14, 14=D14, 15=H12, 16=S13, 17=D9, 18=C11, 19=C13, 20=S14, 21=C10, 22=S11, 23=C14
+2017-11-04T15:44:16.273Z - debug: /api/saveDeal post ["H10","D11","S9","D12","H13","D13","C12","H11","S10","C9","S12","H9","D10","H14","D14","H12","S13","D9","C11","C13","S14","C10","S11","C14"]
+2017-11-04T15:46:16.289Z - debug: /api/saveDeal in app.js app.all
+2017-11-04T15:46:16.289Z - debug: this is the body of the req 0=H10, 1=D11, 2=S9, 3=D12, 4=H13, 5=D13, 6=C12, 7=H11, 8=S10, 9=C9, 10=S12, 11=H9, 12=D10, 13=H14, 14=D14, 15=H12, 16=S13, 17=D9, 18=C11, 19=C13, 20=S14, 21=C10, 22=S11, 23=C14
+2017-11-04T15:46:16.290Z - debug: /api/saveDeal post ["H10","D11","S9","D12","H13","D13","C12","H11","S10","C9","S12","H9","D10","H14","D14","H12","S13","D9","C11","C13","S14","C10","S11","C14"]
+2017-11-04T15:57:48.827Z - debug: Just prior to call
+2017-11-04T15:57:48.833Z - debug: new winston log for shared logs
+2017-11-04T15:57:48.834Z - debug: start of winston logging
+2017-11-04T15:57:48.850Z - debug: Listening on port 3000
+2017-11-04T15:57:55.272Z - debug: / in app.js app.all
+2017-11-04T15:57:55.273Z - debug: this is the body of the req
+2017-11-04T15:57:58.629Z - debug: /login in app.js app.all
+2017-11-04T15:57:58.629Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T15:57:58.825Z - debug: /table in app.js app.all
+2017-11-04T15:57:58.825Z - debug: this is the body of the req
+2017-11-04T15:57:59.558Z - debug: /api/results in app.js app.all
+2017-11-04T15:57:59.558Z - debug: this is the body of the req
+2017-11-04T15:58:03.863Z - debug: /api/saveDeal in app.js app.all
+2017-11-04T15:58:03.863Z - debug: this is the body of the req 0=C14, 1=C10, 2=D12, 3=D14, 4=C11, 5=H14, 6=S13, 7=S11, 8=D10, 9=S10, 10=S14, 11=H9, 12=C12, 13=C9, 14=C13, 15=S12, 16=D11, 17=H12, 18=S9, 19=H11, 20=D9, 21=H10, 22=H13, 23=D13
+2017-11-04T15:58:03.864Z - debug: /api/saveDeal post ["C14","C10","D12","D14","C11","H14","S13","S11","D10","S10","S14","H9","C12","C9","C13","S12","D11","H12","S9","H11","D9","H10","H13","D13"]
+2017-11-04T15:58:03.866Z - info: return from fs
+2017-11-04T17:52:08.820Z - debug: / in app.js app.all
+2017-11-04T17:52:08.821Z - debug: this is the body of the req
+2017-11-04T17:52:11.835Z - debug: /login in app.js app.all
+2017-11-04T17:52:11.835Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T17:52:11.978Z - debug: /table in app.js app.all
+2017-11-04T17:52:11.979Z - debug: this is the body of the req
+2017-11-04T17:52:12.702Z - debug: /api/results in app.js app.all
+2017-11-04T17:52:12.702Z - debug: this is the body of the req
+2017-11-04T17:53:05.200Z - debug: /login in app.js app.all
+2017-11-04T17:53:05.201Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T17:53:05.370Z - debug: /table in app.js app.all
+2017-11-04T17:53:05.371Z - debug: this is the body of the req
+2017-11-04T17:53:05.991Z - debug: /api/results in app.js app.all
+2017-11-04T17:53:05.991Z - debug: this is the body of the req
+2017-11-04T17:53:50.514Z - debug: /login in app.js app.all
+2017-11-04T17:53:50.514Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T17:53:50.669Z - debug: /table in app.js app.all
+2017-11-04T17:53:50.669Z - debug: this is the body of the req
+2017-11-04T17:53:51.387Z - debug: /api/results in app.js app.all
+2017-11-04T17:53:51.428Z - debug: this is the body of the req
+2017-11-04T17:58:36.057Z - debug: /login in app.js app.all
+2017-11-04T17:58:36.057Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T17:58:36.206Z - debug: /table in app.js app.all
+2017-11-04T17:58:36.206Z - debug: this is the body of the req
+2017-11-04T17:58:36.897Z - debug: /api/results in app.js app.all
+2017-11-04T17:58:36.897Z - debug: this is the body of the req
+2017-11-04T18:00:35.011Z - debug: /login in app.js app.all
+2017-11-04T18:00:35.011Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T18:00:35.160Z - debug: /table in app.js app.all
+2017-11-04T18:00:35.161Z - debug: this is the body of the req
+2017-11-04T18:00:35.814Z - debug: /api/results in app.js app.all
+2017-11-04T18:00:35.815Z - debug: this is the body of the req
+2017-11-04T18:00:38.087Z - debug: /api/saveDeal in app.js app.all
+2017-11-04T18:00:38.088Z - debug: this is the body of the req deal=[C12, D14, S9, S10, S14, C10, S12, H11, H14, S11, C13, D10, S13, H10, H9, C14, C9, D12, D13, D9, H12, H13, D11, C11]
+2017-11-04T18:00:38.089Z - debug: /api/saveDeal post {"deal":["C12","D14","S9","S10","S14","C10","S12","H11","H14","S11","C13","D10","S13","H10","H9","C14","C9","D12","D13","D9","H12","H13","D11","C11"]}
+2017-11-04T18:00:38.092Z - info: return from fs
+2017-11-04T18:02:40.172Z - debug: /login in app.js app.all
+2017-11-04T18:02:40.172Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T18:02:40.340Z - debug: /table in app.js app.all
+2017-11-04T18:02:40.340Z - debug: this is the body of the req
+2017-11-04T18:02:41.086Z - debug: /api/results in app.js app.all
+2017-11-04T18:02:41.087Z - debug: this is the body of the req
+2017-11-04T18:02:46.765Z - debug: /api/saveDeal in app.js app.all
+2017-11-04T18:02:46.765Z - debug: this is the body of the req deal=[S9, C14, H12, D10, C12, H9, C13, S10, H10, D12, D14, D9, H11, D13, S13, H13, S14, C10, H14, S12, C9, D11, S11, C11]
+2017-11-04T18:02:46.765Z - debug: /api/saveDeal post {"deal":["S9","C14","H12","D10","C12","H9","C13","S10","H10","D12","D14","D9","H11","D13","S13","H13","S14","C10","H14","S12","C9","D11","S11","C11"]}
+2017-11-04T18:02:46.767Z - info: return from fs
+2017-11-04T18:03:57.106Z - debug: /login in app.js app.all
+2017-11-04T18:03:57.106Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T18:03:57.256Z - debug: /table in app.js app.all
+2017-11-04T18:03:57.256Z - debug: this is the body of the req
+2017-11-04T18:03:57.901Z - debug: /api/results in app.js app.all
+2017-11-04T18:03:57.901Z - debug: this is the body of the req
+2017-11-04T18:04:00.152Z - debug: /api/saveDeal in app.js app.all
+2017-11-04T18:04:00.153Z - debug: this is the body of the req dealer=North, deal=[C13, H14, D10, S11, C12, H9, S14, S9, D11, H13, H10, D14, H11, H12, C14, D13, D12, S13, S10, S12, C11, D9, C10, C9]
+2017-11-04T18:04:00.153Z - debug: /api/saveDeal post {"dealer":"North","deal":["C13","H14","D10","S11","C12","H9","S14","S9","D11","H13","H10","D14","H11","H12","C14","D13","D12","S13","S10","S12","C11","D9","C10","C9"]}
+2017-11-04T18:04:00.155Z - info: return from fs
+2017-11-04T18:07:10.310Z - debug: /login in app.js app.all
+2017-11-04T18:07:10.310Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T18:07:10.531Z - debug: /table in app.js app.all
+2017-11-04T18:07:10.531Z - debug: this is the body of the req
+2017-11-04T18:07:11.146Z - debug: /api/results in app.js app.all
+2017-11-04T18:07:11.147Z - debug: this is the body of the req
+2017-11-04T18:07:49.729Z - debug: /login in app.js app.all
+2017-11-04T18:07:49.730Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T18:07:49.920Z - debug: /table in app.js app.all
+2017-11-04T18:07:49.920Z - debug: this is the body of the req
+2017-11-04T18:07:50.655Z - debug: /api/results in app.js app.all
+2017-11-04T18:07:50.655Z - debug: this is the body of the req
+2017-11-04T18:08:10.843Z - debug: /login in app.js app.all
+2017-11-04T18:08:10.844Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T18:08:10.998Z - debug: /table in app.js app.all
+2017-11-04T18:08:10.998Z - debug: this is the body of the req
+2017-11-04T18:08:11.692Z - debug: /api/results in app.js app.all
+2017-11-04T18:08:11.692Z - debug: this is the body of the req
+2017-11-04T18:13:07.313Z - debug: /login in app.js app.all
+2017-11-04T18:13:07.313Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T18:13:07.466Z - debug: /table in app.js app.all
+2017-11-04T18:13:07.466Z - debug: this is the body of the req
+2017-11-04T18:13:08.185Z - debug: /api/results in app.js app.all
+2017-11-04T18:13:08.186Z - debug: this is the body of the req
+2017-11-04T18:13:28.306Z - debug: /table in app.js app.all
+2017-11-04T18:13:28.306Z - debug: this is the body of the req
+2017-11-04T18:13:28.961Z - debug: /api/results in app.js app.all
+2017-11-04T18:13:28.961Z - debug: this is the body of the req
+2017-11-04T18:13:34.886Z - debug: /login in app.js app.all
+2017-11-04T18:13:34.888Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T18:13:35.040Z - debug: /table in app.js app.all
+2017-11-04T18:13:35.041Z - debug: this is the body of the req
+2017-11-04T18:13:35.647Z - debug: /api/results in app.js app.all
+2017-11-04T18:13:35.648Z - debug: this is the body of the req
+2017-11-04T18:13:38.018Z - debug: /api/saveDeal in app.js app.all
+2017-11-04T18:13:38.019Z - debug: this is the body of the req dealer=North, deal=[H10, C14, C13, S11, C10, S13, H13, C11, S10, S9, H14, D10, D14, H12, D11, H9, D12, D13, S14, H11, S12, C12, C9, D9]
+2017-11-04T18:13:38.019Z - debug: /api/saveDeal post {"dealer":"North","deal":["H10","C14","C13","S11","C10","S13","H13","C11","S10","S9","H14","D10","D14","H12","D11","H9","D12","D13","S14","H11","S12","C12","C9","D9"]}
+2017-11-04T18:13:38.020Z - info: return from fs
+2017-11-04T18:13:38.088Z - debug: /api/getDeal in app.js app.all
+2017-11-04T18:13:38.089Z - debug: this is the body of the req

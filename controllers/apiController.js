@@ -65,6 +65,31 @@ module.exports = function (app) {
 
     });
 
+    app.post('/api/saveDeal', function (req, res) {
+        logs.log('debug', "/api/saveDeal post", JSON.stringify(req.body));
+        var json2 = JSON.stringify(req.body);
+        fs.writeFile('./public/data/deal.json', json2, 'utf8', function (err) {
+            logger.log('info', "return from fs")
+            if (err) {
+                logger.log('error', "Error writing file summary.json");
+                return console.error(err);
+            } else {
+                res.send('Success');
+            }
+        });
+    });
+    app.get('/api/getDeal', function (req, res) {
+        fs.readFile('./public/data/deal.json', 'utf8', function readFileCallback(err, data) {
+            if (err) {
+                logger.log('error', err);
+            } else {
+                obj = JSON.parse(data); //now it an object
+                res.send(obj)
+            }
+        });
+
+    });
+
     app.post('/api/save', function (req, res) {
 
 

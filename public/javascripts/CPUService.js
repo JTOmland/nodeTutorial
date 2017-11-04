@@ -399,7 +399,6 @@ vsapp.factory('CPUService', ['$http', '$q', '$rootScope', 'DataFactory', 'CommSe
                 }
             }
         }
-        var test = Math
         return player.topSuit;
     }
 
