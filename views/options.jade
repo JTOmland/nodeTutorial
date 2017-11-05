@@ -17,4 +17,5 @@ md-dialog(flex)
                 label Play Speed
                 input(type='number' ng-model="options.playSpeed")
         div
-            {{options.playSpeed}}
+          md-checkbox(ng-model="options.incrementCardPlay")
+            h4 Increment Card Play: {{options.incrementCardPlay}}

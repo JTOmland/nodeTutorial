@@ -68,14 +68,30 @@ module.exports = function (app) {
 
     app.post('/api/saveDeal', function (req, res) {
         logs.log('debug', "/api/saveDeal post", JSON.stringify(req.body));
-        var json2 = JSON.stringify(req.body);
-        fs.writeFile('./public/data/deal.json', json2, 'utf8', function (err) {
-            logger.log('info', "return from fs")
+        var jsonReq = JSON.stringify(req.body);
+        jsonReq = JSON.parse(jsonReq);  //change it to an object.
+        logger.log('debug', 'json parse of req.body', jsonReq);
+        
+        fs.readFile('./public/data/deal.json', 'utf8', function readFileCallback(err, data) {
             if (err) {
-                logger.log('error', "Error writing file summary.json");
-                return console.error(err);
+                logger.log('error', err);
             } else {
-                res.send('Success');
+                var arrayToSave = JSON.parse(data); //parse makes data an object
+                logger.log('debug', 'This is arrayToSave after JSON parse of data returned from read file', arrayToSave);
+                //arrayToSave.push(req.body)
+                //json2 = JSON.stringify(arrayToSave);
+                arrayToSave.push(jsonReq);
+                arrayToSave = JSON.stringify(arrayToSave);
+                logger.log('debug', "This is string about to be saved on saveDeal after stringify of array", arrayToSave);
+                fs.writeFile('./public/data/deal.json', arrayToSave, 'utf8', function (err) {
+                    logger.log('info', "return from fs")
+                    if (err) {
+                        logger.log('error', "Error writing file summary.json");
+                        return console.error(err);
+                    } else {
+                        res.send('Success');
+                    }
+                });
             }
         });
     });

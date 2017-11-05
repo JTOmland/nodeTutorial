@@ -4432,3 +4432,407 @@ input is self closing and should not have content.
 2017-11-05T20:29:14.601Z - debug: /api/saveHand in app.js app.all
 2017-11-05T20:29:14.601Z - debug: this is the body of the req bid=3, dealer=North, location=East, tricksTaken=3
 2017-11-05T20:29:14.601Z - debug: /api/saveHand post [{"16159NTLLnLn":{"bid":3,"dealer":"North","location":"East","tricksTaken":3}}]
+2017-11-05T21:35:40.479Z - debug: Just prior to call
+2017-11-05T21:35:40.483Z - debug: new winston log for shared logs
+2017-11-05T21:35:40.484Z - debug: start of winston logging
+2017-11-05T21:35:40.494Z - debug: Listening on port 3000
+2017-11-05T21:35:45.967Z - debug: /login in app.js app.all
+2017-11-05T21:35:45.967Z - debug: this is the body of the req
+2017-11-05T21:35:48.477Z - debug: /login in app.js app.all
+2017-11-05T21:35:48.478Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-05T21:35:48.692Z - debug: /table in app.js app.all
+2017-11-05T21:35:48.693Z - debug: this is the body of the req
+2017-11-05T21:35:49.048Z - debug: /api/results in app.js app.all
+2017-11-05T21:35:49.048Z - debug: this is the body of the req
+2017-11-05T21:35:55.127Z - debug: /options in app.js app.all
+2017-11-05T21:35:55.127Z - debug: this is the body of the req
+2017-11-05T21:36:09.182Z - debug: /table in app.js app.all
+2017-11-05T21:36:09.182Z - debug: this is the body of the req
+2017-11-05T21:36:09.691Z - debug: /api/results in app.js app.all
+2017-11-05T21:36:09.692Z - debug: this is the body of the req
+2017-11-05T21:36:11.928Z - debug: /options in app.js app.all
+2017-11-05T21:36:11.929Z - debug: this is the body of the req
+2017-11-05T21:37:31.593Z - debug: /table in app.js app.all
+2017-11-05T21:37:31.593Z - debug: this is the body of the req
+2017-11-05T21:37:32.036Z - debug: /api/results in app.js app.all
+2017-11-05T21:37:32.036Z - debug: this is the body of the req
+2017-11-05T21:37:33.772Z - debug: /options in app.js app.all
+2017-11-05T21:37:33.772Z - debug: this is the body of the req
+2017-11-05T21:49:15.069Z - debug: /table in app.js app.all
+2017-11-05T21:49:15.070Z - debug: this is the body of the req
+2017-11-05T21:49:15.517Z - debug: /api/results in app.js app.all
+2017-11-05T21:49:15.518Z - debug: this is the body of the req
+2017-11-05T21:49:19.097Z - debug: /options in app.js app.all
+2017-11-05T21:49:19.097Z - debug: this is the body of the req
+2017-11-05T21:51:18.146Z - debug: /table in app.js app.all
+2017-11-05T21:51:18.146Z - debug: this is the body of the req
+2017-11-05T21:51:18.609Z - debug: /api/results in app.js app.all
+2017-11-05T21:51:18.609Z - debug: this is the body of the req
+2017-11-05T21:51:20.219Z - debug: /options in app.js app.all
+2017-11-05T21:51:20.219Z - debug: this is the body of the req
+2017-11-05T21:51:39.564Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T21:51:39.564Z - debug: this is the body of the req dealer=North, deal=[S9, D10, H10, D9, C13, D14, C10, S10, S12, C12, S11, S13, H9, C11, D11, H13, C14, D13, C9, S14, H12, H14, H11, D12]
+2017-11-05T21:51:39.565Z - debug: /api/saveDeal post {"dealer":"North","deal":["S9","D10","H10","D9","C13","D14","C10","S10","S12","C12","S11","S13","H9","C11","D11","H13","C14","D13","C9","S14","H12","H14","H11","D12"]}
+2017-11-05T21:51:39.568Z - info: return from fs
+2017-11-05T21:51:39.637Z - debug: /api/getDeal in app.js app.all
+2017-11-05T21:51:39.637Z - debug: this is the body of the req
+2017-11-05T21:54:54.703Z - debug: /table in app.js app.all
+2017-11-05T21:54:54.703Z - debug: this is the body of the req
+2017-11-05T21:54:55.506Z - debug: /api/results in app.js app.all
+2017-11-05T21:54:55.506Z - debug: this is the body of the req
+2017-11-05T21:54:59.332Z - debug: /options in app.js app.all
+2017-11-05T21:54:59.332Z - debug: this is the body of the req
+2017-11-05T21:55:09.700Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T21:55:09.701Z - debug: this is the body of the req dealer=North, deal=[D11, S14, H11, H12, H10, C9, C12, S10, S12, H9, D12, S9, S11, C11, D9, S13, C13, C14, D13, D10, H13, D14, H14, C10]
+2017-11-05T21:55:09.703Z - debug: /api/saveDeal post {"dealer":"North","deal":["D11","S14","H11","H12","H10","C9","C12","S10","S12","H9","D12","S9","S11","C11","D9","S13","C13","C14","D13","D10","H13","D14","H14","C10"]}
+2017-11-05T21:55:09.704Z - info: return from fs
+2017-11-05T21:55:09.767Z - debug: /api/getDeal in app.js app.all
+2017-11-05T21:55:09.767Z - debug: this is the body of the req
+2017-11-05T21:55:52.153Z - debug: /api/saveHand in app.js app.all
+2017-11-05T21:55:52.153Z - debug: this is the body of the req bid=5, dealer=North, location=South, tricksTaken=6
+2017-11-05T21:55:52.154Z - debug: /api/saveHand post [{"16151413NTLnLn":{"bid":5,"dealer":"North","location":"South","tricksTaken":6}}]
+2017-11-05T21:57:03.429Z - debug: /table in app.js app.all
+2017-11-05T21:57:03.429Z - debug: this is the body of the req
+2017-11-05T21:57:04.290Z - debug: /api/results in app.js app.all
+2017-11-05T21:57:04.291Z - debug: this is the body of the req
+2017-11-05T21:57:07.021Z - debug: /options in app.js app.all
+2017-11-05T21:57:07.021Z - debug: this is the body of the req
+2017-11-05T21:57:25.640Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T21:57:25.640Z - debug: this is the body of the req dealer=North, deal=[S14, C12, D11, D12, C14, C10, H14, S9, H13, D9, H12, S12, D14, D13, H11, S11, C9, H10, S13, S10, C13, D10, C11, H9]
+2017-11-05T21:57:25.641Z - debug: /api/saveDeal post {"dealer":"North","deal":["S14","C12","D11","D12","C14","C10","H14","S9","H13","D9","H12","S12","D14","D13","H11","S11","C9","H10","S13","S10","C13","D10","C11","H9"]}
+2017-11-05T21:57:25.642Z - info: return from fs
+2017-11-05T21:57:25.706Z - debug: /api/getDeal in app.js app.all
+2017-11-05T21:57:25.706Z - debug: this is the body of the req
+2017-11-05T21:57:49.108Z - debug: /api/saveHand in app.js app.all
+2017-11-05T21:57:49.108Z - debug: this is the body of the req bid=3, dealer=North, location=East, tricksTaken=4
+2017-11-05T21:57:49.110Z - debug: /api/saveHand post [{"141312NTLLnLn":{"bid":3,"dealer":"North","location":"East","tricksTaken":4}}]
+2017-11-05T21:57:50.112Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T21:57:50.113Z - debug: this is the body of the req dealer=East, deal=[H10, D14, H14, H13, S12, D10, S13, S14, D12, C12, C11, D11, C10, S11, C9, H9, D9, S9, H11, H12, S10, C14, C13, D13]
+2017-11-05T21:57:50.113Z - debug: /api/saveDeal post {"dealer":"East","deal":["H10","D14","H14","H13","S12","D10","S13","S14","D12","C12","C11","D11","C10","S11","C9","H9","D9","S9","H11","H12","S10","C14","C13","D13"]}
+2017-11-05T21:57:50.114Z - info: return from fs
+2017-11-05T21:57:50.169Z - debug: /api/getDeal in app.js app.all
+2017-11-05T21:57:50.169Z - debug: this is the body of the req
+2017-11-05T21:58:19.371Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T21:58:19.372Z - debug: this is the body of the req dealer=South, deal=[S9, S10, S11, D9, D12, D14, C9, H14, H13, H9, H11, D13, D10, C13, C11, C12, C14, C10, H12, S12, D11, H10, S13, S14]
+2017-11-05T21:58:19.372Z - debug: /api/saveDeal post {"dealer":"South","deal":["S9","S10","S11","D9","D12","D14","C9","H14","H13","H9","H11","D13","D10","C13","C11","C12","C14","C10","H12","S12","D11","H10","S13","S14"]}
+2017-11-05T21:58:19.374Z - info: return from fs
+2017-11-05T21:58:19.426Z - debug: /api/getDeal in app.js app.all
+2017-11-05T21:58:19.426Z - debug: this is the body of the req
+2017-11-05T21:59:49.109Z - debug: /api/saveHand in app.js app.all
+2017-11-05T21:59:49.109Z - debug: this is the body of the req bid=3, dealer=North, location=East, tricksTaken=4
+2017-11-05T21:59:49.109Z - debug: /api/saveHand post [{"141312NTLLnLn":{"bid":3,"dealer":"North","location":"East","tricksTaken":4}}]
+2017-11-05T22:01:49.104Z - debug: /api/saveHand in app.js app.all
+2017-11-05T22:01:49.104Z - debug: this is the body of the req bid=3, dealer=North, location=East, tricksTaken=4
+2017-11-05T22:01:49.104Z - debug: /api/saveHand post [{"141312NTLLnLn":{"bid":3,"dealer":"North","location":"East","tricksTaken":4}}]
+2017-11-05T22:18:56.473Z - debug: /table in app.js app.all
+2017-11-05T22:18:56.473Z - debug: this is the body of the req
+2017-11-05T22:18:57.177Z - debug: /api/results in app.js app.all
+2017-11-05T22:18:57.178Z - debug: this is the body of the req
+2017-11-05T22:21:10.512Z - debug: /table in app.js app.all
+2017-11-05T22:21:10.512Z - debug: this is the body of the req
+2017-11-05T22:21:11.116Z - debug: /api/results in app.js app.all
+2017-11-05T22:21:11.116Z - debug: this is the body of the req
+2017-11-05T22:22:53.178Z - debug: /table in app.js app.all
+2017-11-05T22:22:53.178Z - debug: this is the body of the req
+2017-11-05T22:22:54.069Z - debug: /api/results in app.js app.all
+2017-11-05T22:22:54.070Z - debug: this is the body of the req
+2017-11-05T22:24:16.240Z - debug: /table in app.js app.all
+2017-11-05T22:24:16.241Z - debug: this is the body of the req
+2017-11-05T22:24:16.963Z - debug: /api/results in app.js app.all
+2017-11-05T22:24:16.963Z - debug: this is the body of the req
+2017-11-05T22:26:46.543Z - debug: /table in app.js app.all
+2017-11-05T22:26:46.543Z - debug: this is the body of the req
+2017-11-05T22:26:47.226Z - debug: /api/results in app.js app.all
+2017-11-05T22:26:47.226Z - debug: this is the body of the req
+2017-11-05T22:28:07.449Z - debug: /table in app.js app.all
+2017-11-05T22:28:07.449Z - debug: this is the body of the req
+2017-11-05T22:28:08.175Z - debug: /api/results in app.js app.all
+2017-11-05T22:28:08.175Z - debug: this is the body of the req
+2017-11-05T22:29:25.827Z - debug: /table in app.js app.all
+2017-11-05T22:29:25.827Z - debug: this is the body of the req
+2017-11-05T22:29:26.603Z - debug: /api/results in app.js app.all
+2017-11-05T22:29:26.603Z - debug: this is the body of the req
+2017-11-05T22:30:41.361Z - debug: /table in app.js app.all
+2017-11-05T22:30:41.361Z - debug: this is the body of the req
+2017-11-05T22:30:42.109Z - debug: /api/results in app.js app.all
+2017-11-05T22:30:42.109Z - debug: this is the body of the req
+2017-11-05T22:32:04.043Z - debug: /table in app.js app.all
+2017-11-05T22:32:04.043Z - debug: this is the body of the req
+2017-11-05T22:32:04.771Z - debug: /api/results in app.js app.all
+2017-11-05T22:32:04.771Z - debug: this is the body of the req
+2017-11-05T22:32:41.642Z - debug: /table in app.js app.all
+2017-11-05T22:32:41.642Z - debug: this is the body of the req
+2017-11-05T22:32:42.419Z - debug: /api/results in app.js app.all
+2017-11-05T22:32:42.419Z - debug: this is the body of the req
+2017-11-05T22:42:31.647Z - debug: Just prior to call
+2017-11-05T22:42:31.650Z - debug: new winston log for shared logs
+2017-11-05T22:42:31.650Z - debug: start of winston logging
+2017-11-05T22:42:31.661Z - debug: Listening on port 3000
+2017-11-05T22:42:45.885Z - debug: /table in app.js app.all
+2017-11-05T22:42:45.885Z - debug: this is the body of the req
+2017-11-05T22:42:45.899Z - debug: /login in app.js app.all
+2017-11-05T22:42:45.899Z - debug: this is the body of the req
+2017-11-05T22:42:49.492Z - debug: /login in app.js app.all
+2017-11-05T22:42:49.492Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-05T22:42:49.685Z - debug: /table in app.js app.all
+2017-11-05T22:42:49.685Z - debug: this is the body of the req
+2017-11-05T22:42:50.384Z - debug: /api/results in app.js app.all
+2017-11-05T22:42:50.384Z - debug: this is the body of the req
+2017-11-05T22:42:52.595Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T22:42:52.595Z - debug: this is the body of the req dealer=North, deal=[H13, C11, S10, S9, S13, S14, H10, D10, D13, C9, C10, D11, D14, H11, S11, H9, C13, D9, H14, C12, D12, C14, S12, H12]
+2017-11-05T22:42:52.596Z - debug: /api/saveDeal post {"dealer":"North","deal":["H13","C11","S10","S9","S13","S14","H10","D10","D13","C9","C10","D11","D14","H11","S11","H9","C13","D9","H14","C12","D12","C14","S12","H12"]}
+2017-11-05T22:42:52.596Z - debug: This is string about to be saved on saveDeal {"dealer":"North","deal":["H13","C11","S10","S9","S13","S14","H10","D10","D13","C9","C10","D11","D14","H11","S11","H9","C13","D9","H14","C12","D12","C14","S12","H12"]}{"dealer":"South","deal":["S9","S10","S11","D9","D12","D14","C9","H14","H13","H9","H11","D13","D10","C13","C11","C12","C14","C10","H12","S12","D11","H10","S13","S14"]}
+2017-11-05T22:42:52.599Z - info: return from fs
+2017-11-05T22:42:52.652Z - debug: /api/getDeal in app.js app.all
+2017-11-05T22:42:52.652Z - debug: this is the body of the req
+2017-11-05T22:42:52.660Z - error: uncaughtException: Unexpected token { in JSON at position 167 date=Sun Nov 05 2017 16:42:52 GMT-0600 (CST), pid=13201, uid=501, gid=20, cwd=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad, execPath=/usr/local/bin/node, version=v6.9.3, argv=[/usr/local/bin/node, /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/bin/www], rss=101998592, heapTotal=79278080, heapUsed=54720112, loadavg=[2.0263671875, 1.828125, 1.89990234375], uptime=627316, trace=[column=null, file=null, function=Object.parse, line=null, method=parse, native=true, column=28, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/controllers/apiController.js, function=readFileCallback, line=95, method=null, native=false, column=3, file=fs.js, function=tryToString, line=455, method=null, native=false, column=12, file=fs.js, function=FSReqWrap.readFileAfterClose [as oncomplete], line=442, method=readFileAfterClose [as oncomplete], native=false], stack=[SyntaxError: Unexpected token { in JSON at position 167,     at Object.parse (native),     at readFileCallback (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/controllers/apiController.js:95:28),     at tryToString (fs.js:455:3),     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:442:12)]
+2017-11-05T22:44:03.526Z - debug: Just prior to call
+2017-11-05T22:44:03.529Z - debug: new winston log for shared logs
+2017-11-05T22:44:03.530Z - debug: start of winston logging
+2017-11-05T22:44:03.538Z - debug: Listening on port 3000
+2017-11-05T22:44:06.497Z - debug: /table in app.js app.all
+2017-11-05T22:44:06.497Z - debug: this is the body of the req
+2017-11-05T22:44:06.516Z - debug: /login in app.js app.all
+2017-11-05T22:44:06.516Z - debug: this is the body of the req
+2017-11-05T22:44:09.794Z - debug: /login in app.js app.all
+2017-11-05T22:44:09.794Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-05T22:44:10.001Z - debug: /table in app.js app.all
+2017-11-05T22:44:10.001Z - debug: this is the body of the req
+2017-11-05T22:44:10.672Z - debug: /api/results in app.js app.all
+2017-11-05T22:44:10.672Z - debug: this is the body of the req
+2017-11-05T22:44:14.488Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T22:44:14.488Z - debug: this is the body of the req dealer=North, deal=[C11, D9, S11, H9, S13, H11, D13, C9, H13, H14, H10, C10, D10, H12, D14, C13, D11, C12, S9, C14, S12, S10, S14, D12]
+2017-11-05T22:44:14.489Z - debug: /api/saveDeal post {"dealer":"North","deal":["C11","D9","S11","H9","S13","H11","D13","C9","H13","H14","H10","C10","D10","H12","D14","C13","D11","C12","S9","C14","S12","S10","S14","D12"]}
+2017-11-05T22:44:14.490Z - debug: This is string about to be saved on saveDeal {"dealer":"North","deal":["H13","C11","S10","S9","S13","S14","H10","D10","D13","C9","C10","D11","D14","H11","S11","H9","C13","D9","H14","C12","D12","C14","S12","H12"]}{"dealer":"South","deal":["S9","S10","S11","D9","D12","D14","C9","H14","H13","H9","H11","D13","D10","C13","C11","C12","C14","C10","H12","S12","D11","H10","S13","S14"]}
+2017-11-05T22:44:14.491Z - info: return from fs
+2017-11-05T22:44:14.542Z - debug: /api/getDeal in app.js app.all
+2017-11-05T22:44:14.542Z - debug: this is the body of the req
+2017-11-05T22:45:31.418Z - debug: /api/saveHand in app.js app.all
+2017-11-05T22:45:31.418Z - debug: this is the body of the req bid=3, dealer=North, location=South, tricksTaken=3
+2017-11-05T22:45:31.420Z - debug: /api/saveHand post [{"161410NT13LnLn":{"bid":3,"dealer":"North","location":"South","tricksTaken":3}}]
+2017-11-05T22:45:32.424Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T22:45:32.424Z - debug: this is the body of the req dealer=East, deal=[S14, S12, D14, D12, C11, S10, C9, D9, D13, H14, C14, D11, H13, H9, S11, S13, H10, H12, H11, S9, D10, C10, C13, C12]
+2017-11-05T22:45:32.424Z - debug: /api/saveDeal post {"dealer":"East","deal":["S14","S12","D14","D12","C11","S10","C9","D9","D13","H14","C14","D11","H13","H9","S11","S13","H10","H12","H11","S9","D10","C10","C13","C12"]}
+2017-11-05T22:45:32.425Z - debug: This is string about to be saved on saveDeal {"dealer":"North","deal":["C11","D9","S11","H9","S13","H11","D13","C9","H13","H14","H10","C10","D10","H12","D14","C13","D11","C12","S9","C14","S12","S10","S14","D12"]}
+2017-11-05T22:45:32.425Z - info: return from fs
+2017-11-05T22:45:32.479Z - debug: /api/getDeal in app.js app.all
+2017-11-05T22:45:32.479Z - debug: this is the body of the req
+2017-11-05T22:47:25.904Z - debug: Just prior to call
+2017-11-05T22:47:25.914Z - debug: new winston log for shared logs
+2017-11-05T22:47:25.915Z - debug: start of winston logging
+2017-11-05T22:47:25.936Z - debug: Listening on port 3000
+2017-11-05T22:47:31.244Z - debug: /table in app.js app.all
+2017-11-05T22:47:31.245Z - debug: this is the body of the req
+2017-11-05T22:47:31.257Z - debug: /login in app.js app.all
+2017-11-05T22:47:31.258Z - debug: this is the body of the req
+2017-11-05T22:47:35.218Z - debug: /login in app.js app.all
+2017-11-05T22:47:35.218Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-05T22:47:35.413Z - debug: /table in app.js app.all
+2017-11-05T22:47:35.413Z - debug: this is the body of the req
+2017-11-05T22:47:36.041Z - debug: /api/results in app.js app.all
+2017-11-05T22:47:36.041Z - debug: this is the body of the req
+2017-11-05T22:47:39.829Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T22:47:39.829Z - debug: this is the body of the req dealer=North, deal=[S12, C13, S14, C14, D12, S9, H9, C11, D13, H14, C12, H12, H13, D9, S13, H11, S11, D10, H10, D14, S10, C9, D11, C10]
+2017-11-05T22:47:39.830Z - debug: /api/saveDeal post {"dealer":"North","deal":["S12","C13","S14","C14","D12","S9","H9","C11","D13","H14","C12","H12","H13","D9","S13","H11","S11","D10","H10","D14","S10","C9","D11","C10"]}
+2017-11-05T22:47:39.831Z - debug: This is string about to be saved on saveDeal {"dealer":"East","deal":["S14","S12","D14","D12","C11","S10","C9","D9","D13","H14","C14","D11","H13","H9","S11","S13","H10","H12","H11","S9","D10","C10","C13","C12"]}
+2017-11-05T22:47:39.833Z - info: return from fs
+2017-11-05T22:47:39.886Z - debug: /api/getDeal in app.js app.all
+2017-11-05T22:47:39.887Z - debug: this is the body of the req
+2017-11-05T22:47:39.890Z - error: uncaughtException: Unexpected token t in JSON at position 167 date=Sun Nov 05 2017 16:47:39 GMT-0600 (CST), pid=13258, uid=501, gid=20, cwd=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad, execPath=/usr/local/bin/node, version=v6.9.3, argv=[/usr/local/bin/node, /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/bin/www], rss=100278272, heapTotal=79278080, heapUsed=54663272, loadavg=[1.73828125, 1.75927734375, 1.83984375], uptime=627603, trace=[column=null, file=null, function=Object.parse, line=null, method=parse, native=true, column=28, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/controllers/apiController.js, function=readFileCallback, line=95, method=null, native=false, column=3, file=fs.js, function=tryToString, line=455, method=null, native=false, column=12, file=fs.js, function=FSReqWrap.readFileAfterClose [as oncomplete], line=442, method=readFileAfterClose [as oncomplete], native=false], stack=[SyntaxError: Unexpected token t in JSON at position 167,     at Object.parse (native),     at readFileCallback (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/controllers/apiController.js:95:28),     at tryToString (fs.js:455:3),     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:442:12)]
+2017-11-05T22:49:39.899Z - debug: /api/getDeal in app.js app.all
+2017-11-05T22:49:39.899Z - debug: this is the body of the req
+2017-11-05T22:49:39.901Z - error: uncaughtException: Unexpected token t in JSON at position 167 date=Sun Nov 05 2017 16:49:39 GMT-0600 (CST), pid=13258, uid=501, gid=20, cwd=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad, execPath=/usr/local/bin/node, version=v6.9.3, argv=[/usr/local/bin/node, /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/bin/www], rss=67534848, heapTotal=42827776, heapUsed=33931432, loadavg=[1.837890625, 1.810546875, 1.845703125], uptime=627723, trace=[column=null, file=null, function=Object.parse, line=null, method=parse, native=true, column=28, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/controllers/apiController.js, function=readFileCallback, line=95, method=null, native=false, column=3, file=fs.js, function=tryToString, line=455, method=null, native=false, column=12, file=fs.js, function=FSReqWrap.readFileAfterClose [as oncomplete], line=442, method=readFileAfterClose [as oncomplete], native=false], stack=[SyntaxError: Unexpected token t in JSON at position 167,     at Object.parse (native),     at readFileCallback (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/controllers/apiController.js:95:28),     at tryToString (fs.js:455:3),     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:442:12)]
+2017-11-05T22:56:26.608Z - debug: Just prior to call
+2017-11-05T22:56:26.612Z - debug: new winston log for shared logs
+2017-11-05T22:56:26.612Z - debug: start of winston logging
+2017-11-05T22:56:26.626Z - debug: Listening on port 3000
+2017-11-05T22:56:30.037Z - debug: /table in app.js app.all
+2017-11-05T22:56:30.038Z - debug: this is the body of the req
+2017-11-05T22:56:30.056Z - debug: /login in app.js app.all
+2017-11-05T22:56:30.057Z - debug: this is the body of the req
+2017-11-05T22:56:32.937Z - debug: /login in app.js app.all
+2017-11-05T22:56:32.937Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-05T22:56:33.123Z - debug: /table in app.js app.all
+2017-11-05T22:56:33.123Z - debug: this is the body of the req
+2017-11-05T22:56:33.800Z - debug: /api/results in app.js app.all
+2017-11-05T22:56:33.800Z - debug: this is the body of the req
+2017-11-05T22:56:36.833Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T22:56:36.833Z - debug: this is the body of the req dealer=North, deal=[C11, D12, S12, D13, H10, S11, D9, C12, H11, S14, H13, S10, C14, S9, H14, C10, H9, S13, D14, H12, C13, D10, D11, C9]
+2017-11-05T22:56:36.834Z - debug: /api/saveDeal post {"dealer":"North","deal":["C11","D12","S12","D13","H10","S11","D9","C12","H11","S14","H13","S10","C14","S9","H14","C10","H9","S13","D14","H12","C13","D10","D11","C9"]}
+2017-11-05T22:56:36.835Z - debug: This is string about to be saved on saveDeal ["[{\"dealer\":\"North\",\"deal\":[\"S12\",\"C13\",\"S14\",\"C14\",\"D12\",\"S9\",\"H9\",\"C11\",\"D13\",\"H14\",\"C12\",\"H12\",\"H13\",\"D9\",\"S13\",\"H11\",\"S11\",\"D10\",\"H10\",\"D14\",\"S10\",\"C9\",\"D11\",\"C10\"]}]",{"dealer":"North","deal":["C11","D12","S12","D13","H10","S11","D9","C12","H11","S14","H13","S10","C14","S9","H14","C10","H9","S13","D14","H12","C13","D10","D11","C9"]}]
+2017-11-05T22:56:36.836Z - info: return from fs
+2017-11-05T22:56:36.889Z - debug: /api/getDeal in app.js app.all
+2017-11-05T22:56:36.889Z - debug: this is the body of the req
+2017-11-05T22:58:52.753Z - debug: Just prior to call
+2017-11-05T22:58:52.779Z - debug: new winston log for shared logs
+2017-11-05T22:58:52.781Z - debug: start of winston logging
+2017-11-05T22:58:52.811Z - debug: Listening on port 3000
+2017-11-05T22:58:57.273Z - debug: /table in app.js app.all
+2017-11-05T22:58:57.273Z - debug: this is the body of the req
+2017-11-05T22:58:57.289Z - debug: /login in app.js app.all
+2017-11-05T22:58:57.290Z - debug: this is the body of the req
+2017-11-05T22:59:00.370Z - debug: /login in app.js app.all
+2017-11-05T22:59:00.370Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-05T22:59:00.553Z - debug: /table in app.js app.all
+2017-11-05T22:59:00.554Z - debug: this is the body of the req
+2017-11-05T22:59:01.194Z - debug: /api/results in app.js app.all
+2017-11-05T22:59:01.194Z - debug: this is the body of the req
+2017-11-05T22:59:03.848Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T22:59:03.849Z - debug: this is the body of the req dealer=North, deal=[D12, D11, S9, H13, C11, C10, S11, D10, H10, C13, C12, D14, S14, S10, C14, D13, S12, D9, H11, H12, S13, C9, H14, H9]
+2017-11-05T22:59:03.849Z - debug: /api/saveDeal post {"dealer":"North","deal":["D12","D11","S9","H13","C11","C10","S11","D10","H10","C13","C12","D14","S14","S10","C14","D13","S12","D9","H11","H12","S13","C9","H14","H9"]}
+2017-11-05T22:59:03.850Z - debug: This is string about to be saved on saveDeal {"dealer":"North","deal":["D12","D11","S9","H13","C11","C10","S11","D10","H10","C13","C12","D14","S14","S10","C14","D13","S12","D9","H11","H12","S13","C9","H14","H9"]}
+2017-11-05T22:59:03.852Z - info: return from fs
+2017-11-05T22:59:03.918Z - debug: /api/getDeal in app.js app.all
+2017-11-05T22:59:03.919Z - debug: this is the body of the req
+2017-11-05T23:00:46.989Z - debug: Just prior to call
+2017-11-05T23:00:46.992Z - debug: new winston log for shared logs
+2017-11-05T23:00:46.993Z - debug: start of winston logging
+2017-11-05T23:00:47.005Z - debug: Listening on port 3000
+2017-11-05T23:00:48.815Z - debug: /table in app.js app.all
+2017-11-05T23:00:48.823Z - debug: this is the body of the req
+2017-11-05T23:00:48.857Z - debug: /login in app.js app.all
+2017-11-05T23:00:48.857Z - debug: this is the body of the req
+2017-11-05T23:00:51.028Z - debug: /login in app.js app.all
+2017-11-05T23:00:51.029Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-05T23:00:51.216Z - debug: /table in app.js app.all
+2017-11-05T23:00:51.217Z - debug: this is the body of the req
+2017-11-05T23:00:51.911Z - debug: /api/results in app.js app.all
+2017-11-05T23:00:51.911Z - debug: this is the body of the req
+2017-11-05T23:00:53.647Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T23:00:53.647Z - debug: this is the body of the req dealer=North, deal=[C10, H9, H14, C14, D11, S14, D12, D13, S12, S10, H13, C12, H11, S9, H12, C13, D9, S11, H10, C9, C11, D10, S13, D14]
+2017-11-05T23:00:53.647Z - debug: /api/saveDeal post {"dealer":"North","deal":["C10","H9","H14","C14","D11","S14","D12","D13","S12","S10","H13","C12","H11","S9","H12","C13","D9","S11","H10","C9","C11","D10","S13","D14"]}
+2017-11-05T23:00:53.648Z - debug: This is string about to be saved on saveDeal [{"dealer":"North","deal":["C10","H9","H14","C14","D11","S14","D12","D13","S12","S10","H13","C12","H11","S9","H12","C13","D9","S11","H10","C9","C11","D10","S13","D14"]}]
+2017-11-05T23:00:53.651Z - info: return from fs
+2017-11-05T23:00:53.704Z - debug: /api/getDeal in app.js app.all
+2017-11-05T23:00:53.705Z - debug: this is the body of the req
+2017-11-05T23:04:36.194Z - debug: Just prior to call
+2017-11-05T23:04:36.206Z - debug: new winston log for shared logs
+2017-11-05T23:04:36.206Z - debug: start of winston logging
+2017-11-05T23:04:36.219Z - debug: Listening on port 3000
+2017-11-05T23:04:38.230Z - debug: /table in app.js app.all
+2017-11-05T23:04:38.230Z - debug: this is the body of the req
+2017-11-05T23:04:38.245Z - debug: /login in app.js app.all
+2017-11-05T23:04:38.245Z - debug: this is the body of the req
+2017-11-05T23:04:41.658Z - debug: /login in app.js app.all
+2017-11-05T23:04:41.658Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-05T23:04:41.834Z - debug: /table in app.js app.all
+2017-11-05T23:04:41.834Z - debug: this is the body of the req
+2017-11-05T23:04:42.453Z - debug: /api/results in app.js app.all
+2017-11-05T23:04:42.453Z - debug: this is the body of the req
+2017-11-05T23:04:45.109Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T23:04:45.110Z - debug: this is the body of the req dealer=North, deal=[S10, H11, H10, C12, D11, S13, D14, S9, C10, D10, H12, C9, H14, C14, S12, D9, D12, C13, S14, H13, C11, H9, D13, S11]
+2017-11-05T23:04:45.110Z - debug: /api/saveDeal post {"dealer":"North","deal":["S10","H11","H10","C12","D11","S13","D14","S9","C10","D10","H12","C9","H14","C14","S12","D9","D12","C13","S14","H13","C11","H9","D13","S11"]}
+2017-11-05T23:04:45.111Z - debug: [object Object] in error handlerUnexpected token o in JSON at position 1
+2017-11-05T23:11:44.757Z - debug: Just prior to call
+2017-11-05T23:11:44.762Z - debug: new winston log for shared logs
+2017-11-05T23:11:44.763Z - debug: start of winston logging
+2017-11-05T23:11:44.773Z - debug: Listening on port 3000
+2017-11-05T23:11:46.744Z - debug: /table in app.js app.all
+2017-11-05T23:11:46.744Z - debug: this is the body of the req
+2017-11-05T23:11:46.759Z - debug: /login in app.js app.all
+2017-11-05T23:11:46.760Z - debug: this is the body of the req
+2017-11-05T23:11:49.491Z - debug: /login in app.js app.all
+2017-11-05T23:11:49.491Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-05T23:11:49.684Z - debug: /table in app.js app.all
+2017-11-05T23:11:49.684Z - debug: this is the body of the req
+2017-11-05T23:11:50.351Z - debug: /api/results in app.js app.all
+2017-11-05T23:11:50.351Z - debug: this is the body of the req
+2017-11-05T23:11:52.611Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T23:11:52.612Z - debug: this is the body of the req dealer=North, deal=[D13, C11, H10, H14, C9, H11, S13, D14, D9, H13, S12, S14, S11, D12, H12, C12, D10, C13, S10, C10, D11, H9, S9, C14]
+2017-11-05T23:11:52.612Z - debug: /api/saveDeal post {"dealer":"North","deal":["D13","C11","H10","H14","C9","H11","S13","D14","D9","H13","S12","S14","S11","D12","H12","C12","D10","C13","S10","C10","D11","H9","S9","C14"]}
+2017-11-05T23:11:52.612Z - debug: json parse of req.body {"dealer":"North","deal":["D13","C11","H10","H14","C9","H11","S13","D14","D9","H13","S12","S14","S11","D12","H12","C12","D10","C13","S10","C10","D11","H9","S9","C14"]}
+2017-11-05T23:11:52.617Z - error: uncaughtException: jsonData is not defined date=Sun Nov 05 2017 17:11:52 GMT-0600 (CST), pid=13425, uid=501, gid=20, cwd=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad, execPath=/usr/local/bin/node, version=v6.9.3, argv=[/usr/local/bin/node, /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/bin/www], rss=102166528, heapTotal=79278080, heapUsed=54588808, loadavg=[1.90283203125, 1.84228515625, 1.865234375], uptime=629056, trace=[column=44, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/controllers/apiController.js, function=readFileCallback, line=83, method=null, native=false, column=3, file=fs.js, function=tryToString, line=455, method=null, native=false, column=12, file=fs.js, function=FSReqWrap.readFileAfterClose [as oncomplete], line=442, method=readFileAfterClose [as oncomplete], native=false], stack=[ReferenceError: jsonData is not defined,     at readFileCallback (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/controllers/apiController.js:83:44),     at tryToString (fs.js:455:3),     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:442:12)]
+2017-11-05T23:12:55.942Z - debug: Just prior to call
+2017-11-05T23:12:55.948Z - debug: new winston log for shared logs
+2017-11-05T23:12:55.948Z - debug: start of winston logging
+2017-11-05T23:12:55.963Z - debug: Listening on port 3000
+2017-11-05T23:12:56.183Z - debug: /table in app.js app.all
+2017-11-05T23:12:56.184Z - debug: this is the body of the req
+2017-11-05T23:12:56.202Z - debug: /login in app.js app.all
+2017-11-05T23:12:56.202Z - debug: this is the body of the req
+2017-11-05T23:12:59.023Z - debug: /login in app.js app.all
+2017-11-05T23:12:59.023Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-05T23:12:59.215Z - debug: /table in app.js app.all
+2017-11-05T23:12:59.215Z - debug: this is the body of the req
+2017-11-05T23:12:59.836Z - debug: /api/results in app.js app.all
+2017-11-05T23:12:59.836Z - debug: this is the body of the req
+2017-11-05T23:13:03.020Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T23:13:03.020Z - debug: this is the body of the req dealer=North, deal=[S12, H11, D11, H10, D13, D10, S13, S11, S14, C13, C9, C14, C10, H9, C12, H13, H14, C11, D12, D9, D14, H12, S9, S10]
+2017-11-05T23:13:03.021Z - debug: /api/saveDeal post {"dealer":"North","deal":["S12","H11","D11","H10","D13","D10","S13","S11","S14","C13","C9","C14","C10","H9","C12","H13","H14","C11","D12","D9","D14","H12","S9","S10"]}
+2017-11-05T23:13:03.021Z - debug: json parse of req.body {"dealer":"North","deal":["S12","H11","D11","H10","D13","D10","S13","S11","S14","C13","C9","C14","C10","H9","C12","H13","H14","C11","D12","D9","D14","H12","S9","S10"]}
+2017-11-05T23:13:03.024Z - error: uncaughtException: jsonData is not defined date=Sun Nov 05 2017 17:13:03 GMT-0600 (CST), pid=13434, uid=501, gid=20, cwd=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad, execPath=/usr/local/bin/node, version=v6.9.3, argv=[/usr/local/bin/node, /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/bin/www], rss=100667392, heapTotal=78229504, heapUsed=54308328, loadavg=[1.8701171875, 1.830078125, 1.8544921875], uptime=629127, trace=[column=44, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/controllers/apiController.js, function=readFileCallback, line=83, method=null, native=false, column=3, file=fs.js, function=tryToString, line=455, method=null, native=false, column=12, file=fs.js, function=FSReqWrap.readFileAfterClose [as oncomplete], line=442, method=readFileAfterClose [as oncomplete], native=false], stack=[ReferenceError: jsonData is not defined,     at readFileCallback (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/controllers/apiController.js:83:44),     at tryToString (fs.js:455:3),     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:442:12)]
+2017-11-05T23:14:38.930Z - debug: Just prior to call
+2017-11-05T23:14:38.935Z - debug: new winston log for shared logs
+2017-11-05T23:14:38.936Z - debug: start of winston logging
+2017-11-05T23:14:38.943Z - debug: Listening on port 3000
+2017-11-05T23:14:41.652Z - debug: /table in app.js app.all
+2017-11-05T23:14:41.652Z - debug: this is the body of the req
+2017-11-05T23:14:41.668Z - debug: /login in app.js app.all
+2017-11-05T23:14:41.668Z - debug: this is the body of the req
+2017-11-05T23:14:44.403Z - debug: /login in app.js app.all
+2017-11-05T23:14:44.403Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-05T23:14:44.589Z - debug: /table in app.js app.all
+2017-11-05T23:14:44.590Z - debug: this is the body of the req
+2017-11-05T23:14:45.199Z - debug: /api/results in app.js app.all
+2017-11-05T23:14:45.200Z - debug: this is the body of the req
+2017-11-05T23:14:49.099Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T23:14:49.099Z - debug: this is the body of the req dealer=North, deal=[D11, H11, D13, S13, S10, H9, C11, D9, H14, H13, S11, C14, C10, C13, D12, S12, C9, S9, D14, H10, C12, D10, H12, S14]
+2017-11-05T23:14:49.100Z - debug: /api/saveDeal post {"dealer":"North","deal":["D11","H11","D13","S13","S10","H9","C11","D9","H14","H13","S11","C14","C10","C13","D12","S12","C9","S9","D14","H10","C12","D10","H12","S14"]}
+2017-11-05T23:14:49.100Z - debug: json parse of req.body {"dealer":"North","deal":["D11","H11","D13","S13","S10","H9","C11","D9","H14","H13","S11","C14","C10","C13","D12","S12","C9","S9","D14","H10","C12","D10","H12","S14"]}
+2017-11-05T23:14:49.101Z - debug: This is string about to be saved on saveDeal dealer=North, deal=[C10, H9, H14, C14, D11, S14, D12, D13, S12, S10, H13, C12, H11, S9, H12, C13, D9, S11, H10, C9, C11, D10, S13, D14], 1={"dealer":"North","deal":["D11","H11","D13","S13","S10","H9","C11","D9","H14","H13","S11","C14","C10","C13","D12","S12","C9","S9","D14","H10","C12","D10","H12","S14"]}
+2017-11-05T23:14:49.103Z - info: return from fs
+2017-11-05T23:14:49.161Z - debug: /api/getDeal in app.js app.all
+2017-11-05T23:14:49.162Z - debug: this is the body of the req
+2017-11-05T23:14:49.165Z - error: uncaughtException: Unexpected token o in JSON at position 1 date=Sun Nov 05 2017 17:14:49 GMT-0600 (CST), pid=13445, uid=501, gid=20, cwd=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad, execPath=/usr/local/bin/node, version=v6.9.3, argv=[/usr/local/bin/node, /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/bin/www], rss=102092800, heapTotal=79278080, heapUsed=54654720, loadavg=[2.005859375, 1.84326171875, 1.849609375], uptime=629233, trace=[column=null, file=null, function=Object.parse, line=null, method=parse, native=true, column=28, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/controllers/apiController.js, function=readFileCallback, line=101, method=null, native=false, column=3, file=fs.js, function=tryToString, line=455, method=null, native=false, column=12, file=fs.js, function=FSReqWrap.readFileAfterClose [as oncomplete], line=442, method=readFileAfterClose [as oncomplete], native=false], stack=[SyntaxError: Unexpected token o in JSON at position 1,     at Object.parse (native),     at readFileCallback (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/controllers/apiController.js:101:28),     at tryToString (fs.js:455:3),     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:442:12)]
+2017-11-05T23:16:49.180Z - debug: /api/getDeal in app.js app.all
+2017-11-05T23:16:49.180Z - debug: this is the body of the req
+2017-11-05T23:16:59.212Z - debug: Just prior to call
+2017-11-05T23:16:59.217Z - debug: new winston log for shared logs
+2017-11-05T23:16:59.217Z - debug: start of winston logging
+2017-11-05T23:16:59.229Z - debug: Listening on port 3000
+2017-11-05T23:17:00.105Z - debug: /table in app.js app.all
+2017-11-05T23:17:00.105Z - debug: this is the body of the req
+2017-11-05T23:17:00.120Z - debug: /login in app.js app.all
+2017-11-05T23:17:00.120Z - debug: this is the body of the req
+2017-11-05T23:17:02.963Z - debug: /login in app.js app.all
+2017-11-05T23:17:02.963Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-05T23:17:03.159Z - debug: /table in app.js app.all
+2017-11-05T23:17:03.159Z - debug: this is the body of the req
+2017-11-05T23:17:03.811Z - debug: /api/results in app.js app.all
+2017-11-05T23:17:03.812Z - debug: this is the body of the req
+2017-11-05T23:17:06.181Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T23:17:06.181Z - debug: this is the body of the req dealer=North, deal=[H14, C14, D10, C11, C10, D9, C13, H13, D11, C12, H12, D12, C9, S11, S12, D14, S14, S9, H9, H11, S13, H10, D13, S10]
+2017-11-05T23:17:06.182Z - debug: /api/saveDeal post {"dealer":"North","deal":["H14","C14","D10","C11","C10","D9","C13","H13","D11","C12","H12","D12","C9","S11","S12","D14","S14","S9","H9","H11","S13","H10","D13","S10"]}
+2017-11-05T23:17:06.182Z - debug: json parse of req.body {"dealer":"North","deal":["H14","C14","D10","C11","C10","D9","C13","H13","D11","C12","H12","D12","C9","S11","S12","D14","S14","S9","H9","H11","S13","H10","D13","S10"]}
+2017-11-05T23:17:06.184Z - debug: This is arrayToSave after JSON parse of data returned from read file dealer=North, deal=[D11, H11, D13, S13, S10, H9, C11, D9, H14, H13, S11, C14, C10, C13, D12, S12, C9, S9, D14, H10, C12, D10, H12, S14]
+2017-11-05T23:17:06.184Z - debug: This is string about to be saved on saveDeal dealer=North, deal=[D11, H11, D13, S13, S10, H9, C11, D9, H14, H13, S11, C14, C10, C13, D12, S12, C9, S9, D14, H10, C12, D10, H12, S14], 1={"dealer":"North","deal":["H14","C14","D10","C11","C10","D9","C13","H13","D11","C12","H12","D12","C9","S11","S12","D14","S14","S9","H9","H11","S13","H10","D13","S10"]}
+2017-11-05T23:17:06.185Z - info: return from fs
+2017-11-05T23:17:06.250Z - debug: /api/getDeal in app.js app.all
+2017-11-05T23:17:06.250Z - debug: this is the body of the req
+2017-11-05T23:17:06.253Z - error: uncaughtException: Unexpected token o in JSON at position 1 date=Sun Nov 05 2017 17:17:06 GMT-0600 (CST), pid=13474, uid=501, gid=20, cwd=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad, execPath=/usr/local/bin/node, version=v6.9.3, argv=[/usr/local/bin/node, /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/bin/www], rss=101298176, heapTotal=79278080, heapUsed=54779528, loadavg=[1.974609375, 1.857421875, 1.84716796875], uptime=629370, trace=[column=null, file=null, function=Object.parse, line=null, method=parse, native=true, column=28, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/controllers/apiController.js, function=readFileCallback, line=101, method=null, native=false, column=3, file=fs.js, function=tryToString, line=455, method=null, native=false, column=12, file=fs.js, function=FSReqWrap.readFileAfterClose [as oncomplete], line=442, method=readFileAfterClose [as oncomplete], native=false], stack=[SyntaxError: Unexpected token o in JSON at position 1,     at Object.parse (native),     at readFileCallback (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/controllers/apiController.js:101:28),     at tryToString (fs.js:455:3),     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:442:12)]
+2017-11-05T23:19:06.250Z - debug: /api/getDeal in app.js app.all
+2017-11-05T23:19:06.250Z - debug: this is the body of the req
+2017-11-05T23:19:06.253Z - error: uncaughtException: Unexpected token o in JSON at position 1 date=Sun Nov 05 2017 17:19:06 GMT-0600 (CST), pid=13474, uid=501, gid=20, cwd=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad, execPath=/usr/local/bin/node, version=v6.9.3, argv=[/usr/local/bin/node, /Users/jeffomland/Programming/JavaScript Projects/ScratchPad/bin/www], rss=68136960, heapTotal=42827776, heapUsed=33967088, loadavg=[1.9130859375, 1.9375, 1.8818359375], uptime=629490, trace=[column=null, file=null, function=Object.parse, line=null, method=parse, native=true, column=28, file=/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/controllers/apiController.js, function=readFileCallback, line=101, method=null, native=false, column=3, file=fs.js, function=tryToString, line=455, method=null, native=false, column=12, file=fs.js, function=FSReqWrap.readFileAfterClose [as oncomplete], line=442, method=readFileAfterClose [as oncomplete], native=false], stack=[SyntaxError: Unexpected token o in JSON at position 1,     at Object.parse (native),     at readFileCallback (/Users/jeffomland/Programming/JavaScript Projects/ScratchPad/controllers/apiController.js:101:28),     at tryToString (fs.js:455:3),     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:442:12)]
+2017-11-05T23:22:01.875Z - debug: Just prior to call
+2017-11-05T23:22:01.878Z - debug: new winston log for shared logs
+2017-11-05T23:22:01.879Z - debug: start of winston logging
+2017-11-05T23:22:01.891Z - debug: Listening on port 3000
+2017-11-05T23:22:06.100Z - debug: /table in app.js app.all
+2017-11-05T23:22:06.100Z - debug: this is the body of the req
+2017-11-05T23:22:06.117Z - debug: /login in app.js app.all
+2017-11-05T23:22:06.117Z - debug: this is the body of the req
+2017-11-05T23:22:08.704Z - debug: /login in app.js app.all
+2017-11-05T23:22:08.704Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-05T23:22:08.905Z - debug: /table in app.js app.all
+2017-11-05T23:22:08.905Z - debug: this is the body of the req
+2017-11-05T23:22:09.605Z - debug: /api/results in app.js app.all
+2017-11-05T23:22:09.605Z - debug: this is the body of the req
+2017-11-05T23:22:12.197Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T23:22:12.197Z - debug: this is the body of the req dealer=North, deal=[S11, S14, D12, D13, D9, H10, C13, C12, S10, H14, C9, S12, H9, D10, H12, D14, C10, H13, H11, S9, D11, C14, S13, C11]
+2017-11-05T23:22:12.198Z - debug: /api/saveDeal post {"dealer":"North","deal":["S11","S14","D12","D13","D9","H10","C13","C12","S10","H14","C9","S12","H9","D10","H12","D14","C10","H13","H11","S9","D11","C14","S13","C11"]}
+2017-11-05T23:22:12.198Z - debug: json parse of req.body dealer=North, deal=[S11, S14, D12, D13, D9, H10, C13, C12, S10, H14, C9, S12, H9, D10, H12, D14, C10, H13, H11, S9, D11, C14, S13, C11]
+2017-11-05T23:22:12.199Z - debug: This is arrayToSave after JSON parse of data returned from read file dealer=North, deal=[H14, C14, D10, C11, C10, D9, C13, H13, D11, C12, H12, D12, C9, S11, S12, D14, S14, S9, H9, H11, S13, H10, D13, S10]
+2017-11-05T23:22:12.199Z - debug: This is string about to be saved on saveDeal after stringify of array [{"dealer":"North","deal":["H14","C14","D10","C11","C10","D9","C13","H13","D11","C12","H12","D12","C9","S11","S12","D14","S14","S9","H9","H11","S13","H10","D13","S10"]},{"dealer":"North","deal":["S11","S14","D12","D13","D9","H10","C13","C12","S10","H14","C9","S12","H9","D10","H12","D14","C10","H13","H11","S9","D11","C14","S13","C11"]}]
+2017-11-05T23:22:12.201Z - info: return from fs
+2017-11-05T23:22:12.253Z - debug: /api/getDeal in app.js app.all
+2017-11-05T23:22:12.253Z - debug: this is the body of the req
