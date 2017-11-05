@@ -9,23 +9,24 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "bcrypt-nodejs": "latest",
     "body-parser": "~1.17.1",
+    "connect-flash": "~0.1.1",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "express": "~4.15.2",
-    "jade": "~1.11.0",
-    "morgan": "~1.8.1",
-    "serve-favicon": "~2.4.2",
-    "passport": "~0.1.17",
-    "passport-local": "~0.1.6",
-    "passport-facebook": "~1.0.2",
-    "passport-twitter": "~1.0.2",
-    "passport-google-oauth": "~0.1.5",
-    "connect-flash": "~0.1.1",
-    "bcrypt-nodejs": "latest",
-    "method-override": "~1.0.0",
     "express-session": "1.15.5",
-    "mongoose": "^4.4.1"
+    "jade": "~1.11.0",
+    "lodash": "^4.17.4",
+    "method-override": "~1.0.0",
+    "mongoose": "^4.4.1",
+    "morgan": "~1.8.1",
+    "passport": "~0.1.17",
+    "passport-facebook": "~1.0.2",
+    "passport-google-oauth": "~0.1.5",
+    "passport-local": "~0.1.6",
+    "passport-twitter": "~1.0.2",
+    "serve-favicon": "~2.4.2"
   },
   "devDependencies": {
     "pm2": "^2.5.0"

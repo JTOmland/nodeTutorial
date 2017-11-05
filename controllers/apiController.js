@@ -39,6 +39,7 @@ module.exports = function (app) {
 
         docClient.put(params, function(err, data) {
             if(err) {
+                console.log("apiController app.post /api/savehand error on docClient put");
                 console.log(JSON.stringify(err, null, 2))
             } else {
                 console.log("success put", JSON.stringify(data, null, 2));

@@ -4303,3 +4303,132 @@ input is self closing and should not have content.
 2017-11-04T18:13:38.020Z - info: return from fs
 2017-11-04T18:13:38.088Z - debug: /api/getDeal in app.js app.all
 2017-11-04T18:13:38.089Z - debug: this is the body of the req
+2017-11-04T21:34:45.545Z - debug: Just prior to call
+2017-11-04T21:34:45.548Z - debug: new winston log for shared logs
+2017-11-04T21:34:45.549Z - debug: start of winston logging
+2017-11-04T21:34:45.560Z - debug: Listening on port 3000
+2017-11-04T21:34:52.832Z - debug: / in app.js app.all
+2017-11-04T21:34:52.840Z - debug: this is the body of the req
+2017-11-04T21:34:56.722Z - debug: /login in app.js app.all
+2017-11-04T21:34:56.722Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-04T21:34:56.923Z - debug: /table in app.js app.all
+2017-11-04T21:34:56.923Z - debug: this is the body of the req
+2017-11-04T21:34:57.585Z - debug: /api/results in app.js app.all
+2017-11-04T21:34:57.585Z - debug: this is the body of the req
+2017-11-05T14:30:47.053Z - debug: Just prior to call
+2017-11-05T14:30:47.058Z - debug: new winston log for shared logs
+2017-11-05T14:30:47.059Z - debug: start of winston logging
+2017-11-05T14:30:47.072Z - debug: Listening on port 3000
+2017-11-05T18:04:36.949Z - debug: Just prior to call
+2017-11-05T18:04:36.952Z - debug: new winston log for shared logs
+2017-11-05T18:04:36.953Z - debug: start of winston logging
+2017-11-05T18:04:36.966Z - debug: Listening on port 3000
+2017-11-05T18:05:44.045Z - debug: / in app.js app.all
+2017-11-05T18:05:44.046Z - debug: this is the body of the req
+2017-11-05T18:06:45.158Z - debug: / in app.js app.all
+2017-11-05T18:06:45.159Z - debug: this is the body of the req
+2017-11-05T18:07:03.698Z - debug: /table in app.js app.all
+2017-11-05T18:07:03.699Z - debug: this is the body of the req
+2017-11-05T18:07:25.850Z - debug: / in app.js app.all
+2017-11-05T18:07:25.850Z - debug: this is the body of the req
+2017-11-05T18:10:19.119Z - debug: / in app.js app.all
+2017-11-05T18:10:19.120Z - debug: this is the body of the req
+2017-11-05T18:10:28.571Z - debug: /table in app.js app.all
+2017-11-05T18:10:28.571Z - debug: this is the body of the req
+2017-11-05T20:14:48.610Z - debug: Just prior to call
+2017-11-05T20:14:48.614Z - debug: new winston log for shared logs
+2017-11-05T20:14:48.614Z - debug: start of winston logging
+2017-11-05T20:14:48.622Z - debug: Listening on port 3000
+2017-11-05T20:15:01.405Z - debug: /login in app.js app.all
+2017-11-05T20:15:01.405Z - debug: this is the body of the req
+2017-11-05T20:15:02.211Z - debug: /favicon.ico in app.js app.all
+2017-11-05T20:15:02.211Z - debug: this is the body of the req
+2017-11-05T20:15:02.212Z - debug: [object Object]catch 404
+2017-11-05T20:15:02.212Z - debug: [object Object] in error handlerNot Found
+2017-11-05T20:15:04.653Z - debug: /login in app.js app.all
+2017-11-05T20:15:04.653Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-05T20:15:04.847Z - debug: /table in app.js app.all
+2017-11-05T20:15:04.847Z - debug: this is the body of the req
+2017-11-05T20:15:05.180Z - debug: /api/results in app.js app.all
+2017-11-05T20:15:05.180Z - debug: this is the body of the req
+2017-11-05T20:15:11.760Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T20:15:11.760Z - debug: this is the body of the req dealer=North, deal=[D11, D13, C11, H10, H11, H13, S12, D9, D12, C14, H14, H9, D14, C10, C13, S9, S13, H12, C9, S14, D10, S11, S10, C12]
+2017-11-05T20:15:11.761Z - debug: /api/saveDeal post {"dealer":"North","deal":["D11","D13","C11","H10","H11","H13","S12","D9","D12","C14","H14","H9","D14","C10","C13","S9","S13","H12","C9","S14","D10","S11","S10","C12"]}
+2017-11-05T20:15:11.764Z - info: return from fs
+2017-11-05T20:15:11.828Z - debug: /api/getDeal in app.js app.all
+2017-11-05T20:15:11.828Z - debug: this is the body of the req
+2017-11-05T20:15:23.010Z - debug: /table in app.js app.all
+2017-11-05T20:15:23.011Z - debug: this is the body of the req
+2017-11-05T20:15:23.564Z - debug: /api/results in app.js app.all
+2017-11-05T20:15:23.564Z - debug: this is the body of the req
+2017-11-05T20:15:47.708Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T20:15:47.708Z - debug: this is the body of the req dealer=North, deal=[S14, S11, H9, D9, C9, S12, D12, D13, C12, H13, C10, D14, H14, C14, D10, S10, C11, S13, D11, C13, H11, H12, H10, S9]
+2017-11-05T20:15:47.710Z - debug: /api/saveDeal post {"dealer":"North","deal":["S14","S11","H9","D9","C9","S12","D12","D13","C12","H13","C10","D14","H14","C14","D10","S10","C11","S13","D11","C13","H11","H12","H10","S9"]}
+2017-11-05T20:15:47.710Z - info: return from fs
+2017-11-05T20:15:47.770Z - debug: /api/getDeal in app.js app.all
+2017-11-05T20:15:47.771Z - debug: this is the body of the req
+2017-11-05T20:15:59.245Z - debug: /api/saveHand in app.js app.all
+2017-11-05T20:15:59.245Z - debug: this is the body of the req bid=4, dealer=North, location=West, tricksTaken=4
+2017-11-05T20:15:59.246Z - debug: /api/saveHand post [{"16151210NTLnLn":{"bid":4,"dealer":"North","location":"West","tricksTaken":4}}]
+2017-11-05T20:16:00.231Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T20:16:00.232Z - debug: this is the body of the req dealer=East, deal=[H10, H13, D9, S13, H14, S14, H9, S10, S9, H11, D12, C11, S11, C10, C12, D14, C13, C14, D11, C9, D13, S12, H12, D10]
+2017-11-05T20:16:00.232Z - debug: /api/saveDeal post {"dealer":"East","deal":["H10","H13","D9","S13","H14","S14","H9","S10","S9","H11","D12","C11","S11","C10","C12","D14","C13","C14","D11","C9","D13","S12","H12","D10"]}
+2017-11-05T20:16:00.233Z - info: return from fs
+2017-11-05T20:16:00.288Z - debug: /api/getDeal in app.js app.all
+2017-11-05T20:16:00.289Z - debug: this is the body of the req
+2017-11-05T20:17:39.213Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T20:17:39.213Z - debug: this is the body of the req dealer=North, deal=[S10, D10, H13, H9, C9, C14, D9, H10, C13, D14, S9, H11, D12, S12, H14, C12, D13, H12, D11, S14, C10, C11, S11, S13]
+2017-11-05T20:17:39.213Z - debug: /api/saveDeal post {"dealer":"North","deal":["S10","D10","H13","H9","C9","C14","D9","H10","C13","D14","S9","H11","D12","S12","H14","C12","D13","H12","D11","S14","C10","C11","S11","S13"]}
+2017-11-05T20:17:39.214Z - info: return from fs
+2017-11-05T20:17:39.278Z - debug: /api/getDeal in app.js app.all
+2017-11-05T20:17:39.278Z - debug: this is the body of the req
+2017-11-05T20:19:24.313Z - debug: /api/saveHand in app.js app.all
+2017-11-05T20:19:24.313Z - debug: this is the body of the req bid=5, dealer=North, location=West, tricksTaken=5
+2017-11-05T20:19:24.315Z - debug: /api/saveHand post [{"16151413NTLnLn":{"bid":5,"dealer":"North","location":"West","tricksTaken":5}}]
+2017-11-05T20:19:25.320Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T20:19:25.320Z - debug: this is the body of the req dealer=East, deal=[D9, S14, C11, S13, C14, H12, S12, S9, H11, D11, H14, H10, D13, D14, C9, C12, D10, H9, H13, C13, S11, S10, C10, D12]
+2017-11-05T20:19:25.320Z - debug: /api/saveDeal post {"dealer":"East","deal":["D9","S14","C11","S13","C14","H12","S12","S9","H11","D11","H14","H10","D13","D14","C9","C12","D10","H9","H13","C13","S11","S10","C10","D12"]}
+2017-11-05T20:19:25.321Z - info: return from fs
+2017-11-05T20:19:25.372Z - debug: /api/getDeal in app.js app.all
+2017-11-05T20:19:25.372Z - debug: this is the body of the req
+2017-11-05T20:21:24.317Z - debug: /api/saveHand in app.js app.all
+2017-11-05T20:21:24.317Z - debug: this is the body of the req bid=5, dealer=North, location=West, tricksTaken=5
+2017-11-05T20:21:24.318Z - debug: /api/saveHand post [{"16151413NTLnLn":{"bid":5,"dealer":"North","location":"West","tricksTaken":5}}]
+2017-11-05T20:23:24.341Z - debug: /api/saveHand in app.js app.all
+2017-11-05T20:23:24.342Z - debug: this is the body of the req bid=5, dealer=North, location=West, tricksTaken=5
+2017-11-05T20:23:24.342Z - debug: /api/saveHand post [{"16151413NTLnLn":{"bid":5,"dealer":"North","location":"West","tricksTaken":5}}]
+2017-11-05T20:24:02.189Z - debug: Just prior to call
+2017-11-05T20:24:02.199Z - debug: new winston log for shared logs
+2017-11-05T20:24:02.199Z - debug: start of winston logging
+2017-11-05T20:24:02.212Z - debug: Listening on port 3000
+2017-11-05T20:24:09.618Z - debug: /table in app.js app.all
+2017-11-05T20:24:09.618Z - debug: this is the body of the req
+2017-11-05T20:24:09.638Z - debug: /login in app.js app.all
+2017-11-05T20:24:09.638Z - debug: this is the body of the req
+2017-11-05T20:24:12.782Z - debug: /login in app.js app.all
+2017-11-05T20:24:12.783Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-05T20:24:12.956Z - debug: /table in app.js app.all
+2017-11-05T20:24:12.957Z - debug: this is the body of the req
+2017-11-05T20:24:13.305Z - debug: /api/results in app.js app.all
+2017-11-05T20:24:13.305Z - debug: this is the body of the req
+2017-11-05T20:24:18.580Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T20:24:18.580Z - debug: this is the body of the req dealer=North, deal=[D12, D14, C10, H10, S12, C13, C9, C11, D11, S11, H9, H11, S9, S10, H13, D9, D10, D13, S13, C12, S14, H14, H12, C14]
+2017-11-05T20:24:18.581Z - debug: /api/saveDeal post {"dealer":"North","deal":["D12","D14","C10","H10","S12","C13","C9","C11","D11","S11","H9","H11","S9","S10","H13","D9","D10","D13","S13","C12","S14","H14","H12","C14"]}
+2017-11-05T20:24:18.583Z - info: return from fs
+2017-11-05T20:24:18.635Z - debug: /api/getDeal in app.js app.all
+2017-11-05T20:24:18.635Z - debug: this is the body of the req
+2017-11-05T20:25:14.592Z - debug: /api/saveHand in app.js app.all
+2017-11-05T20:25:14.593Z - debug: this is the body of the req bid=3, dealer=North, location=East, tricksTaken=3
+2017-11-05T20:25:14.594Z - debug: /api/saveHand post [{"16159NTLLnLn":{"bid":3,"dealer":"North","location":"East","tricksTaken":3}}]
+2017-11-05T20:25:15.594Z - debug: /api/saveDeal in app.js app.all
+2017-11-05T20:25:15.594Z - debug: this is the body of the req dealer=East, deal=[S13, C14, D13, D14, C13, D9, S9, D11, C12, H10, D10, S10, H14, H13, C11, D12, S14, S11, S12, C10, H12, C9, H9, H11]
+2017-11-05T20:25:15.594Z - debug: /api/saveDeal post {"dealer":"East","deal":["S13","C14","D13","D14","C13","D9","S9","D11","C12","H10","D10","S10","H14","H13","C11","D12","S14","S11","S12","C10","H12","C9","H9","H11"]}
+2017-11-05T20:25:15.595Z - info: return from fs
+2017-11-05T20:25:15.644Z - debug: /api/getDeal in app.js app.all
+2017-11-05T20:25:15.644Z - debug: this is the body of the req
+2017-11-05T20:27:14.595Z - debug: /api/saveHand in app.js app.all
+2017-11-05T20:27:14.595Z - debug: this is the body of the req bid=3, dealer=North, location=East, tricksTaken=3
+2017-11-05T20:27:14.595Z - debug: /api/saveHand post [{"16159NTLLnLn":{"bid":3,"dealer":"North","location":"East","tricksTaken":3}}]
+2017-11-05T20:29:14.601Z - debug: /api/saveHand in app.js app.all
+2017-11-05T20:29:14.601Z - debug: this is the body of the req bid=3, dealer=North, location=East, tricksTaken=3
+2017-11-05T20:29:14.601Z - debug: /api/saveHand post [{"16159NTLLnLn":{"bid":3,"dealer":"North","location":"East","tricksTaken":3}}]
