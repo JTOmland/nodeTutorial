@@ -5854,3 +5854,21 @@ input is self closing and should not have content.
 2017-11-11T19:49:31.709Z - debug: this is the body of the req
 2017-11-11T19:49:32.612Z - debug: /dealSelector in app.js app.all
 2017-11-11T19:49:32.613Z - debug: this is the body of the req
+2017-11-11T20:04:45.707Z - debug: Just prior to call
+2017-11-11T20:04:45.711Z - debug: new winston log for shared logs
+2017-11-11T20:04:45.712Z - debug: start of winston logging
+2017-11-11T20:04:45.721Z - debug: Listening on port 3000
+2017-11-11T20:04:47.903Z - debug: /table in app.js app.all
+2017-11-11T20:04:47.903Z - debug: this is the body of the req
+2017-11-11T20:04:47.923Z - debug: /login in app.js app.all
+2017-11-11T20:04:47.924Z - debug: this is the body of the req
+2017-11-11T20:04:50.712Z - debug: /login in app.js app.all
+2017-11-11T20:04:50.713Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-11-11T20:04:50.918Z - debug: /table in app.js app.all
+2017-11-11T20:04:50.919Z - debug: this is the body of the req
+2017-11-11T20:04:52.137Z - debug: /api/results in app.js app.all
+2017-11-11T20:04:52.137Z - debug: this is the body of the req
+2017-11-11T20:04:52.149Z - debug: /api/getDeal in app.js app.all
+2017-11-11T20:04:52.149Z - debug: this is the body of the req
+2017-11-11T20:04:53.533Z - debug: /dealSelector in app.js app.all
+2017-11-11T20:04:53.533Z - debug: this is the body of the req
