@@ -5,6 +5,7 @@ vsapp.factory('DataFactory', ['$http', '$q', function ($http, $q) {
         getData: getData,
         saveData: saveData,
         saveHand: saveDeal,
+        getDeal: getDeal,
     };
     return service;
 
@@ -19,7 +20,6 @@ vsapp.factory('DataFactory', ['$http', '$q', function ($http, $q) {
                 'calledFrom': 'admin'
             }
         }).success(function (data, status) {
-            getDeal();
         }).error(function (data, status) {
         })
     }
@@ -62,15 +62,15 @@ vsapp.factory('DataFactory', ['$http', '$q', function ($http, $q) {
     function getDeal() {
         var deferred = $q.defer();
         var urls = '/api/getDeal';
-        console.log("before http call");
+        console.log("before http call for getDeal");
         $http({
             method: 'GET',
             url: urls,
         }).then(function successCallback(response) {
-            console.log("success retrieving data ", response.data);
+            console.log("success retrieving getDeal ", response.data);
             deferred.resolve(response.data);
         }, function errorCallback(response) {
-            console.log("error on http call for getting data", response);
+            console.log("error on http call for getDeal", response);
             deferred.reject(response);
         });
         return deferred.promise;

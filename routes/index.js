@@ -14,6 +14,9 @@ module.exports = function (passport) {
     res.render('probabilityTable');
   });
 
+  router.get('/dealSelector', function(req, res) {
+    res.render('dealSelector');
+  });
 
 
   /* GET home page. */

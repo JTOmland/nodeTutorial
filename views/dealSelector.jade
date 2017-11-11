@@ -1,0 +1,24 @@
+md-dialog(flex)
+  md-toolbar(layout='row')
+    .md-toolbar-tools
+      h2 Deal Selector
+      md-button.md-icon-button(ng-click='save()')
+        md-icon save
+      md-button.md-icon-button(ng-click='closeEdit()')
+        md-icon close
+  //- md-dialog-content
+  //-   md-list(flex="")
+  //-     md-subheader  3 line item
+  //-     md-list-item(ng-repeat="item in options.backupDeal" ng-cick="click()")
+  //-       h3 {{item.dealer}}
+  md-dialog-content
+        .md-dialog-content(layout="row" layout-align="center")
+            md-content
+              md-list(flex="")
+                md-list-item.md-3-line(ng-repeat= 'item in options.backupDeal', ng-click='selectUnit(item)', ng-class="{selected: item === selectedDeal}")
+                  div.md-list-item-text(layout="column")
+                    h3 {{item.dealer}} 
+                    h3 {{item.deal}}
+                    md-divider
+
+      

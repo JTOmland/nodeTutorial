@@ -73,6 +73,6 @@ block content
                         td {{p.isbidder}}
                         td {{p.isDealer}}
                         td {{p.isWinner}}
-                md-virtual-repeat-container(id="vertical-container" style = "height: 600px")
-                    div.repeated-item(md-virtual-repeat="item in messages")
-                        {{item}}
+                md-virtual-repeat-container.customMessage(id="vertical-container" style = "height: 600px")
+                    div.repeated-item(md-virtual-repeat="item in customMsg")
+                        &nbsp &nbsp{{item}}

@@ -111,3 +111,27 @@ td.wider{
     left:10px;
 }
 
+.md-virtual-repeat-container.customMessage {
+    margin: 20px;
+    background-color: palegoldenrod;
+}
+
+.md-virtual-repeat-offsetter  div{
+    padding-left: 20px;
+    background-color: rgb(188, 170, 238);
+}
+
+.md-content.li {
+    line-height: 150%;
+}
+
+#dialogContent_7 div md-content li {
+    padding: 10px;
+}
+
+.selected {
+    background-color: red;
+}
+
+
+
