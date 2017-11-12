@@ -6,6 +6,8 @@ MainController.$inject = ['$scope', '$location', '$http', '$q', '$rootScope', '$
 
 function MainController($scope, $location, $http, $q, $rootscope, $timeout, $interval, $mdDialog, $rootScope, DataFactory, CPUService, Player, CommService, Rules, Utilities) {
     'use strict'
+
+    var pause = false;
     $scope.data = [];
     $scope.backupDeals = [];
     var targetData = 10;
@@ -58,6 +60,7 @@ function MainController($scope, $location, $http, $q, $rootscope, $timeout, $int
 
             angular.copy(response, $scope.backupDeals);
             console.log("this is the backupDeals", $scope.backupDeals);
+
         });
         $scope.gameInformation = {
             auto: false,
@@ -122,7 +125,10 @@ function MainController($scope, $location, $http, $q, $rootscope, $timeout, $int
         $scope.arrayToRender.push($scope.deck);
         //Lets add a discard pile
         $scope.discardPile = new cards.Hand({ faceUp: true, x: 350, y: 250 });
+        //hand to show last trick
+        $scope.lastTrickPile = new cards.Hand({ faceUp: true, x: 600, y: 60 });
         $scope.arrayToRender.push($scope.discardPile);
+        $scope.arrayToRender.push($scope.lastTrickPile);
         $scope.discardPile.x += 50;
         $scope.gameInformation.numberOfPlayersIn = 4;
         $scope.gameInformation.currentPlayer = $scope.gameInformation.playersIn[0];
@@ -140,6 +146,41 @@ function MainController($scope, $location, $http, $q, $rootscope, $timeout, $int
     };
 
     init();
+
+    $scope.showTrick = function(){
+        console.log("showtrick pause", pause);
+        pause = !pause;
+        if(pause){
+            console.log('This is whats saved in maincontroller $scope.hand', $scope.hand);
+            console.log("this is discardPile", $scope.discardPile);
+            console.log("and this is the deck", $scope.deck, " and deck .length", $scope.deck.length);
+            console.log("other", ($scope.gameInformation.numberOfPlayersIn));
+            var examplePile = [];
+            var deckLength = $scope.deck.length;
+            for(var i = deckLength; i > deckLength - $scope.gameInformation.numberOfPlayersIn; i--){
+                console.log("addint card to lastTrickPile ",$scope.deck[0].shortName, " i: ", i);
+                $scope.lastTrickPile.addCard($scope.deck[$scope.deck.length-1]);
+            }
+            $scope.render(true, true, true, true, true, true, true);   
+        } else {
+            console.log("length ")
+            var length = $scope.lastTrickPile.length;
+            for(var i = 0; i < length; i++){
+                console.log("lastTrick card", $scope.lastTrickPile[0]);
+                $scope.deck.addCard($scope.lastTrickPile[0]);
+            }
+            console.log("The deck ", $scope.deck)
+            // var i = 0;
+            // while($scope.lastTrickPile[i]){
+            //     console.log("Going off pause and putting lastTrick into deck", $scope.lastTrickPile[i], " i ", i);
+            //    $scope.deck.addCard($scope.lastTrickPile[i]);
+            //    i++
+            // }
+            onStartTurn();
+        }
+           
+
+    }
 
     $scope.logout = function (path) {
         console.log("logout path", path);
@@ -186,7 +227,10 @@ function MainController($scope, $location, $http, $q, $rootscope, $timeout, $int
 
     $scope.render = function (north, east, south, west, deck, pile, alt) {
         console.log("render called")
-        alt = !alt;
+        for(var i = 0; i < arguments.length; i++){
+            console.log("render arguments", arguments[i]);
+        }
+        //alt = alt;
         $scope.itemsToRender = { player1: north, player2: east, player3: south, player4: west, deck: deck, pile: pile, alt: alt }
         // $scope.test = itemsToRender;
 
@@ -372,45 +416,52 @@ function MainController($scope, $location, $http, $q, $rootscope, $timeout, $int
 
 
     function onStartTurn() {
-        console.log("beggining of onStartTurn testing, gamestate, playerTurnComplete", $scope.testing, $scope.gameInformation.gameState, playerTurnComplete);
-        if ($scope.testing == true && $scope.gameInformation.gameState == 'Play' && playerTurnComplete) {
-            $scope.render(true, true, true, true, true, true, true);
+
+        if(pause){
+            
         } else {
-            $timeout(function () {
-                console.log("inside timeout function", $scope.gameInformation.currentPlayer.name, ($scope.gameInformation.currentPlayer.isIn));
-                if ($scope.gameInformation.currentPlayer.isIn) {
-                    if ($scope.gameInformation.gameState == 'Deal') {
-                        onCurrentPlayerEndTurn(null);
-                    } else {
-                        console.log("not deal state check not handend", $scope.gameInformation.gameState)
-                        if ($scope.gameInformation.gameState != 'HandEnd') {
-                            console.log("onStartTurn check human vs cpu activegame and currentPlayerType", $scope.currentPlayer, $scope.activeGame, $scope.gameInformation.currentPlayer.type)
-                            if ($scope.activeGame && $scope.gameInformation.currentPlayer.type == 'cpu') {
-                                $scope.gameInformation.currentPlayer.setNextAction($scope.gameInformation.gameState);
-                                var playerAction = $scope.gameInformation.currentPlayer.nextAction($scope.gameInformation.currentPlayer, $scope.gameInformation);
-                                onCurrentPlayerEndTurn(playerAction);
-                            } else {
-                                console.log("Human player turn or end of game", angular.isDefined(stop))
-                                console.log("this is stop", stop)
-                                // $scope.stopGame();
-                            }
-                        } else {
+            console.log("beggining of onStartTurn testing, gamestate, playerTurnComplete", $scope.testing, $scope.gameInformation.gameState, playerTurnComplete);
+            if ($scope.testing == true && $scope.gameInformation.gameState == 'Play' && playerTurnComplete) {
+                $scope.render(true, true, true, true, true, true, true);
+            } else {
+                $timeout(function () {
+                    console.log("inside timeout function", $scope.gameInformation.currentPlayer.name, ($scope.gameInformation.currentPlayer.isIn));
+                    if ($scope.gameInformation.currentPlayer.isIn) {
+                        if ($scope.gameInformation.gameState == 'Deal') {
                             onCurrentPlayerEndTurn(null);
+                        } else {
+                            console.log("not deal state check not handend", $scope.gameInformation.gameState)
+                            if ($scope.gameInformation.gameState != 'HandEnd') {
+                                console.log("onStartTurn check human vs cpu activegame and currentPlayerType", $scope.currentPlayer, $scope.activeGame, $scope.gameInformation.currentPlayer.type)
+                                if ($scope.activeGame && $scope.gameInformation.currentPlayer.type == 'cpu') {
+                                    $scope.gameInformation.currentPlayer.setNextAction($scope.gameInformation.gameState);
+                                    var playerAction = $scope.gameInformation.currentPlayer.nextAction($scope.gameInformation.currentPlayer, $scope.gameInformation);
+                                    onCurrentPlayerEndTurn(playerAction);
+                                } else {
+                                    console.log("Human player turn or end of game", angular.isDefined(stop))
+                                    console.log("this is stop", stop)
+                                    // $scope.stopGame();
+                                }
+                            } else {
+                                onCurrentPlayerEndTurn(null);
+                            }
+    
                         }
-
+                        //  $scope.render(true, true, true, true, true, true, true);
+                    } else {
+                        console.log($scope.gameInformation.currentPlayer.location, " not in")
+                        onCurrentPlayerEndTurn(null);
                     }
-                    //  $scope.render(true, true, true, true, true, true, true);
-                } else {
-                    console.log($scope.gameInformation.currentPlayer.location, " not in")
-                    onCurrentPlayerEndTurn(null);
-                }
-                // turnOver = true;
+                    // turnOver = true;
+    
+                }, $scope.playSpeed);
+    
+                console.log("end of timeout")
+            }
+    
 
-            }, $scope.playSpeed);
-
-            console.log("end of timeout")
         }
-
+        
     }
 
     function onCurrentPlayerEndTurn(playerAction) {
@@ -587,7 +638,7 @@ function MainController($scope, $location, $http, $q, $rootscope, $timeout, $int
                         $timeout(function () {
                             moveCardsToDeck($scope.discardPile);
 
-                        }, 1000);
+                        }, 2000);
                         if ($scope.gameInformation.tricks == 6) {
                             //hand has ended score it and deal
                             $scope.gameInformation.gameState = 'HandEnd'

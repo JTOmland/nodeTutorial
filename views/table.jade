@@ -11,6 +11,7 @@ block content
             
         //- md-button.md-primary(ng-show="gameState == 'Bidding'" aria-label="Bid" ng-click="makebid()") Bid {{bid}}
         md-input-container(layout='row')
+            md-button.md-primary.md-raised(ng-click="showTrick()") Show Trick            
             md-button.md-primary.md-raised(ng-click="test()") Test
             md-button.md-primary.md-raised(ng-click="checkProbabilities()") Check Probabilities
             md-button.md-primary.md-raised(ng-click="logout('/logout')") Logout

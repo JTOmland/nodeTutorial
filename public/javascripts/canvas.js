@@ -37,22 +37,34 @@ vsapp.directive("drawCanvas", function () {
                 });
             });
             scope.$watch(scope.render, function(value){
-                console.log("canvas watch called")
+                console.log("canvas watch called value", value);
                 //the value passed is whether this needs to be rendered true or false
                 if(value){
-                     draw(value.player1,value.player2,value.player3,value.player4,value.deck, value.pile);
+                     draw(value.player1,value.player2,value.player3,value.player4,value.deck, value.pile, value.alt);
                 }
                
             });
            
-            function draw(north, east, south, west, deck, pile) {
+            function draw(north, east, south, west, deck, pile, lastTrick) {
+                console.log("draw arguments north:", north);
+                console.log("draw arguments north:", east);
+                console.log("draw arguments north:", south);
+                console.log("draw arguments north:", west);
+                console.log("draw arguments north:", deck);
+                console.log("draw arguments north:", pile);
+                console.log("draw arguments north:", lastTrick);
+                console.log("This is the lastTrick in arraytodraw", scope.startdraw[scope.startdraw.length-1]);
+                console.log("This is the lastTrick in arraytodraw north", scope.startdraw[0]);
                 var ctx = cv1.getContext('2d');
                 ctx.clearRect(0,0,900, 900);
                 for(var i = 0; i < arguments.length; i++){
                     if(arguments[i]){
                         var hand = scope.startdraw[i];
+                        console.log("This is the north called same way in arraytodraw north", scope.startdraw[i], " and i", i);
+                        console.log("Render hand after set equal to draw", hand);
                         var cardCounter = 0;
                         _.each(scope.startdraw[i], function(card){
+                            console.log("render drawing card with i", card, i);
                             var imgLocation = {};
                             var xAxisNum = card.rank;
                             if (xAxisNum == 14) { xAxisNum = 1 };

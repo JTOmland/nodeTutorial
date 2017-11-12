@@ -1,0 +1,22 @@
+Finish show last trick
+    -Game can't continue
+    -All cards shown
+    -Ok button to send show trick back to pile
+Labels on canvas for players names
+    -get logged in user
+    -Human player variable
+Options/Settings Check Develoopment
+    -Index player
+    -Show hands button
+    -Show messages
+    -cards face up
+Add stats to user
+Check game end/winner
+    Reset game with modal
+Add shit talk messages
+Animation of deal and card player
+Look at loop again
+Can adjust time for trick before it is put in pile
+Improve Animation
+    Don't lead tp card if higher card out
+Add welcome and rules
