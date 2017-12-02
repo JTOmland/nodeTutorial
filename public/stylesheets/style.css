@@ -1,6 +1,7 @@
 body {
   /*padding: 50px;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  overflow: hidden;
 }
 
 a {
@@ -109,6 +110,10 @@ td.wider{
     position: relative;
     top: 5px;
     left:10px;
+}
+
+.fixed-bar {
+    position: fixed;
 }
 
 .md-virtual-repeat-container.customMessage {

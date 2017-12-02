@@ -90,13 +90,13 @@ function MainController($scope, $location, $http, $q, $rootscope, $timeout, $int
         var newPlayer = new Player({ location: 'North', type: 'human', name: 'nate', score: 0, tricksTaken: 0, sortedHand: {}, topSuit: 's', handScore: 0, isbidder: false, isDealer: true, isIn: true, hand: new cards.Hand({ faceUp: true, x: 325, y: 60 }) });
         $scope.gameInformation.playersIn.push(newPlayer);
         $scope.arrayToRender.push(newPlayer.hand);
-        newPlayer = new Player({ location: 'East', type: 'cpu', name: 'evan', score: 0, tricksTaken: 0, sortedHand: {}, topSuit: 's', handScore: 0, isbidder: false, isDealer: false, isIn: true, hand: new cards.Hand({ faceUp: true, x: 600, y: 300 }) });
+        newPlayer = new Player({ location: 'East', type: 'cpu', name: 'evan', score: 0, tricksTaken: 0, sortedHand: {}, topSuit: 's', handScore: 0, isbidder: false, isDealer: false, isIn: true, hand: new cards.Hand({ faceUp: true, x: 600, y: 200 }) });
         $scope.gameInformation.playersIn.push(newPlayer);
         $scope.arrayToRender.push(newPlayer.hand);
-        newPlayer = new Player({ location: 'South', type: 'cpu', name: 'same', score: 0, tricksTaken: 0, sortedHand: {}, topSuit: 's', handScore: 0, isbidder: false, isDealer: false, isIn: true, hand: new cards.Hand({ faceUp: true, x: 325, y: 540 }) });
+        newPlayer = new Player({ location: 'South', type: 'cpu', name: 'same', score: 0, tricksTaken: 0, sortedHand: {}, topSuit: 's', handScore: 0, isbidder: false, isDealer: false, isIn: true, hand: new cards.Hand({ faceUp: true, x: 325, y: 340 }) });
         $scope.gameInformation.playersIn.push(newPlayer);
         $scope.arrayToRender.push(newPlayer.hand);
-        newPlayer = new Player({ location: 'West', type: 'cpu', name: 'weseley', score: 0, tricksTaken: 0, sortedHand: {}, topSuit: 's', handScore: 0, isbidder: false, isDealer: false, isIn: true, hand: new cards.Hand({ faceUp: true, x: 50, y: 300 }) });
+        newPlayer = new Player({ location: 'West', type: 'cpu', name: 'weseley', score: 0, tricksTaken: 0, sortedHand: {}, topSuit: 's', handScore: 0, isbidder: false, isDealer: false, isIn: true, hand: new cards.Hand({ faceUp: true, x: 50, y: 200 }) });
         $scope.gameInformation.playersIn.push(newPlayer);
         $scope.arrayToRender.push(newPlayer.hand);
 
@@ -104,7 +104,7 @@ function MainController($scope, $location, $http, $q, $rootscope, $timeout, $int
         $scope.activeGame = true;
         cards.init({ table: '#card-table' });
         //Create a new deck of cards
-        $scope.deck = new cards.Deck({ faceUp: false, x: 350, y: 250 });
+        $scope.deck = new cards.Deck({ faceUp: false, x: 350, y: 200 });
 
         //By default it's in the middle of the container, put it slightly to the side
         $scope.deck.x -= 50;
@@ -124,7 +124,7 @@ function MainController($scope, $location, $http, $q, $rootscope, $timeout, $int
         console.log("deck after adding cards to tracking deck", $scope.deck);
         $scope.arrayToRender.push($scope.deck);
         //Lets add a discard pile
-        $scope.discardPile = new cards.Hand({ faceUp: true, x: 350, y: 250 });
+        $scope.discardPile = new cards.Hand({ faceUp: true, x: 350, y: 200 });
         //hand to show last trick
         $scope.lastTrickPile = new cards.Hand({ faceUp: true, x: 600, y: 60 });
         $scope.arrayToRender.push($scope.discardPile);

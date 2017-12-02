@@ -2,7 +2,7 @@ extends layout
 block content
     div(ng-controller="HeaderController" layout="column" flex)
     div(ng-controller="MainController")
-        div(layout='row' layout-align='start start')
+        md-toolbar(layout='row' layout-align='start start')
             h2(flex='20') {{gameInformation.currentPlayer.location}}'s Turn
             h2(flex='20') GameState: {{gameInformation.gameState}}
             h2(flex='20') {{gameInformation.currentBidOwner.location}} bid is {{gameInformation.bidTaken}}   {{gameInformation.trump}}
@@ -53,9 +53,9 @@ block content
         //-         md-option(value='h') Hearts
         //-         md-option(value='s') Spades
         //img.preload(src='/images/cards.png')
-        div(layout='row' layout-align = 'start start')
-            draw-canvas.testTable(array = "arrayToRender" m-clicked = "cardClick" draw = 'itemsToRender')
-            div(layout='column')
+        md-input-container(layout='row' layout-align = 'start start')
+            draw-canvas.testTable(array = "arrayToRender" m-clicked = "cardClick" draw = 'itemsToRender' flex='60')
+            div(layout='column' flex='40')
                 md-table-container
                 table
                     tr
@@ -74,6 +74,6 @@ block content
                         td {{p.isbidder}}
                         td {{p.isDealer}}
                         td {{p.isWinner}}
-                md-virtual-repeat-container.customMessage(id="vertical-container" style = "height: 600px")
+                md-virtual-repeat-container.customMessage(id="vertical-container" style = "height: 350px")
                     div.repeated-item(md-virtual-repeat="item in customMsg")
                         &nbsp &nbsp{{item}}

@@ -7,15 +7,15 @@ vsapp.directive("drawCanvas", function () {
             render: "&draw"
         },
         template: '<div style = "position: relative;">' +
-        '<canvas id="canvas" width="900" height="750" z-index 0;"></canvas>' +
+        '<canvas id="canvas" width="960" height="480" z-index 0;"></canvas>' +
         '<canvas id="canvas2" width="900" height="672" z-index 1;"></canvas>' +
         '</div>',
 
         link: function (scope, element) {
             var cv1 = document.getElementById('canvas');
             var cv2 = document.getElementById('canvas2');
-            var tableWidth = 400;
-            var tableHeight = 400;
+            var tableWidth = 960;
+            var tableHeight = 480;
             var cardWidth = 35;
             var cardHeight = 32;
             var cardImg = new Image();
@@ -28,6 +28,7 @@ vsapp.directive("drawCanvas", function () {
             var lastX;
             var lastY;
 
+           
             element.bind('mousedown', function(event){
                 
                 lastX = event.offsetX;
@@ -57,6 +58,13 @@ vsapp.directive("drawCanvas", function () {
                 console.log("This is the lastTrick in arraytodraw north", scope.startdraw[0]);
                 var ctx = cv1.getContext('2d');
                 ctx.clearRect(0,0,900, 900);
+               // ctx.scale(.75, .75);
+               var containerWidth = element.parent().width();
+               console.log("canvas container width is ", containerWidth);
+               cv1.width = .6 * containerWidth;
+   
+              
+               
                 for(var i = 0; i < arguments.length; i++){
                     if(arguments[i]){
                         var hand = scope.startdraw[i];
