@@ -2,15 +2,18 @@ extends layout
 block content
     div(ng-controller="HeaderController" layout="column" flex)
     div(ng-controller="MainController")
-        md-toolbar(layout='row' layout-align='start start')
-            h2(flex='20') {{gameInformation.currentPlayer.location}}'s Turn
-            h2(flex='20') GameState: {{gameInformation.gameState}}
-            h2(flex='20') {{gameInformation.currentBidOwner.location}} bid is {{gameInformation.bidTaken}}   {{gameInformation.trump}}
-            h2(flex='20') Trick Winner: {{gameInformation.trickOwner.location}}
-            h2(flex='20') Data Length: {{data.length}}
+        //-  md-toolbar(layout='row' layout-align='start start')
+        //-     h2(flex='20') {{gameInformation.currentPlayer.location}}'s Turn
+        //-     h2(flex='20') GameState: {{gameInformation.gameState}}
+        //-     h2(flex='20' ng-show="gameInformation.gameState == 'Bidding' && !gameInformation.currentBidOwner") No Bid
+        //-     h2(flex='20' ng-show="gameInformation.gameState == 'Bidding' && gameInformation.currentBidOwner") {{gameInformation.currentBidOwner.location}} Bid is {{gameInformation.bidTaken}}   {{gameInformation.trump}}
+        //-     h2(flex='20') Trick Winner: {{gameInformation.trickOwner.location}}
+        //-     h2(flex='20') Data Length: {{data.length}}
             
-        //- md-button.md-primary(ng-show="gameState == 'Bidding'" aria-label="Bid" ng-click="makebid()") Bid {{bid}}
-        md-input-container(layout='row')
+        //- //- md-button.md-primary(ng-show="gameState == 'Bidding'" aria-label="Bid" ng-click="makebid()") Bid {{bid}}
+        //- md-input-container(layout='row')
+        md-toolbar(layout='row' layout-align='start start')
+            h2 {user}
             md-button.md-primary.md-raised(ng-click="showTrick()") Show Trick            
             md-button.md-primary.md-raised(ng-click="test()") Test
             md-button.md-primary.md-raised(ng-click="checkProbabilities()") Check Probabilities
@@ -54,7 +57,8 @@ block content
         //-         md-option(value='s') Spades
         //img.preload(src='/images/cards.png')
         md-input-container(layout='row' layout-align = 'start start')
-            draw-canvas.testTable(array = "arrayToRender" m-clicked = "cardClick" draw = 'itemsToRender' flex='60')
+            div(flex='60')
+                draw-canvas.testTable(array = "arrayToRender" m-clicked = "cardClick" draw = 'itemsToRender' flex='60')
             div(layout='column' flex='40')
                 md-table-container
                 table

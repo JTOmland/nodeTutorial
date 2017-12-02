@@ -2,6 +2,11 @@ Finish show last trick
     -Game can't continue
     -All cards shown
     -Ok button to send show trick back to pile
+Formatting:
+    -Locate cards based on canvas size
+    -Hide buttons or show buttons only on actions allowed
+    -Make it obvious it is the players turn
+Add sort hand option to sort display of cards based on trump and suits
 Labels on canvas for players names
     -get logged in user
     -Human player variable
@@ -20,3 +25,4 @@ Can adjust time for trick before it is put in pile
 Improve Animation
     Don't lead tp card if higher card out
 Add welcome and rules
+Make probabilities right

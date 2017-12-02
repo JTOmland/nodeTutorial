@@ -1,4 +1,4 @@
-vsapp.directive("drawCanvas", function () {
+vsapp.directive("drawCanvas", function ($window, $timeout) {
     return {
         restrict: "E",
         scope: {
@@ -7,7 +7,7 @@ vsapp.directive("drawCanvas", function () {
             render: "&draw"
         },
         template: '<div style = "position: relative;">' +
-        '<canvas id="canvas" width="960" height="480" z-index 0;"></canvas>' +
+        '<canvas id="canvas" width=100% height="480" z-index 0;"></canvas>' +
         '<canvas id="canvas2" width="900" height="672" z-index 1;"></canvas>' +
         '</div>',
 
@@ -27,6 +27,38 @@ vsapp.directive("drawCanvas", function () {
             var cardMargin = { x: 20, y: 0 };
             var lastX;
             var lastY;
+
+            scope.onResizeFunction = function() {
+                // scope.windowHeight = $window.innerHeight;
+                // scope.windowWidth = $window.innerWidth;
+                $timeout(function () {
+                    var containerWidth = element.parent().width();
+                    console.log("canvas container width is ", containerWidth);
+                    console.log("scope.render", scope.render())
+                    cv1.width = containerWidth;
+                   // if(scope.render()){
+                        draw(scope.render().player1,scope.render().player2,scope.render().player3,scope.render().player4,scope.render().deck, scope.render().pile, scope.render().alt);
+                   //}
+
+                }, 200);
+               
+        
+                console.log("this is from resizefunction", element.parent().height()+"-"+element.parent().width())
+              };
+
+              scope.onResizeFunction();
+            //   angular.element.parent().bind('resize', function() {
+            //     console.log("canvas new element called");
+            //   scope.onResizeFunction();
+            //   scope.$apply();
+            // });
+
+              angular.element($window).bind('resize', function() {
+                  console.log("canvas resize element called");
+                scope.onResizeFunction();
+                scope.$apply();
+              });
+
 
            
             element.bind('mousedown', function(event){
@@ -59,9 +91,7 @@ vsapp.directive("drawCanvas", function () {
                 var ctx = cv1.getContext('2d');
                 ctx.clearRect(0,0,900, 900);
                // ctx.scale(.75, .75);
-               var containerWidth = element.parent().width();
-               console.log("canvas container width is ", containerWidth);
-               cv1.width = .6 * containerWidth;
+              
    
               
                

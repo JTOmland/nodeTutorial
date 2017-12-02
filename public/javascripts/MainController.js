@@ -40,6 +40,7 @@ function MainController($scope, $location, $http, $q, $rootscope, $timeout, $int
     $scope.clicked = {};
     $scope.playToo = 5;  //Score to win game
     $scope.customMsg = [];
+    $scope.developmentMode = false;
 
     function init() {
         DataFactory.getData().then(function (response) {
@@ -338,7 +339,8 @@ function MainController($scope, $location, $http, $q, $rootscope, $timeout, $int
     $scope.changeSettings = function () {
         var items = {
             playSpeed: $scope.playSpeed,
-            incrementCardPlay: $scope.testing
+            incrementCardPlay: $scope.testing,
+            developmentMode: $scope.developmentMode,
         }
 
         $mdDialog.show({
