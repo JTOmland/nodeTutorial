@@ -1,0 +1,14 @@
+md-dialog(flex='30')
+  md-toolbar(layout='row' layout-align="center center")
+    h2 Player Pick Trump
+     
+  md-dialog-content.smallDialog(layout="column")
+    md-content(layout="column" layout-align="center center")
+      p Select Trump:
+        span.radioValue
+          {{ data.group2 }}
+      md-radio-group(ng-model="data" class="md-primary")
+        md-radio-button(ng-repeat="d in radioData" ng-value="d.value" ng-disabled=" d.isDisabled " ng-class="{'md-align-top-left': $index==1}")
+          {{ d.label }}
+    md-content(layout='row' layout-align="space-around center")
+      md-button.md-primary.md-raised(ng-click="save()") Confirm Trump         

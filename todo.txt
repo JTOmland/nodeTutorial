@@ -26,3 +26,6 @@ Improve Animation
     Don't lead tp card if higher card out
 Add welcome and rules
 Make probabilities right
+Error from trying to save to dynamodb.  apiController app.post /api/savehand   Need to change that to MongoDB. 
+BUG when not in testing mode and human folds leader plays twice on first trick?
+In non testing mode need to provide time for the player to hit buttons ... player action modals pull up too fast and can't do anything but play.

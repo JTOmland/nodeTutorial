@@ -139,8 +139,17 @@ td.wider{
 }
 
 h2 {
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
+
+.md-dialog-content .smallDialog{
+    max-width: 20%;
+    min-width: 20%;
+}
+
+.md-dialog-content {
+    max-width: 300px;
+  }
 
 
 

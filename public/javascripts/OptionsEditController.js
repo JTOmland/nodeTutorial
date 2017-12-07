@@ -1,6 +1,6 @@
 vsapp.controller('OptionsEditController', ['$scope', '$mdDialog','dialogLocals','CommService', '$rootScope', function ($scope, $mdDialog, dialogLocals, CommService, $rootScope) {
-    $scope.closeEdit = function(){
-        $mdDialog.hide();
+    $scope.close = function(){
+        $mdDialog.hide($scope.options);
     }
 
     $scope.save = function(){

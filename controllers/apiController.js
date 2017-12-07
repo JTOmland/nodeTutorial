@@ -20,6 +20,7 @@ module.exports = function (app) {
     });
 
     app.post('/api/saveHand', function (req, res) {
+        //@Jeff todo: eliminate this using of dynamodb
         logs.log('debug', "/api/saveHand post", JSON.stringify(req.body));
         
         //what I want to do is take the data which is 
@@ -95,6 +96,7 @@ module.exports = function (app) {
             }
         });
     });
+
     app.get('/api/getDeal', function (req, res) {
         fs.readFile('./public/data/deal.json', 'utf8', function readFileCallback(err, data) {
             if (err) {
@@ -216,8 +218,6 @@ module.exports = function (app) {
 
     });
 
-
-
     app.get('/api/results', function (req, res) {
         fs.readFile('./public/data/summary.json', 'utf8', function readFileCallback(err, data) {
             if (err) {
@@ -229,6 +229,4 @@ module.exports = function (app) {
         });
 
     });
-
-
 }

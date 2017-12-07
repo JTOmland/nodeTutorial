@@ -1,0 +1,17 @@
+md-dialog(flex)
+    md-toolbar(layout='row')
+        .md-toolbar-tools
+            h2 Deal Selector
+            md-button.md-icon-button(ng-click='save()')
+                md-icon save
+            md-button.md-icon-button(ng-click='closeEdit()')
+                md-icon close
+    md-dialog-content(layout="row" layout-align="center")
+        md-content
+            md-input-container
+                label Proivde Hand Description
+                input(ng-model="handDescription")
+            md-content
+                p {{selectedDeal}}
+
+      

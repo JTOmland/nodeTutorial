@@ -11,14 +11,14 @@ md-dialog(flex)
   //-     md-subheader  3 line item
   //-     md-list-item(ng-repeat="item in options.backupDeal" ng-cick="click()")
   //-       h3 {{item.dealer}}
-  md-dialog-content
-        .md-dialog-content(layout="row" layout-align="center")
-            md-content
-              md-list(flex="")
-                md-list-item.md-3-line(ng-repeat= 'item in options.backupDeal', ng-click='selectUnit(item)', ng-class="{selected: item === selectedDeal}")
-                  div.md-list-item-text(layout="column")
-                    h3 {{item.dealer}} 
-                    h3 {{item.deal}}
-                    md-divider
+  md-dialog-content(layout="row" layout-align="center")
+    md-content
+      md-list(flex="100")
+        md-list-item.md-3-line(ng-repeat= 'item in options.backupDeal', ng-click='selectUnit(item)', ng-class="{selected: item === selectedDeal}")
+          div.md-list-item-text(flex="100" layout="column" layout-align="center stretch")
+            h3 {{item.dealer}} 
+            h3 {{item.note}}
+            h3 {{item.deal}}
+            md-divider
 
       

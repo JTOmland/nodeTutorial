@@ -1,0 +1,63 @@
+md-dialog(aria-label='Buck Euchre')
+  form
+    md-toolbar
+      .md-toolbar-tools
+        h2 Buck Euchre
+        span(flex='')
+        md-button.md-icon-button(ng-click='close()')
+            md-icon close
+    md-dialog-content(style='max-width:800px;max-height:810px; ')
+      md-tabs(md-dynamic-height='', md-border-bottom='')
+        md-tab(label='Rules')
+            md-content.md-padding
+                h1.md-display-2 Rules
+                p
+                |Welcome to Buck Euchre Ipswich style.  You may not find the rules in Hoyle's, but hang in there the rules are simple.
+                md-divider
+                    h4 Bidding:
+                    P
+                    |Bidding is started at the first player clockwise of the dealer.  The minimum open bid is three.  If there is no bid when it is the dealer's turn to bid, the dealer is "stuck".  The dealer has the option to fold and be set 3 points or bid.  If the dealer is stuck and bids, all players must play.
+                    p
+                    |The bid must be in a suit.  No trump bid is not allowed.
+                md-divider
+                h4 Scoring:
+                p
+                |If a player bids and does not make his bid, the player goes set the bid.  If a player stays on a bid but does not get one trick, they go set 3 points.  Otherwise, the player (including the bidder) earns one point per trick taken. 
+                md-divider
+                h4 Card rank:
+                p
+                |The card ranks are Jack of trump suit, jack of the other suit of the same color, Ace, King, Queen, Ten, and Nine of trump.  If no trump is played the rank is Ace, King, Queen, Jack, Ten, Nine.
+                md-divider
+                h4 Card play
+                P
+                |The player must follow the suit led if possible.
+                P  
+                |A player must kill by playing a higher card.  A higher card in the same suit that was led or a trump card.
+                P 
+                |The game ends when a player reaches 21.
+            md-dialog-actions(layout='row')
+                md-button(md-autofocus='', ng-click="save()")
+                    | Let's Play
+        md-tab(label='Game Options')
+            md-content.md-padding
+                h1.md-display-2 Game Settings
+                div(layout="column" flex="30")
+                    div(layout-align="space-between center")
+                    md-content(layout="column")
+                        md-input-container(flex="50")
+                            label Play Speed (milliseconds)
+                            input(type='number' ng-model="options.playSpeed")
+                div
+                    md-checkbox(ng-model="options.incrementCardPlay")
+                        h4 Increment Card Play: {{options.incrementCardPlay}}
+            md-dialog-actions(layout='row')
+                md-button(md-autofocus='', ng-click="save()")
+                    | Save Changes
+        md-tab(label='Development Options')
+            md-content.md-padding
+                h1.md-display-2 Development Options
+                md-checkbox(ng-model="options.developmentMode")
+                    h4 Development Mode: {{options.developmentMode}}
+            md-dialog-actions(layout='row')
+                md-button(md-autofocus='', ng-click="save()")
+                    | Save
