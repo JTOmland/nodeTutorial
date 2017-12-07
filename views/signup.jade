@@ -21,6 +21,11 @@ block content
                             input(name="password" placeholder="Password" type="password" required ng-model="password")
                             div(ng-messages="loginForm.password.required.$error")
                                 div(ng-message="required") You must supply a password
+                        md-input-container.md-block
+                            label Nickname
+                            input(name="nickname" placeholder="nickname" type="name" required ng-model="nickname")
+                            div(ng-messages="loginForm.nickname.required.$error")
+                                div(ng-message="required") You must supply a nickname
                         div(layout="row")
                             span(flex)
                             md-button.md-raised.md-primary(type="submit" ng-disabled="signupForm.$invalid") Signup

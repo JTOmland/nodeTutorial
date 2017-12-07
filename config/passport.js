@@ -32,6 +32,7 @@ module.exports = function(passport) {
     passport.use('local-signup', new LocalStrategy({
         usernameField: 'email',
         passwordField: 'password',
+        nickname: 'nickname',
         passReqToCallback: true
     },
 
@@ -39,6 +40,10 @@ module.exports = function(passport) {
         //async
         //User.findOne won't fire unless data is sent back.
         console.log("passport about to execut passed function");
+        console.log("passport req.body.nickname", req.body.nickname);
+        console.log("passport email", email);
+        console.log('passport password', password);
+        //console.log('passport nickname', nickname)
         
         process.nextTick(function() {
             //find the user who has email sent by form
@@ -64,6 +69,7 @@ module.exports = function(passport) {
                     newUser.local.email = email;
                     console.log('setting pw')
                     newUser.local.password = newUser.generateHash(password);
+                    newUser.local.nickname = req.body.nickname;
 
                     //save the user
                     console.log("about to save new user")

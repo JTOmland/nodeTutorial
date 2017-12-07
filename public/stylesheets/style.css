@@ -1,6 +1,7 @@
 body {
   /*padding: 50px;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  overflow: hidden;
 }
 
 a {
@@ -111,6 +112,10 @@ td.wider{
     left:10px;
 }
 
+.fixed-bar {
+    position: fixed;
+}
+
 .md-virtual-repeat-container.customMessage {
     margin: 20px;
     background-color: palegoldenrod;
@@ -132,6 +137,19 @@ td.wider{
 .selected {
     background-color: red;
 }
+
+h2 {
+    font-size: 1.5vw;
+}
+
+.md-dialog-content .smallDialog{
+    max-width: 20%;
+    min-width: 20%;
+}
+
+.md-dialog-content {
+    max-width: 300px;
+  }
 
 
 

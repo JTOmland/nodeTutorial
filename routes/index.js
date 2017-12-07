@@ -6,8 +6,23 @@ module.exports = function (passport) {
   var router = express.Router();
 
 
-  router.get('/options', function(req, res) {
-    res.render('options');
+  router.get('/OpeningDialog', function(req, res) {
+    res.render('OpeningDialog');
+  });
+  router.get('/saveHand', function(req, res) {
+    res.render('saveHand');
+  });
+
+  router.get('/bid', function(req,res){
+    res.render('bid');
+  });
+
+  router.get('/trump', function(req,res){
+    res.render('trump');
+  });
+
+  router.get('/stayOrFold', function(req,res){
+    res.render('stayOrFold');
   });
 
   router.get('/probabilityTable', function(req, res) {
@@ -18,7 +33,6 @@ module.exports = function (passport) {
     res.render('dealSelector');
   });
 
-
   /* GET home page. */
   router.get('/', function (req, res, next) {
     logger.log('degug', 'index.js get /');
@@ -27,8 +41,13 @@ module.exports = function (passport) {
 
   router.get('/table', isLoggedIn, function (req, res) {
     console.log('route /table called')
+    var userVariables = {};
+    userVariables.id = req.user.id;
+    userVariables.nickname = req.user.local.nickname;
+    //var sendBack = JSON.stringify(userVariables)
+    //var myUser = {user: userVariables}
     res.render('table', {
-      user: req.user
+      user: userVariables
     });
   });
 
@@ -64,12 +83,15 @@ module.exports = function (passport) {
     res.render('partials/' + name);
   });
 
+  router.get('/users', function(req, res) {
+    res.json({ username : req.user.email });
+  });
+
   function isLoggedIn(req, res, next) {
     //if user is authenticated in the session carry on
     if (req.isAuthenticated()) {
       return next();
     }
-
     //if they aren't redirect to login
     res.redirect('/login');
   };

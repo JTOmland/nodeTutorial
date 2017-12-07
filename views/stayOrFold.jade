@@ -1,0 +1,12 @@
+md-dialog(flex='30')
+  md-toolbar(layout='row' layout-align="center center")
+    h2 Stay Or Fold
+     
+  md-dialog-content.smallDialog(layout="column")
+    md-content(layout="column" layout-align="center center")
+      h4 Current Bid Owner: &nbsp  {{options.bidOwner}}
+      h4(ng-show="options.highBid > 2") Current Bid {{options.highBid}} {{options.trump}}
+    md-content(layout='row' layout-align="space-around center")
+      md-button.md-primary.md-raised(ng-click="save()") Stay
+      md-button.md-primary(ng-click="closeEdit()") Fold
+         

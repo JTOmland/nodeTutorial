@@ -25,6 +25,7 @@ vsapp.factory('DataFactory', ['$http', '$q', function ($http, $q) {
     }
 
     function saveData(data) {
+        //@Jeff todo:  This uses dynamodb in the api.  Needs to switch to mongo.
         console.log("DataFactory saveData and data is", angular.toJson(data));
         var hand = {};
         hand.handCode = data;
