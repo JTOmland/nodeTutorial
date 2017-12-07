@@ -32,7 +32,7 @@ function MainController($scope, $location, $http, $q, $rootscope, $timeout, $int
     $scope.trickEnded = false;
     $scope.indexTurn = false;  //used to index card plays by cput
     $scope.clicked = {};
-    $scope.playToo = 2;  //Score to win game
+    $scope.playToo = 21;  //Score to win game
     $scope.customMsg = [];
     $scope.developmentMode = false;
 

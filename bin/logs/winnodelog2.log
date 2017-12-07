@@ -788,3 +788,31 @@
 2017-12-07T04:01:57.654Z - debug: this is the body of the req
 2017-12-07T04:02:03.328Z - debug: /stayOrFold in app.js app.all
 2017-12-07T04:02:03.328Z - debug: this is the body of the req
+2017-12-07T04:11:12.906Z - debug: Just prior to call
+2017-12-07T04:11:12.909Z - debug: new winston log for shared logs
+2017-12-07T04:11:12.910Z - debug: start of winston logging
+2017-12-07T04:11:12.918Z - debug: Listening on port 3000
+2017-12-07T04:11:20.401Z - debug: /table in app.js app.all
+2017-12-07T04:11:20.401Z - debug: this is the body of the req
+2017-12-07T04:11:20.414Z - debug: /login in app.js app.all
+2017-12-07T04:11:20.414Z - debug: this is the body of the req
+2017-12-07T04:11:24.736Z - debug: /login in app.js app.all
+2017-12-07T04:11:24.736Z - debug: this is the body of the req email=jeff.omland@gmail.com, password=Ipswich, remember=true
+2017-12-07T04:11:24.955Z - debug: /table in app.js app.all
+2017-12-07T04:11:24.955Z - debug: this is the body of the req
+2017-12-07T04:11:25.707Z - debug: /api/results in app.js app.all
+2017-12-07T04:11:25.708Z - debug: this is the body of the req
+2017-12-07T04:11:25.924Z - debug: /OpeningDialog in app.js app.all
+2017-12-07T04:11:25.926Z - debug: this is the body of the req
+2017-12-07T18:14:04.123Z - debug: /table in app.js app.all
+2017-12-07T18:14:04.124Z - debug: this is the body of the req
+2017-12-07T18:14:04.884Z - debug: /api/results in app.js app.all
+2017-12-07T18:14:04.884Z - debug: this is the body of the req
+2017-12-07T18:14:05.147Z - debug: /OpeningDialog in app.js app.all
+2017-12-07T18:14:05.148Z - debug: this is the body of the req
+2017-12-07T18:14:28.321Z - debug: /table in app.js app.all
+2017-12-07T18:14:28.322Z - debug: this is the body of the req
+2017-12-07T18:14:29.086Z - debug: /OpeningDialog in app.js app.all
+2017-12-07T18:14:29.086Z - debug: this is the body of the req
+2017-12-07T18:14:29.147Z - debug: /api/results in app.js app.all
+2017-12-07T18:14:29.148Z - debug: this is the body of the req
