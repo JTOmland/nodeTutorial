@@ -2,25 +2,40 @@ extends layout
 block content
     div(ng-controller="HeaderController" layout="column" flex)
     div(ng-controller="MainController")
-        md-toolbar(layout='row' layout-align='start start')
-            //- h2 #{user}
-            h2(flex='20') {{gameInformation.currentPlayer.location}}'s Turn
-            h2(flex='20') GameState: {{gameInformation.gameState}}
-            h2(flex='20' ng-show="gameInformation.gameState == 'Bidding' && !gameInformation.currentBidOwner") No Bid
-            h2(flex='20' ng-show="gameInformation.gameState == 'Bidding' && gameInformation.currentBidOwner") {{gameInformation.currentBidOwner.location}} Bid is {{gameInformation.bidTaken}}   {{gameInformation.trump}}
-            h2(flex='20') Trick Winner: {{gameInformation.trickOwner.location}}
-            h2(flex='20' ng-show="gameInformation.gameState == 'Play'") Trump &nbsp {{gameInformation.trump}}
-            h2(flex='20') Bidder: {{gameInformation.currentBidOwner.location}}
-        md-input-container(layout='row')
-            md-button.md-primary.md-raised(ng-click="showTrick()") Show Trick            
-            md-button.md-primary.md-raised(ng-click="replayHand()") Replay Hand
-            md-button.md-primary.md-raised(ng-click="checkProbabilities()") Check Probabilities
-            md-button.md-primary.md-raised(ng-click="logout('/logout')") Logout
-            md-button.md-primary.md-raised(ng-click="changeSettings()") Settings
+        //- md-toolbar(layout='row' layout-align='start start')
+        //-     h2(flex='20') {{gameInformation.currentPlayer.location}}'s Turn
+        //-     h2(flex='20') GameState: {{gameInformation.gameState}}
+        //-     h2(flex='20' ng-show="gameInformation.gameState == 'Bidding' && !gameInformation.currentBidOwner") No Bid
+        //-     h2(flex='20' ng-show="gameInformation.gameState == 'Bidding' && gameInformation.currentBidOwner") {{gameInformation.currentBidOwner.location}} Bid is {{gameInformation.bidTaken}}   {{gameInformation.trump}}
+        //-     h2(flex='20') Trick Winner: {{gameInformation.trickOwner.location}}
+        //-     h2(flex='20' ng-show="gameInformation.gameState == 'Play'") Trump &nbsp {{gameInformation.trump}}
+        //-     h2(flex='20') Bidder: {{gameInformation.currentBidOwner.location}}
+        //-     md-slider-container
+        //-         md-slider(flex="" min="500" max="5000" ng-model="playSpeed" aria-label="red" id="red-slider")
+        //-         md-input-container
+        //-             input(flex="" type="number" ng-model="playSpeed" aria-label="red" aria-controls="red-slider")
+        md-input-container(layout='row' id='toastContainer')
+            md-menu
+                md-button.md-icon-button(aria-label='Open menu with custom trigger', ng-mouseenter='open($mdOpenMenu, $event)')
+                    md-icon menu
+                    //- md-icon(md-menu-origin='', md-svg-icon='call:textsms')
+                md-menu-content(width='4', ng-mouseleave='$mdMenu.close()')
+                    md-menu-item
+                        md-button.md-primary.md-raised(ng-click="showTrick()") Show Trick 
+                    md-menu-item
+                        md-button.md-primary.md-raised(ng-click="replayHand()") Replay Hand
+                    md-menu-item
+                        md-button.md-primary.md-raised(ng-click="checkProbabilities()") Check Probabilities
+                    md-menu-item
+                        md-button.md-primary.md-raised(ng-click="logout('/logout')") Logout
+                    md-menu-item
+                        md-button.md-primary.md-raised(ng-click="changeSettings()") Settings
+                    md-menu-item
+                        md-button.md-primary.md-raised(ng-click="saveDeal()") Save Deal
             md-button.md-primary.md-raised(aria-label = "Index Play" ng-click ="indexPlay()") Index Play
-            md-button.md-primary.md-raised(ng-click="saveDeal()") Save Deal
-            md-button.md-primary(ng-show="gameInformation.gameState == 'Deal'" aria-label="Deal random card" ng-click="DealSpecific()") Deal Specific
-            md-button.md-primary(aria-label="Deal specific card" ng-click="stopGame()") Stop Game
+            //- md-button.md-primary(ng-show="gameInformation.gameState == 'Deal'" aria-label="Deal random card" ng-click="DealSpecific()") Deal Specific
+            md-button.md-primary(aria-label="Deal specific card" ng-click="openSideNavPanel()") Open Nav
+            md-button.md-primary(arial-label="toast" ng-click="showToast()") Show Toast
         div(ng-show="gameInformation.gameState == 'Play' && testing==true" layout='row' layout-align='start start')
             h4(flex='15') Trick Owner {{gameInformation.trickOwner.location}},
             h4(flex='15') Top Card {{gameInformation.topCard.name}},
@@ -33,31 +48,35 @@ block content
             div(ng-repeat="card in allCardsPlayed" ) 
                 h6(flex='10') {{card.shortName}}
                 span(flex='3')
-        md-input-container(layout='row' layout-align = 'start start')
-            div(flex='60')
-                draw-canvas.testTable(array = "arrayToRender" m-clicked = "cardClick" draw = 'itemsToRender' flex='60')
-            div(layout='column' flex='40')
-                md-table-container
-                table
-                    tr
-                        th Name 
-                        th Score
-                        th Tricks
-                        th Playing
-                        th Bidder
-                        th Dealer
-                        th Winner
-                    tr(ng-repeat ='p in gameInformation.playersIn')
-                        td {{p.name}}
-                        td {{p.score}}
-                        td {{p.tricksTaken}}
-                        td {{p.isIn}}
-                        td {{p.isbidder}}
-                        td {{p.isDealer}}
-                        td {{p.isWinner}}
-                md-virtual-repeat-container.customMessage(id="vertical-container" style = "height: 350px")
-                    div.repeated-item(md-virtual-repeat="item in customMsg")
-                        &nbsp &nbsp{{item}}
+        md-input-container(layout='row' layout-align = 'center center')
+            div( flex='65')
+                draw-canvas.testTable(array = "arrayToRender" m-clicked = "cardClick" draw = 'itemsToRender')
+        md-sidenav.md-sidenav-right.md-whiteframe-4dp(md-component-id='right')
+            md-toolbar.md-theme-light
+                h1.md-toolbar-tools Sidenav Right
+            md-content(layout-padding='')
+                div(layout='column' flex='' ng-if="showScore")
+                    md-table-container
+                    table
+                        tr
+                            th Name 
+                            th Score
+                            th Tricks
+                            th Playing
+                            th Bidder
+                            th Dealer
+                            th Winner
+                        tr(ng-repeat ='p in gameInformation.playersIn')
+                            td {{p.name}}
+                            td {{p.score}}
+                            td {{p.tricksTaken}}
+                            td {{p.isIn}}
+                            td {{p.isbidder}}
+                            td {{p.isDealer}}
+                            td {{p.isWinner}}
+                    md-virtual-repeat-container.customMessage(id="vertical-container" style = "height: 350px" ng-if="showMessages")
+                        div.repeated-item(md-virtual-repeat="item in customMsg")
+                            &nbsp &nbsp{{item}}
             script
                 |var EuchreVariables = EuchreVariables || {};
                 if(user)

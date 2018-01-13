@@ -35,7 +35,7 @@ vsapp.factory('Rules', [function () {
         var higherTrumpCards = [];
         var lowerTrumpCards = [];
         var losers = [];
-        console.log("******* LEGAL PLAYS *********")
+        // console.log("******* LEGAL PLAYS *********")
 
         //four cases:
         //1.  Your the leader  all cards legalCards
@@ -46,8 +46,8 @@ vsapp.factory('Rules', [function () {
         //6.  The trick has not been trumped you have no cards in suit led and you have trump
         //7.  The trick has not been trumped you have no cards in suit and no trump
         //8.  The trick has been trumped, you don't have lead suit or trump (all cards legal)
-        console.log("trick length", gameInfo.trick.length)
-        console.log("legal plays game info", gameInfo);
+        // console.log("trick length", gameInfo.trick.length)
+        // console.log("legal plays game info", gameInfo);
         if (gameInfo.trick.length < 1) {
             _.each(player.hand, function (card) {
                 higherSuitCards.push(card);
@@ -56,33 +56,33 @@ vsapp.factory('Rules', [function () {
         }
 
         _.each(player.hand, function (card) {
-            console.log("card to evaluate ", card, " player is ", player);
+           // console.log("card to evaluate ", card, " player is ", player);
 
             if ((card.suit == gameInfo.suitLed && !(card.rank == 11 && jickSuit(card.suit) == gameInfo.trump)) || (gameInfo.suitLed == gameInfo.trump && (card.rank == 11 && jickSuit(card.suit) == gameInfo.trump))) {
                 hasSuit = true;
-                console.log("has suit");
+                //console.log("has suit");
                 if (card.power > gameInfo.topCard.power) {
-                    console.log("higher card in suit");
+                    //console.log("higher card in suit");
                     hasHigherSuitCard = true;
                     higherSuitCards.push(card);
                 } else {
                     lowerSuitCards.push(card);
-                    console.log("lower card in suit");
+                    //console.log("lower card in suit");
                 }
             } else {
                 if (card.suit == gameInfo.trump || (card.rank == 11 && jickSuit(card.suit) == gameInfo.trump)) {
-                    console.log("can trump is true");
+                    //console.log("can trump is true");
                     canTrump = true;
                     if (card.power > gameInfo.topCard.power) {
-                        console.log("higherTrump");
+                        //console.log("higherTrump");
                         higherTrumpCards.push(card);
                     } else {
-                        console.log("lower trump card")
+                        //console.log("lower trump card")
                         lowerTrumpCards.push(card);
                     }
                 } else {
                     if (card.suit != gameInfo.suitLed && card.suit != gameInfo.trump) {
-                        console.log("card is a loser")
+                       // console.log("card is a loser")
                         losers.push(card);
                     }
                 }
@@ -93,20 +93,20 @@ vsapp.factory('Rules', [function () {
             if (hasSuit) {  //if has trump then has to play higher card else can play lower cart
                 return (higherSuitCards.length > 0 ? { cards: higherSuitCards, losers: false } : { cards: lowerSuitCards, losers: true });
             } else {  //if does not have suit (trump) then can play any card.
-                console.log("returning from trump led, player had no trump returning losers ", losers, " should match player.hand", player.hand)
+               // console.log("returning from trump led, player had no trump returning losers ", losers, " should match player.hand", player.hand)
                 legalCards = losers;
                 return { cards: losers, losers: true };
             }
         } else {  //if trump is not led
-            console.log("Legal plays checking which cards to return based on trump played gameInfo.trumpPlayed is  ", gameInfo.trumpPlayed)
+           // console.log("Legal plays checking which cards to return based on trump played gameInfo.trumpPlayed is  ", gameInfo.trumpPlayed)
             if (!gameInfo.trumpPlayed) {  // and if trump has not been played.
                 if (hasHigherSuitCard) {  //must play higher suit led card if available (must kill)
-                    console.log("Returning higherSuiCards no trump played")
+                   // console.log("Returning higherSuiCards no trump played")
                     legalCards = higherSuitCards;
                     return { cards: higherSuitCards, losers: false };
                 } else { //if cannot kill must follow suit
                     if (hasSuit) {
-                        console.log("Returning suit no trump played")
+                       // console.log("Returning suit no trump played")
                         legalCards = higherSuitCards.concat(lowerSuitCards);  //should not have higherSuitCards
                         return { cards: lowerSuitCards, losers: true };
                     } else { //if cannot follow suit can trump
@@ -121,7 +121,7 @@ vsapp.factory('Rules', [function () {
                 }
             } else {  //trump played
                 if (hasSuit) {  //has suit need to play higher card unles trumped
-                    console.log("Returning trump played has suit play lower card if available")
+                    //console.log("Returning trump played has suit play lower card if available")
                     //here legal plays are really any suit card
                     legalCards = higherSuitCards.concat(lowerSuitCards);
                     if (player.type == 'human') {
@@ -131,10 +131,10 @@ vsapp.factory('Rules', [function () {
                     }
                 } else {
                     if (higherTrumpCards.length > 0) {
-                        console.log("Returning trump played no suit but higher trump card returns")
+                       // console.log("Returning trump played no suit but higher trump card returns")
                         return { cards: higherTrumpCards, losers: false };
                     } else {
-                        console.log("Returning trump played no suit no trump return losers")
+                       //console.log("Returning trump played no suit no trump return losers")
                         return (losers.length > 0 ? { cards: losers, losers: true } : { cards: lowerTrumpCards, losers: true });
                     }
                 }
@@ -142,7 +142,7 @@ vsapp.factory('Rules', [function () {
         }
     }
     function adjustCardRank(gameInfo) {
-        console.log("************Adjusting Ranks *****************")
+        //console.log("************Adjusting Ranks *****************")
         _.each(gameInfo.playersIn, function (p) {
             // console.log("player ", p.name);
             _.each(p.hand, function (card) {

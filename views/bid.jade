@@ -1,10 +1,10 @@
 md-dialog(flex='30')
   md-toolbar(layout='row' layout-align="center center")
-    h2 Player Bid Action
+    h2 Player Bid
      
   md-dialog-content.smallDialog(layout="column")
     md-content(layout="column" layout-align="center center")
-      h4 Current Bid Owner: &nbsp  {{options.bidOwner}}
+      h4 {{options.bidOwner}} &nbsp bid &nbsp {{options.highBid}}
       h4(ng-show="options.highBid > 2") Current Bid {{options.highBid}}
       p Select Bid:
         span.radioValue

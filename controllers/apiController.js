@@ -109,6 +109,26 @@ module.exports = function (app) {
 
     });
 
+    app.post('/api/saveBidHand', function (req, res) {
+        fs.readFile('./public/data/bidVectors.json', 'utf8', function readFileCallback(err, data) {
+            if (err) {
+                logger.log('error', err);
+            } else {
+                var existingData = JSON.parse(data); //now it an object
+                existingData.push(req.body)
+                var modifiedData = JSON.stringify(existingData);
+                fs.writeFile('./public/data/bidVectors.json', modifiedData, 'utf8', function (err) {
+                    if (err) {
+                        logger.log('error', "Error writing file bedVectors.json");
+                        return console.error(err);
+                    } else {
+                        res.send('Success');
+                    }
+                });
+            }
+        });
+    });
+
     app.post('/api/save', function (req, res) {
 
 

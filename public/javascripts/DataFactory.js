@@ -6,8 +6,28 @@ vsapp.factory('DataFactory', ['$http', '$q', function ($http, $q) {
         saveData: saveData,
         saveHand: saveDeal,
         getDeal: getDeal,
+        saveBidHand: saveBidHand
     };
     return service;
+
+    function saveBidHand(player) {
+        console.log("DataFactory.saveBidHand the hands to post are", player.hand);
+        var data = {tricksTaken: player.tricksTaken, vector: player.vector};
+        
+        
+        $http({
+            method: 'POST',
+            url: 'api/saveBidHand',
+            data: angular.toJson(data),
+            headers: {
+                'Content-Type': 'application/json',
+                'calledFrom': 'admin'
+            }
+        }).success(function (data, status) {
+        }).error(function (data, status) {
+        });
+
+    }
 
     function saveDeal(data) {
         console.log('DataFactory saveDeal and data is ', data); //angular.toJson(data));

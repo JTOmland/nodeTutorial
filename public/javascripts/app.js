@@ -1,4 +1,4 @@
-var vsapp = angular.module('vsapp', ['ngMaterial','ngRoute'])
+var vsapp = angular.module('vsapp', ['ngAnimate','ngSanitize','ngMaterial','ngRoute'])
     .config(['$routeProvider','$locationProvider',function ($routeProvider, $locationProvider) {
         $locationProvider.html5Mode(true);
         $routeProvider

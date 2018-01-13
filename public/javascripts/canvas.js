@@ -66,7 +66,7 @@ vsapp.directive("drawCanvas", function ($window, $timeout) {
             });
 
             scope.$watch(scope.render, function (value) {
-                console.log("canvas watch called value", value);
+               // console.log("canvas watch called value", value);
                 //the value passed is whether this needs to be rendered true or false
                 if (value) {
                     draw(value.player1, value.player2, value.player3, value.player4, value.deck, value.pile, value.alt);
@@ -85,7 +85,7 @@ vsapp.directive("drawCanvas", function ($window, $timeout) {
                 // console.log("This is the lastTrick in arraytodraw", scope.startdraw[scope.startdraw.length - 1]);
                 // console.log("This is the lastTrick in arraytodraw north", scope.startdraw[0]);
                 var ctx = cv1.getContext('2d');
-                ctx.clearRect(0, 0, 900, 900);
+                ctx.clearRect(0, 0, cv1.width, cv1.height);
 
                 for (var i = 0; i < arguments.length; i++) {
                     if (arguments[i]) {

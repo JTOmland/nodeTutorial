@@ -81,12 +81,14 @@
 	
 	Card.prototype = {
 		init: function (suit, rank, table) {
+			var offsets = { "c": 0, "d": 1, "h": 2, "s": 3 };
 			//console.log("Card.prototype init");
 			this.shortName = suit + rank;
 			this.suit = suit;
 			this.rank = rank;
 			this.name = suit.toUpperCase()+rank;
 			this.faceUp = false;
+			this.index = offsets[suit] * 6 + rank - 9;
 		},
 
 		toString: function () {

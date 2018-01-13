@@ -130,6 +130,11 @@ td.wider{
     line-height: 150%;
 }
 
+md-toast.md-center {
+    left: 50%;
+    margin-left: -150px;
+}
+
 #dialogContent_7 div md-content li {
     padding: 10px;
 }

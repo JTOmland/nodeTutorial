@@ -41,12 +41,18 @@ md-dialog(aria-label='Buck Euchre')
         md-tab(label='Game Options')
             md-content.md-padding
                 h1.md-display-2 Game Settings
-                div(layout="column" flex="30")
-                    div(layout-align="space-between center")
-                    md-content(layout="column")
-                        md-input-container(flex="50")
-                            label Play Speed (milliseconds)
-                            input(type='number' ng-model="options.playSpeed" required md-maxlength="4" md-minlength="3")
+                p
+                    |Play Speed
+                md-slider-container
+                    md-slider(flex="" min="500" max="5000" ng-model="options.playSpeed" aria-label="red" id="red-slider")
+                    md-input-container
+                        input(flex="" type="number" ng-model="options.playSpeed" aria-label="red" aria-controls="red-slider")
+                //- div(layout="column" flex="30")
+                //-     div(layout-align="space-between center")
+                //-     md-content(layout="column")
+                //-         md-input-container(flex="50")
+                //-             label Play Speed (milliseconds)
+                //-             input(type='number' ng-model="options.playSpeed" required md-maxlength="4" md-minlength="3")
                 div
                     md-checkbox(ng-model="options.incrementCardPlay")
                         h4 Increment Card Play: {{options.incrementCardPlay}}

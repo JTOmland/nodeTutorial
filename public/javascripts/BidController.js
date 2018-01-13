@@ -7,7 +7,7 @@ vsapp.controller('BidController', ['$scope', '$mdDialog','dialogLocals','CommSer
     var disableFour = false;
 
     if($scope.options.highBid == 3){
-        console.log("BicController setting disabledThree")
+       // console.log("BicController setting disabledThree")
         disableThree = true
     } else if($scope.options.highBid == 4){
         disableThree = true;
@@ -39,7 +39,7 @@ vsapp.controller('BidController', ['$scope', '$mdDialog','dialogLocals','CommSer
         { label: '6', value: 6 }
       ];
     
-    console.log("BidController options", $scope.options)
+    //console.log("BidController options", $scope.options)
 
 }]);
 

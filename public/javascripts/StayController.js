@@ -2,7 +2,7 @@ vsapp.controller('StayController', ['$scope', '$mdDialog','dialogLocals','CommSe
     
         $scope.options = dialogLocals;
         $scope.data = 0;
-        console.log("StayController options", $scope.options)
+        //console.log("StayController options", $scope.options)
 
         $scope.closeEdit = function(){
             //folding button

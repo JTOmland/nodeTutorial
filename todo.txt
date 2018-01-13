@@ -3,7 +3,7 @@ Finish show last trick
     -All cards shown
     -Ok button to send show trick back to pile
 Formatting:
-    -Locate cards based on canvas size
+    *-Locate cards based on canvas size
     -Hide buttons or show buttons only on actions allowed
     -Make it obvious it is the players turn
 Add sort hand option to sort display of cards based on trump and suits
@@ -20,12 +20,16 @@ Check game end/winner
     Reset game with modal
 Add shit talk messages
 Animation of deal and card player
-Look at loop again
 Can adjust time for trick before it is put in pile
-Improve Animation
+Improve AI
     Don't lead tp card if higher card out
-Add welcome and rules
+    Don't bid six if you don't have the jack
+*Add welcome and rules
 Make probabilities right
-Error from trying to save to dynamodb.  apiController app.post /api/savehand   Need to change that to MongoDB. 
-BUG when not in testing mode and human folds leader plays twice on first trick?
+*Error from trying to save to dynamodb.  apiController app.post /api/savehand   Need to change that to MongoDB. 
+*BUG when not in testing mode and human folds leader plays twice on first trick?
 In non testing mode need to provide time for the player to hit buttons ... player action modals pull up too fast and can't do anything but play.
+On six bid ... don't need to and shouldn't allow bidding to continue
+Formatting
+    -Show/hide scorecaard
+    -show/hide message
